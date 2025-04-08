@@ -57,7 +57,7 @@ We will be prioritizing candidates which have something that we consider a stron
 
 Applications are opened from TODO.
 
-The program will run for 5 months, from June 10 through mid-November. This gives us the opportunity to organize physical meetups at Ethereum conferences like [Devcon](https://devcon.org) and [EthCC](https://www.ethcc.io/).
+The program will run for 5 months, from June through mid-November. This gives us the opportunity to organize physical meetups at Ethereum conferences like [Devconnect](https://devconnect.org) and [EthCC](https://www.ethcc.io/).
 
 Timeline of the 5 month program will follow these stages:
 

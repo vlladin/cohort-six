@@ -1,8 +1,10 @@
 # Suggested Reading
 
-Here are some starting points for learning about the Ethereum protocol.
+EPF.wiki includes Study Group curriculum and community wiki covering almost every area of the protocol. It's the best place to get comprehensive knowledge you should be faimilar with before starting with EPF. 
 
-> Please feel free to open a pull request to expand this list.
+Here are some more starting points for learning about the Ethereum protocol.
+
+> Please contribute to EPF.wiki along your learning jouerney and feel free to open a pull request to expand this list.
 
 ### Ethereum Basics 
 - Conceptual Overview: https://ethereum.stackexchange.com/questions/268/ethereum-block-architecture
