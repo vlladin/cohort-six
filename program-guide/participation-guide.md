@@ -4,15 +4,15 @@ EPF is a program for aspiring developers dedicated to work on Ethereum core prot
 
 ## Dive In
 
-EPF starts by learning about the core protocol. Visit the [EPF Wiki](https://epf.wiki) and get started immersing yourself in the various Ethereum protocol topics. Contribute to the wiki to cover gaps in content you find interesting and add any materials you discover yourself.
+EPF starts by learning about the core protocol. Visit the [EPF Wiki](https://epf.wiki) to get started immersing yourself in the various Ethereum protocol topics. Contribute to the wiki to cover gaps in content you find interesting and add any materials you discover yourself.
 
-If you have the necessary skills and feel confident enough with your Ethereum knowledge to start contributing, you can start by exploring [Good First Issues](https://gfi.bordel.wtf) across clients and other core projects.
+If you have the necessary skills and feel confident in your software engineering ability and Ethereum knowledge to start contributing, you can start by exploring [Good First Issues](https://gfi.bordel.wtf) across clients and other core projects.
 
 ## Choose a project
 
-Based on your learning experience about the protocol, identify missing pieces and projects to contribute. Mentors have [suggested various projects](/projects/project-ideas.md) you can work on, take your time to dive into them, learn about their protocol area and context. You can propose your own project as well, make sure it's valuable to current core protocol efforts. 
+Based on your learning experience about the protocol, identify missing pieces and projects to contribute. Mentors have [suggested various projects](/projects/project-ideas.md) you can work on. Take some time to explore them, learn about the areas of the protocol they touch and build your context. You can propose your own project as well, but make sure it's valuable to current core protocol efforts. 
 
-During the first month, choose a project that you would like to build or contribute to on during the duration of the program and write your own project proposal with the specification. Your project does not need to be completed at the end of the program but you are expected to make significant progress during the five months of the program. Based on the project scope, consider teaming up with other fellows.
+During the first month, write your own project proposal, including the specification, for the project you would like to work on for the duration of the program. Your project does not need to be complete but you are expected to make significant progress at the end of the program. Based on the project scope, consider teaming up with other fellows.
 
 ## Participate in the discussion
 
@@ -24,7 +24,7 @@ Join the Ethereum R&D Discord. Use the *#protocol-fellowship* channel for genera
 
 Weekly updates help us, mentors and other contributors to see how you are progressing in your project. Making an update each week will not only keep you accountable to your project, but it will also track your ability to do the work. Additionally, weekly updates help you practice technical writing, explaining your ideas to others through written posts, which is one of the primary ways that information about Ethereum is spread. Remember that our goal is to help you find placement with a client team, research team, or help you to become a funded independent contributor.
 
-*How to make weekly updates*
+> [!NOTE] *How to make weekly updates*
 - Follow the guidelines in the [Repo Guide](./repo-guide.md)
 - Post your update or a link to your update in the [Development Updates](/development-updates.md)
 - Link your update in the weekly update thread in *#protocol-fellowship*
@@ -33,11 +33,11 @@ Weekly updates help us, mentors and other contributors to see how you are progre
 
 [Mentors](./mentors.md) from client teams who proposed projects are available to assist with the work project. Mentors are NOT here to teach you how to do things, tell you what to do or hold you accountable to your project. They can unlock roadblocks, give feedback on your progress, or help point you in the right direction if you are stuck.
 
->Please be respectful of mentors’ time. Try to figure it out on your own first. If asking for help is necessary, be concise and direct.
+> [!WARNING] Please be respectful of mentors’ time. Try to figure it out on your own first. If asking for help is necessary, be concise and direct.
 
 *How to interact with mentors*
-- Do not approach mentors before doing your own research and at least basic work on the project
-- First reach out to cohort organizers to ask about mentor's availability and share what you need
+- Reach out to cohort organizers to ask about mentor's availability and share what you need
+- Only approach mentors after you have done significant research and at least basic work on the project
 - We can connect your with a mentor directly or point you to the right place:
     - Ask in a public client teams chat, like their Discord server
     - You can ask a question in the #protocol-fellowship channel and tag them

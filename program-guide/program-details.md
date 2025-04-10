@@ -8,7 +8,7 @@ The Ethereum protocol needs maintenance but also goes through the significant up
 
 The *Ethereum Protocol Fellowship (formerly Core Developer Apprentice Program)* is a program designed to onboard developers to the process through which protocol development happens. It is an opportunity to dive deep into the protocol while working closely with others on the same learning trajectory as well as the core development community.
 
-*This program will not teach or focus in any way on smart contract development or creating blockchain applications.*
+> [!NOTE] *This program will not teach or focus in any way on smart contract development or creating blockchain applications.*
 
 Over the course of the 5 month program, EPF participants will receive project support and mentorship as well as a monthly stipend while working on a project of their choosing. Participants can expect
 - a weekly call with participants
@@ -24,17 +24,17 @@ Learn more about EPF and the previous cohort in the [fifth cohort recap]
 Successful candidates will have most of the following skills. It is ok if you have some weak areas, but you should expect to focus on improving them.
 While none of these guidelines are hard requirements for applicants, the most successful applicants:
 
+- have a technical foundation
 - have strong verbal and written communication skills
 - are self-directed and self-motivated
-- have a technical foundation
 - are able to write code
 
+### Technical Foundation
+Core development is deeply technical. You will consistently be required to learn and understand new things. We don't expect you to have a deep understanding of the domain-specific knowledge, but you should have a solid technical foundation. This could be things like experience with *software development, a computer science or math background*, or ability to read and very loosely understand the Ethereum yellow paper. You should be confident in your ability to learn and understand complex technical things.
 ### Verbal and Written communication
 Core development requires you to be able to write your ideas down in a manner that is clear and easy to understand. In addition, you will need to be able to discuss your ideas in person and over voice and video calls. The majority of protocol development happens in English.
 ### Self Directed
 Core development requires the ability to tackle a problem in a self-directed way. You will have a community of knowledgeable people to support you, but the ultimate responsibility for figuring things out is yours. The program will operate in much the same way. While mentorship is an important part of this program, mentors are there to unlock doors and remove barriers. There will be near-zero "teaching". 
-### Technical Foundation
-Core development is deeply technical. You will consistently be required to learn and understand new things. We don't expect you to have a deep understanding of the domain-specific knowledge, but you should have a solid technical foundation. This could be things like experience with software development, a computer science or math background, or being able to read and very loosely understand the Ethereum yellow paper. You should be confident in your ability to learn and understand complex technical things.
 ### Ability to Write Code
 You don't have to be a seasoned software engineer. But almost everyone who is successful in core development has some ability to use code to implement and validate their ideas.
 ### Intrinsically Motivated
@@ -61,10 +61,12 @@ The program will run for 5 months, from June through mid-November. This gives us
 
 Timeline of the 5 month program will follow these stages:
 
+### Phase Zero
+- Those selected for EPF6 should spend the month prior getting up to speed on the current state of the art in Ethereum protocol development. A great place for this is [epf.wiki](https://epf.wiki) and our [reading list](/reading.md)
+- Fellows should also make arrangements to attend EthCC, including securing a visa, if needed
 ### Phase One
-- Initial meeting with individual participants, interviewing and providing program orientation.
+- Initial meeting with individual participants and providing program orientation.
 - Initial group session, presenting the introduction to the program and areas of focus.
-- Learn about Ethereum core protocol, catch up on resources from the [study group](https://epf.wiki) and identify problems interesting to you
 - Learn about chosen problems and create a write up of a topic of interest based on input from mentors.
 ### Phase Two
 - Deep dive into identified areas. Learn and familiarize with previous work and current solutions.
@@ -78,7 +80,7 @@ Timeline of the 5 month program will follow these stages:
 ### Program End
 - Project wrap up and looking forward to further contributing to the Ethereum ecosystem
 - Project showcase to group and mentors
-- In-person event at Devcon SEA
+- In-person event at Devconnect ARG
 
 During the entire process, participants will have access to [mentors](./mentors.md) and the core developer community for things like answering questions and getting feedback on ideas. Participants should not expect the core developers to actively guide them.
 
