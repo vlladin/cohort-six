@@ -55,3 +55,4 @@ Here are some more starting points for learning about the Ethereum protocol.
 
 ### Privacy
    - Roadmap to Ethereum privacy https://hackmd.io/@pcaversaccio/ethereum-privacy-the-road-to-self-sovereignty
+   - https://ethereum-magicians.org/t/a-maximally-simple-l1-privacy-roadmap/23459
