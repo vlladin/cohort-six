@@ -20,7 +20,7 @@ A good development update can take many forms. Every individual will probably ne
 - Links are great. Forum posts. Pull requests. HackMD documents. Any resources you have been studying or creating. 
 
 A great example is Danny Ryan's "finalized" series of development updates. Check out their update about their [work on the Merge devnets](https://blog.ethereum.org/2021/04/02/finalized-no-25/) for inspiration.
-You can also check out [development updates from previous cohorts](https://github.com/eth-protocol-fellows/cohort-four/blob/master/development-updates.md). 
+You can also check out [development updates from previous cohorts](https://github.com/eth-protocol-fellows/cohort-five/blob/master/development-updates.md). 
 
 ### Best practices
 

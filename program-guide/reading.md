@@ -4,16 +4,20 @@ EPF.wiki includes Study Group curriculum and community wiki covering almost ever
 
 Here are some more starting points for learning about the Ethereum protocol.
 
-> Please contribute to EPF.wiki along your learning jouerney and feel free to open a pull request to expand this list.
+> Please contribute to EPF.wiki along your learning journey and feel free to open a pull request to expand this list.
 
 ### Ethereum Basics 
 - Conceptual Overview: https://ethereum.stackexchange.com/questions/268/ethereum-block-architecture
     - [Higher resolution pictures](https://github.com/4c656554/BlockchainIllustrations/tree/2f6804a75b0ef4708adaa6e34df9681dbec4b669/Ethereum)
-- Ecosystem Portal: https://123eth.org/
-- Basic technical details of Ethereum Blockchain Protocol (Vitalik Buterin): https://youtu.be/gjwr-7PgpN8
+- Developer docs https://ethereum.org/en/developers/docs/
 - Ethereum in 30 minutes (Vitalik Buterin): https://youtu.be/UihMqcj-cqc
 - [Inevitable Ethereum](https://inevitableeth.com/site/content) provides a wiki kind of content covering many basic and advanced research topics 
 - [Ethereum Design Rationale](https://web.archive.org/web/20211121044757/https://ethereumbuilders.gitbooks.io/guide/content/en/design_rationale.html) is an older document describing design principles of Ethereum 
+
+### Current Research and EIPS
+- Research Forums: https://ethresear.ch/
+- Fellowship of Ethereum Magicians: https://ethereum-magicians.org/
+- EIPS: https://eips.ethereum.org/
 
 ### Yellow Paper
 - Yellow Paper: https://ethereum.github.io/yellowpaper/paper.pdf  (accompanying cheat sheet: [Cheat sheet link](https://github.com/benjaminion/YellowPaper_CheatSheet/blob/master/YPCheatSheet.pdf))
@@ -36,27 +40,18 @@ Here are some more starting points for learning about the Ethereum protocol.
 ### Proof of Stake
    - Overview: https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
    - Why Proof of Stake? (Vitalik Buterin): https://vitalik.eth.limo/general/2020/11/06/pos2020.html
-   - The Merge: https://ethereum.org/en/eth2/merge/
+   - The Merge: https://ethereum.org/en/roadmap/merge/
    - Clients (Coding Languages of Ethereum 2): https://ethereum.org/en/eth2/get-involved/#clients
    - LMD Ghost Fork Choice Algorithm: https://medium.com/@aditya.asgaonkar/bitwise-lmd-ghost-an-efficient-cbc-casper-fork-choice-rule-6db924e57d1f
    - Annotated Beacon Chain Specification:
        - Ben Edgington ETH2 book: https://eth2book.info/ 
        - By Vitalik https://github.com/ethereum/annotated-spec/tree/master
 
-### Current Research and EIPS
-- Research Forums: https://ethresear.ch/
-- Fellowship of Ethereum Magicians: https://ethereum-magicians.org/
-- EIPS: https://eips.ethereum.org/
-
 ### Scaling 
-   - Block Chain Scalability: https://vitalik.eth.limo/general/2021/05/23/scaling.html
+   - Surge https://vitalik.eth.limo/general/2024/10/17/futures2.html
+   - Blockchain Scalability: https://vitalik.eth.limo/general/2021/05/23/scaling.html
    - Stateless Ethereum: https://blog.ethereum.org/2019/12/30/eth1x-files-state-of-stateless-ethereum/
-   - Kate Commitments: https://hackmd.io/yqfI6OPlRZizv9yPaD-8IQ?view#Background
    - Danksharding: https://ethereum.org/en/roadmap/danksharding/
 
-### Sharding
-   - Overview: https://ethereum.org/en/eth2/shard-chains/
-   - Why Sharding? (Vitalik Buterin): https://vitalik.eth.limo/general/2021/04/07/sharding.html
-
 ### Privacy
-   - zkOracle Documentation (Hyper Oracle): https://docs.hyperoracle.io/
+   - Roadmap to Ethereum privacy https://hackmd.io/@pcaversaccio/ethereum-privacy-the-road-to-self-sovereignty

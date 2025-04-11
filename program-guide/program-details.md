@@ -17,7 +17,7 @@ Over the course of the 5 month program, EPF participants will receive project su
 - optional in-person meetups
 - project documentation guidance
 
-Learn more about EPF and the previous cohort in the [fifth cohort recap]
+Learn more about EPF and the previous cohort in the [fifth cohort recap](https://blog.ethereum.org/2025/04/10/epf-5-recap) and [intro town hall](https://www.youtube.com/watch?v=nrwKxyBIYYk).
 
 ## Who is it for?
 
@@ -36,7 +36,7 @@ Core development requires you to be able to write your ideas down in a manner th
 ### Self Directed
 Core development requires the ability to tackle a problem in a self-directed way. You will have a community of knowledgeable people to support you, but the ultimate responsibility for figuring things out is yours. The program will operate in much the same way. While mentorship is an important part of this program, mentors are there to unlock doors and remove barriers. There will be near-zero "teaching". 
 ### Ability to Write Code
-You don't have to be a seasoned software engineer. But almost everyone who is successful in core development has some ability to use code to implement and validate their ideas.
+You don't have to be a senior software developer. But almost everyone who is successful in core development has some ability to use code to implement, therfore the cohort focuses mainly on software engineers. 
 ### Intrinsically Motivated
 This is probably the most important one. You need a strong inherent desire to do this work. Working on open source and open protocols. Building decentralized peer to peer networks. Improving client architecture. Developing and improving low-level EVM mechanics. Contributing to the public good.
 
@@ -47,7 +47,7 @@ Candidate selection will take the following things into account.
 - Your application and areas of interest
 - Your history of open source contributions
 - Your existing contributions to the Ethereum ecosystem
-- Relevant prior work experience
+- Relevant prior work and educational experience
 
 We will be prioritizing candidates which have something that we consider a strong signal of both interest and ability.
 
@@ -55,7 +55,7 @@ We will be prioritizing candidates which have something that we consider a stron
 
 ## How it will work
 
-Applications are opened from TODO.
+Applications are opened from TBD.
 
 The program will run for 5 months, from June through mid-November. This gives us the opportunity to organize physical meetups at Ethereum conferences like [Devconnect](https://devconnect.org) and [EthCC](https://www.ethcc.io/).
 
@@ -80,19 +80,18 @@ Timeline of the 5 month program will follow these stages:
 ### Program End
 - Project wrap up and looking forward to further contributing to the Ethereum ecosystem
 - Project showcase to group and mentors
-- In-person event at Devconnect ARG
+- In-person event at Devconnect in Buenos Aires
 
 During the entire process, participants will have access to [mentors](./mentors.md) and the core developer community for things like answering questions and getting feedback on ideas. Participants should not expect the core developers to actively guide them.
 
-A common weekly "stand up" meeting will be held for all teams during which they will go over 
-1. What they've been working on
-2. What they are working on next
-3. Anything that is blocking their work.
+### Meetings
 
-## Will you be paid?
+We will meet twice every week during the 5 months of the cohort. 
 
-Our goal is to provide an opportunity for you to get paid to learn. We will work with individual applicants to determine a "stipend" amount which will allow you to focus your effort on this program. Some candidates will be selected for funding at the start of the program. Other candidates who choose to participate independent of funding may be extended the option to receive funding as the program progresses.
+#### Standup calls 
 
-## Who is running the program?
+Standup calls provide an opportunity to share your progress and meet other fellows. These calls serve to discuss regular updates, current issues participants are facing, their open questions and comments raised in development updates. Standup calls are dedicated to participants and their discussion, some mentors might show up occasionally. Standups occur weekly every Monday, 15:00 UTC. Use [this link](https://meet.ethereum.org/epf-standup) to attend.
 
-The program is funded by the Ethereum Foundation and run by the Protocol Support Team. It is important to note that the [Ethereum Foundation](https://ethereum.foundation/philosophy/) does not own, operate, or manage Ethereum but exists to support the protocol and the Ethereum community through funding and research.
+#### Office hours
+
+In addition to the weekly standup calls, we hold Office Hours calls which can be focused on meeting mentors and dicussing specific topics proposed in advance. Mostly, we will hold an AMA with core developers to answer your questions and share their knowledge and experience. Find the upcoming call agenda in [Issues](https://github.com/eth-protocol-fellows/cohort-six/issues). Anybody can propose topics for this call by commenting on its tracking issue. Office Hours are regularly happening on every Wednesday, 15:00 UTC.
