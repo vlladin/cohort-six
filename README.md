@@ -5,7 +5,7 @@ This repository is dedicated to coordination and resources for EPF Cohort 6.
 EPF is an open fellowship program for developers aspiring to work on Ethereum core protocol, clients, research and related tooling. 
 
 > [!IMPORTANT]  
-> Cohort 6 will start in June 2025. Use information in this repository to get ready beforehand and submit your application to participate.  
+> Cohort 6 will start in June 2025. Use information in this repository to get ready beforehand and [submit your application](https://blog.ethereum.org/2025/04/10/epf-6) to participate.  
 
 Learn more about EPF in [Program details](./program-guide/program-details.md), watch the [intro to previous cohort](https://www.youtube.com/watch?v=nrwKxyBIYYk) and learn about latest outcomes [cohort 5 recap](https://blog.ethereum.org/2025/04/10/epf-5-recap).
 
