@@ -38,3 +38,14 @@ Contribute to integrations of public ephemeral testnet defined in eip-6916. Miss
 https://github.com/ephemery-testnet/ephemery-resources/blob/master/client-implementations.md
 https://ephemery.dev/
 
+### Lodestar: Backfill
+
+By Lodestar
+
+Lodestar's TypeScript-based Ethereum consensus client currently does not have a backfill mechanism to retain blocks/blobs required, conduct backfill syncing and eventually serve custody column groups when moving towards PeerDAS. This feature will expose a candidate to various parts of the Ethereum consensus protocol, including new chain features whilst producing a high priority need for the implementation. For more information, please check: https://github.com/ChainSafe/lodestar/issues/7753
+
+### Lodestar: ERA file support
+
+By Lodestar
+
+Lodestar's TypeScript-based Ethereum consensus client is seeking a fellow interested in helping to produce and use Era files for historical state regeneration as an alternative to backfill syncing and minimizing unnecessary data stored on nodes. For more information, please check: https://github.com/ChainSafe/lodestar/issues/7048
