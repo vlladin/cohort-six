@@ -49,3 +49,21 @@ Lodestar's TypeScript-based Ethereum consensus client currently does not have a 
 By Lodestar
 
 Lodestar's TypeScript-based Ethereum consensus client is seeking a fellow interested in helping to produce and use Era files for historical state regeneration as an alternative to backfill syncing and minimizing unnecessary data stored on nodes. For more information, please check: https://github.com/ChainSafe/lodestar/issues/7048
+
+### Besu: discv5
+
+Besu - implementing discv5 support https://github.com/hyperledger/besu/issues/4089
+
+By Besu
+
+### Besu: eth/70
+
+Besu - implementing eth/70 - https://github.com/hyperledger/besu/issues/8288
+
+By Besu
+
+### Besu: ephemery 
+
+Besu - ephemery - basic support is implemented but there are still some remaining tasks - https://github.com/hyperledger/besu/issues?q=is%3Aissue%20state%3Aopen%20ephemery
+
+By Besu
