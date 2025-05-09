@@ -76,6 +76,7 @@ Implementing this EIP in one or more of the above mentioned clients is a low han
 By Justin Drake & Lin Oshitani
 
 
+
 ### Erigon: FOCIL & Alternatives 
 
 By Mark Holt
@@ -112,5 +113,32 @@ Examples of indexing tasks which could form part of this POC include DEX market 
 
 ### Erigon: RISCV Executable Proof Sourcing
 
+By Mark Holt
+
+As zk based proving has matured it has started to use indistry standard VM's for driving its proof set.  These rely on producing and analysing executable code in one of these instruction setc, RISC-V and MIPS being the current candidates used by various market participants.  RISCV seems to have an edge in adoption due as it is has simpler instructions and this has lead to an edge in delivery. 
+
+At presnent most provers for EVM code work by compiling an EVM implementation into the instruction set architecture and then proving the operation of the resultant code.  Given the availibility of various the components necessary to run a stand alone EVM this has been relatively quick to delivery and provides an operating prover.  However this has a number of drawbaccks the most signifigant being that this leads to proving a far larger set of executable instructions than is needed to execute a simple set evm transations in a block, it also introduces a signifigant number of external dependencies which need to be proved.
+
+An alternative is to create an ISA based execution module which is directly provable, this has implications for the tooling of current chains as it means a transition of a core component of the current Ethereum platform, a component which has a large surface area of dependencies.  Another alternative is to add a transpilation process to the existing execution module - so that it provides an executable equivalent which can be used by the proving system.
+
+We are interested in using the erigon execution component with instrtuction level hooks to explore the practicality of the transpilation approach generating an ISA compatable executable object inline with the executions process.  We see this as a POC so it does not necessarily need t be a complete solution at this stage but it does noeed to deal with enough instructions to process a subset of viable smart contract based transactions.
+
+Some simplifying assumtions could for example be:
+
+    * All state is provided in the execution model as constants
+    * Precomiles can be treated as idempotent functions which check the input values and return a constant outpout
+    * Output value and side effects are pushed to a static constant output function or similar for runtime checking - this may require a target supplied library function
+
+The intention is the produced output can be assembled and executed by an existing zkvm to prove the process. One option that we have considered is to use the Taiko prover framework for this, but part of the project would be to identify prover candidates to test and intergrate to.
+
 ### Erigon: L1 Clearing Bridge
 
+By Mark Holt
+
+This project is more R&D than development based.  We curently interact with a number of L2's each of wich has an associated bridging product.  These have a common pattern but largely incompatable operating models typically they rely on the use of logs and proofs from the source chain and rely on a trusted off chain component to initiate activity on the target chain.  They have a variety of trust and confirmation processes which may automated or semi-automated depending upon the implementation details and the cross chain economics.
+
+WIth the pectra hard fork and the deployment of EIP-7702 one of the main points of friction in this process, namely who pays for gas transactions on the target chain is eliviated.  7702 allows payment to be transfered to an onchain paymester rather than the bridge provider.  This makes by directional bridging easier to achieve as payment transfer can become more seamless.  Whilst this still leaves several trust and finality basied inconsistencies it opens the way for a more seamless interactio0n.  It also provided the potential for bridging to be conducted by as a technical operation by node operators without them having to bear the cost of financial costs of bridge transations.
+
+A further extension of the paymaster model could be for an L1 inchain party to act as a trustless clearer of cross chain transactions.  Exactly how this model would work and the implications and practicalities for the parties involved is unclear at this stage.  We think that post Pectra there is an interesting oportunity to explore how this process could work using an L1 CL/EL pair to expore the varios components that would be necessary to facilitate a trustless clearing based bridging model where the L1 acts as a default bridge between L2's.
+
+We see this project as an R&D project which may provide an example contract design and at a streach, given the time scales involved, some form of working model which can be used as the basis for future phases of development.
