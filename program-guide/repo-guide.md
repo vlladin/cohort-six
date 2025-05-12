@@ -98,7 +98,7 @@ This document isn't meant to be a "profile". It is meant to be used especially i
 
 Merge access will be granted relatively widely. Cohort organizers will merge your first PRs but then feel free to reach out to get the access. 
 
-When submitting a PR, make sure you are using the latest main branch. Otherwise [rebase and keep your changes always on top](#2-keeping-your-local-repository-in-up-to-date) to be sure you are not deleting content of others.
+When submitting a PR, make sure you are using the latest main branch. Otherwise [rebase and keep your changes always on top](#2-keeping-your-local-repository-up-to-date) to be sure you are not deleting content of others.
 
 When merging someone else's PR, use your best judgement and ask if you are unsure. 
 
