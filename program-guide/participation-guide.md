@@ -43,7 +43,7 @@ Weekly updates help us, mentors and other contributors to see how you are progre
     - You can ask a question in the #protocol-fellowship channel and tag them
     - Ask a specific question about the topic you are working on in the appropriate channel
 - If an ongoing conversation is necessary, ask the mentor for a direct message contact. Consider setting up a regular call if they are available
-- Add a comment in the [Office Hours](https://github.com/eth-protocol-fellows/cohort-five/issues) issue in the GitHub repo for the upcoming meeting outlining the problem you are having or the discussion you would like to happen
+- Add a comment in the [Office Hours](https://github.com/eth-protocol-fellows/cohort-six/issues) issue in the GitHub repo for the upcoming meeting outlining the problem you are having or the discussion you would like to happen
 
 ## Join weekly meetings
 

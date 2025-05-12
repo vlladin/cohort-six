@@ -1,6 +1,6 @@
 # Proposed projects
 
-Project ideas proposed by client teams and mentors. These are projects that fit the EPF scsope and would be the most valuable to the team. 
+Project ideas proposed by client teams and mentors. These are projects that fit the EPF scope and would be the most valuable to the team. 
 
 If you are interested in the project, take your time to learn about it, the team it's coming from and related area of the protocol. Reach out to client organizers if you have any questions or need connection to a mentor.
 

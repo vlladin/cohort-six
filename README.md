@@ -7,7 +7,7 @@ EPF is an open fellowship program for developers aspiring to work on Ethereum co
 > [!IMPORTANT]  
 > Cohort 6 will start in June 2025. Use information in this repository to get ready beforehand and [submit your application](https://blog.ethereum.org/2025/04/10/epf-6) to participate.  
 
-Learn more about EPF in [Program details](./program-guide/program-details.md), watch the [intro to previous cohort](https://www.youtube.com/watch?v=nrwKxyBIYYk) and learn about latest outcomes [cohort 5 recap](https://blog.ethereum.org/2025/04/10/epf-5-recap).
+Learn more about EPF in [Program details](./program-guide/program-details.md), watch the [intro to current cohort](https://www.youtube.com/watch?v=t0evZ6NX9J0) and learn about latest outcomes [cohort 5 recap](https://blog.ethereum.org/2025/04/10/epf-5-recap).
 
 ## Getting started
 
@@ -32,7 +32,7 @@ Standup calls provide an opportunity to share your progress and meet other fello
 
 #### Office hours
 
-In addition to the weekly standup calls, we hold Office Hours calls which can be focused on specific topics proposed in advance. Find the upcoming call agenda in [Issues](https://github.com/eth-protocol-fellows/cohort-five/issues). Anybody can propose topics for this call by commenting on its tracking issue. Office Hours are regularly happening on every Tuesday, 15:00 UTC.
+In addition to the weekly standup calls, we hold Office Hours calls which can be focused on specific topics proposed in advance. Find the upcoming call agenda in [Issues](https://github.com/eth-protocol-fellows/cohort-six/issues). Anybody can propose topics for this call by commenting on its tracking issue. Office Hours are regularly happening on every Tuesday, 15:00 UTC.
 
 If you need any further assistance, contact cohort organizers @joshdavislight and @taxmeifyoucan.
 
