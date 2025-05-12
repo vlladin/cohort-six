@@ -42,21 +42,21 @@ The cohort coordination using a public repository is also meant to give you an e
 Install [git](https://git-scm.com/) using a preferred method on your machine and set it up with your github SSH key. You need to [setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add the generated key to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) if you haven't done so yet. With your git setup complete, **fork the repo** to your github account (by clicking the Fork button) and clone the fork locally, for example: 
 
 ```
-git clone git@github.com:taxmeifyoucan/cohort-five.git
+git clone git@github.com:taxmeifyoucan/cohort-six.git
 ```
-Now you have a local copy of the repo that you can use to update your fork. Let's add the main repository as an upstream named `epf5`: 
+Now you have a local copy of the repo that you can use to update your fork. Let's add the main repository as an upstream named `epf6`: 
 ```
-cd cohort-five
-git remote add epf5 https://github.com/eth-protocol-fellows/cohort-five.git
+cd cohort-six
+git remote add epf6 https://github.com/eth-protocol-fellows/cohort-six.git
 ```
 This completes your one time setup of the repository.
 
 #### 2. Keeping your local repository up to date
 
-With the upstream added, you can keep your local repo updated by directly pulling from epf5 upstream. If you already added your own commits on top of it, rebase it before opening a PR:
+With the upstream added, you can keep your local repo updated by directly pulling from `epf6` upstream. If you already added your own commits on top of it, rebase it before opening a PR:
 ```
-git fetch epf5
-git rebase epf5/main
+git fetch epf6
+git rebase epf6/main
 ```
 
 #### 3. Adding your updates

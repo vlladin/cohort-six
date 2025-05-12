@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Here are some frequently asked questions about EPF program. You can also watch the [EPF5 Town Hall](https://www.youtube.com/watch?v=nrwKxyBIYYk) presentation, an intro to previous cohort, and keep an eye for upcoming cohort 6 town hall to ask questions before the cohort starts. 
+Here are some frequently asked questions about the EPF program. You can also watch the [EPF6 Town Hall](https://www.youtube.com/watch?v=t0evZ6NX9J0) presentation for an introduction to the current cohort and answers to common questions.
 
 - **Will I learn to develop applications on the Ethereum blockchain?**
     - No. This program is not focused on Solidity or other development of smart contracts. 
