@@ -16,6 +16,14 @@ In project ideas from previous cohorts, you might find some up to date ideas whi
 
 ## Ideas proposed by core devs 
 
+## Protocol Security tooling wishlist
+
+By Fredrik
+
+Ongoing wishlist of ideas for tools that will help with securing the protocol.
+
+https://security.ethereum.org/wishlist
+
 ### PandaOps tooling wishlist
 
 By Pari
