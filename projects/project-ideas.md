@@ -142,3 +142,31 @@ WIth the pectra hard fork and the deployment of EIP-7702 one of the main points 
 A further extension of the paymaster model could be for an L1 inchain party to act as a trustless clearer of cross chain transactions.  Exactly how this model would work and the implications and practicalities for the parties involved is unclear at this stage.  We think that post Pectra there is an interesting oportunity to explore how this process could work using an L1 CL/EL pair to expore the varios components that would be necessary to facilitate a trustless clearing based bridging model where the L1 acts as a default bridge between L2's.
 
 We see this project as an R&D project which may provide an example contract design and at a streach, given the time scales involved, some form of working model which can be used as the basis for future phases of development.
+
+### Ream Client - A Beam client in Rust: Build Beacon Validator Client
+
+By Kolby ML and Kayden ML
+
+We want to support transitioning Validators from the Beacon Chain to the Beam Chain. We also expect a lot of lessons and tooling required to build a Beacon Validator client will expedite our progress in building a Beam Validator client when the specifications are released later this year. This project would be good for one or multiple people to collaborate. https://github.com/ReamLabs/ream/issues/361
+
+### Ream Client - A Beam client in Rust: Build out P2P testing
+
+By Kolby ML and Kayden ML
+
+We are building out the Beacon Chain’s P2P stack as there is likely to be a lot of overlap with the Beam Chain, this will also allow us to participate in Beacon to Beam transition testnets. We want to add tests that ensure our P2P stack is working as expected and will properly interop with other clients.
+
+### Ream Client - A Beam client in Rust: Implement Beacon API Endpoints
+
+By Kolby ML and Kayden ML
+
+The Beacon API allows us to interact/test our Beacon Chain implementation to verify if everything is working. The Beacon API is also required to be able to run a validator client. It would be valuable for us to implement all the endpoints required to run a validator. Another important task would be to add tests that our implementation is compliant with the specification.
+
+### Ream Client - A Beam client in Rust: Benchmark zkVM performance on Ream's Beacon state transition functions
+
+By Unnawut
+
+We've started benchmarking SP1 and RISC Zero against ream's consensus codebase, giving us early data on performance and how different zkVMs behave when running consensus logic. This lets us track performance regressions as we iterate on the codebase and pinpoint the specific roadblocks and bottlenecks that arise when running consensus specs inside zkVM environments.
+
+We are looking to extend our benchmarking setup to cover other zkVMs like OpenVM, Zisk, Jolt, Brevis Pico, Valida, etc. You'll be implementing benchmarks for these systems, modifying the ream codebase as needed to support the snarkification, while keeping the benchmark framework modular enough to keep track of differences across code iterations, and to easily convert for beam chain specs down the road.
+
+We hope this project provides essential data for making informed zkVM choices in Beam Chain development. For the fellow, it's a chance to get hands-on with both beacon chain consensus implementation details and the rapidly evolving zkVM ecosystem, and prepare yourself to snarkify the upcoming Beam Chain specs.
