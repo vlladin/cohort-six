@@ -197,3 +197,56 @@ By: Lighthouse team
 Github Issue: TBA
 
 The Lighthouse beacon node backend has been previously abstracted to handle different database implementations. Currently the two enabled database implementations are LevelDB and Redb. LevelDB is currently the most performant DB implementation, but we've seen issues where a LevelDB database hosted on a NFS (network file system) can get corrupted. This is because LevelDB (and probably Redb as well) is not designed to handle concurrent access and other inconsistencies/latencies introduced by NFS. Postgres, with the correct settings should be able to run on an NFS without these risks.
+
+### Grandine: FOCIL (EIP-7805) Implementation and Testnet Deployment
+
+By Saulius Grigaitis
+
+EIP-7805 introduces FOCIL, a promising feature for Ethereum consensus clients. While a few teams already have early implementations, testnets are expected to launch soon. Grandine intends to develop a robust FOCIL implementation to ensure compatibility and actively participate in testnet experimentation. This work will help validate and refine the proposal through testnet deployment.
+
+### Grandine: Optimizing PeerDAS for Production
+
+By Saulius Grigaitis
+
+Grandine includes an initial implementation of PeerDAS, Ethereum’s upcoming data availability sampling protocol. We aim to significantly optimize its performance, building on our custom cryptography library, rust-kzg, which already includes several enhancements. We will target further performance gains at both the cryptographic level and in broader system integration areas to ensure PeerDAS is production-ready.
+
+### Grandine: Execution Layer (EL) Client Integrations
+
+By Saulius Grigaitis
+
+We are integrating Grandine into the Nethermind EL client with promising early results. We now propose to extend this work by integrating Grandine with other EL clients. In parallel, we plan to investigate inverse integrations—embedding EL functionality into Grandine. This may include low-level optimizations such as replacing HTTP-based Engine API calls with efficient native function interfaces, reducing latency.
+
+### Grandine: zkVMs for Beacon Chain Snarkification
+
+By Saulius Grigaitis
+
+We are experimenting with zkVMs (zero-knowledge virtual machines) to enable SNARK-based proving of the Beacon Chain’s state transition function. Initial results using SP1 and RISC Zero show promise for networks with tens of thousands of validators. We now propose to scale this work to support larger validator sets and to explore new zkVMs — such as OpenVM and Zisk — that offer continuation supports.
+
+### Grandine: Disk Usage Optimization for State Storage
+
+By Saulius Grigaitis
+
+Grandine currently stores full Ethereum states every 32 epochs. This approach leads to redundant on-disk data and slow state reconstruction. In-memory, we use structural sharing to eliminate overlapping data; we now propose to bring similar deduplication and delta encoding techniques to disk storage. This will reduce disk usage and accelerate state transitions, especially for historical state lookups.
+
+### Grandine: Implementing Tokio Tracing for Debugging and Performance Analysis
+
+By Saulius Grigaitis
+
+Observability is critical for high-performance Ethereum clients. While we have long planned to integrate Tokio Tracing, it has remained a lower priority. We now propose to prioritize this integration to provide structured logging, asynchronous performance profiling, and rich diagnostics across the Grandine stack.
+
+### Grandine: Exploring Distributed Validator Technology (DVT) Compatibility
+
+By Saulius Grigaitis
+
+Distributed Validator Technology (DVT) is gaining momentum within the Ethereum staking ecosystem. We propose to assess Grandine’s compatibility with major DVT solutions, evaluate integration challenges, and explore potential extensions to support secure, decentralized validator operations.
+
+### Grandine: Standalone Validator Client
+
+By Saulius Grigaitis
+
+Grandine only has built-in Validator Client currently. Standalone Validator Client would help to attract some users that prefers a separate Validator Client.
+
+### Grandine: Open Call for Collaboration
+By Saulius Grigaitis
+
+We are open to collaboration on additional ideas that align with Grandine’s mission and Ethereum’s long-term roadmap. If you have a compelling proposal not listed above, we’d love to explore it together.
