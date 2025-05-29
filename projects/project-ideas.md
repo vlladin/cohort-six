@@ -179,6 +179,25 @@ We are looking to extend our benchmarking setup to cover other zkVMs like OpenVM
 
 We hope this project provides essential data for making informed zkVM choices in Beam Chain development. For the fellow, it's a chance to get hands-on with both beacon chain consensus implementation details and the rapidly evolving zkVM ecosystem, and prepare yourself to snarkify the upcoming Beam Chain specs.
 
+
+### Lighthouse: Checkpoint sync from a non-finalized checkpoint
+By: Lighthouse team
+Github issue: https://github.com/sigp/lighthouse/issues/7089
+
+Allow Lighthouse to checkpoint sync from a non-finalized checkpoint. This feature is critical during long periods of non-finality and would have been super useful during the Holesky incident. You can read the Syncing section of this blog post for more context: https://blog.sigmaprime.io/pectra-holesky-incident.html
+
+### Lighthouse: Better state cache heuristics
+By: Lighthouse team
+Github issue: https://github.com/sigp/lighthouse/issues/7449 and https://github.com/sigp/lighthouse/issues/7450
+
+As an optimization, Lighthouse holds recently accessed states in memory. The current state cache size is 32. We would like to be able to dynamically grow/shrink the state cache size based on a set of heuristics (like for example current memory usage, individual state size etc.). During the Holesy non-finality incident, beacon states grew in size. Holding these larger states in memory caused Lighthouse to OOM. We would like the state cache to be more resilient in these scenarios while ensuring we are still optimizing for healthy network conditions. You can read the Out of Memory section of this blog post for more context: https://blog.sigmaprime.io/pectra-holesky-incident.html
+
+### Lighthouse: Add PostgresDB as an optional DB implementation for the Beacon Node
+By: Lighthouse team
+Github Issue: TBA
+
+The Lighthouse beacon node backend has been previously abstracted to handle different database implementations. Currently the two enabled database implementations are LevelDB and Redb. LevelDB is currently the most performant DB implementation, but we've seen issues where a LevelDB database hosted on a NFS (network file system) can get corrupted. This is because LevelDB (and probably Redb as well) is not designed to handle concurrent access and other inconsistencies/latencies introduced by NFS. Postgres, with the correct settings should be able to run on an NFS without these risks.
+
 ### Grandine: FOCIL (EIP-7805) Implementation and Testnet Deployment
 
 By Saulius Grigaitis
