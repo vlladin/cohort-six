@@ -250,3 +250,18 @@ Grandine only has built-in Validator Client currently. Standalone Validator Clie
 By Saulius Grigaitis
 
 We are open to collaboration on additional ideas that align with Grandine’s mission and Ethereum’s long-term roadmap. If you have a compelling proposal not listed above, we’d love to explore it together.
+
+### Nimbus EL: Support producing and/or consuming era1, era, e2ss, and e2hs files
+By Nimbus Team
+
+https://github.com/eth-clients/e2store-format-specs defines these. They allow an EL client to produce and consume various types of state and block archival data. The Nimbus EL already supports consuming some of these, such as era1 and era files. It has no current supprt for e2ss or e2hs files. The goal of this project is fill the remaining gaps, whether they be in the producing or consuming these formats.
+
+### Nimbus CL: FOCIL (EIP-7805) Implementation
+By Nimbus Team
+
+FOCIL facilitates scaling L1 while retaining censorship-resistance. The goal of this project is to enable Nimbus to participate in upcoming FOCIL devnets and testnets, to help enable FOCIL adoption more broadly.
+
+### Nimbus EL: Discovery V5 support
+By Nimbus Team
+
+The Nimbus EL discovers peers using the Discovery V4 protocol. The devp2p network is gradually shifting to using the Discovery V5 protocol, and it would internally align Nimbus EL's implementation with the Nimbus CL's V5-based implementation, to share a codebase. The goal of this project is to add V5 support to the Nimbus EL.
