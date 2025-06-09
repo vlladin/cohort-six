@@ -8,9 +8,9 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
-| Name/GH | Week 0 | Week 1 | Week 2 |
-| ------- | ------ | ------ | ------ |
-|         |        |        |        |
+| Name/GH                                    | Week 0                                                     | Week 1 | Week 2 |
+| ------------------------------------------ | ---------------------------------------------------------- | ------ | ------ |
+| [Mario](https://github.com/taxmeifyoucan/) | [Update 0 ](https://notes.ethereum.org/@MarioHavel/week0 ) |        |        |
 
 ## Phase 2: Deep dive
 
