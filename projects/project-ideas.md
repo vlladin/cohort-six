@@ -266,6 +266,11 @@ By Nimbus Team
 
 The Nimbus EL discovers peers using the Discovery V4 protocol. The devp2p network is gradually shifting to using the Discovery V5 protocol, and it would internally align Nimbus EL's implementation with the Nimbus CL's V5-based implementation, to share a codebase. The goal of this project is to add V5 support to the Nimbus EL.
 
+### Besu / Erigon / Geth / Nethermind / Nimbus EL / Reth: Pureth (EIP-7919)
+By Etan Kissling (Nimbus)
+
+Pureth aims at making Ethereum data easier to access and verify without relying on trusted RPC providers or third-party indexers. This improves UX of wallets (verifiable eth_getLogs response with proof of correctness and completeness), reduces the need for third-party indexers for dApps, and reduces gas cost when consuming partial data in smart contracts (e.g., proving presence of a single log within a receipt as part of an L2 bridge). We are looking for a prototype EL implementation (any EL) that serves JSON-RPC with proofs. The implementation will be used as part of a devnet to collect feedback from light client developers (e.g., wallets, dApps).
+
 ### Prysm: Migrate e2e to Kurtosis
 
 By Prysm
