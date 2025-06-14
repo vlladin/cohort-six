@@ -11,6 +11,8 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | Name/GH                                    | Week 0                                                     | Week 1 | Week 2 |
 | ------------------------------------------ | ---------------------------------------------------------- | ------ | ------ |
 | [Mario](https://github.com/taxmeifyoucan/) | [Update 0 ](https://notes.ethereum.org/@MarioHavel/week0 ) |        |        |
+| [Shane](https://github.com/shane-moore/)   | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)      |        |        |
+
 
 ## Phase 2: Deep dive
 
