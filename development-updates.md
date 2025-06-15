@@ -18,7 +18,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                    |        |        |
 | [Pelle](https://github.com/pellekrab)                       | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)                    |        |        |
 | [Grapebaba](https://github.com/GrapeBaBa)                       | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                    |        |        |
-
+| [Dimitris](https://github.com/DimitriosMitsios)                       | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html)                    |        |        |
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. Read about [proposed projects](/projects/project-ideas.md) and choose one to dive into. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
