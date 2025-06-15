@@ -317,3 +317,19 @@ More info can be found here: https://hackmd.io/@etan-status/electra-lc#SSZ-query
 By Prysm
 
 In the Prysm codebase there is a https://github.com/OffchainLabs/prysm/blob/develop/beacon-chain/state/state-native/proofs.go file that includes functionality to calculate a Merkle proof of the current sync committee, next sync committee and the finalized checkpoint's root. In case we'd like a proof for anything else, a new function must be defined just for that one proof. Ideally we'd like a generic way of producing arbitrary proofs for states and blocks, although it should be possible to support arbitrary SSZ objects.
+
+### Implement the Fast Confirmation Rule
+
+by the EF Protocol Consensus Team
+
+The Fast Confirmation Rule is an algorithm that, assuming low latency, allows determining in 1-2 slots only that a block will always be part of the canonical chain without having to wait for finalization.
+
+The objective of this project is to implement the Fast Confirmation Rule in one of the CL clients. Ideally, not Teku or Prysm as these two teams already have plans to work on this feature.
+
+To know more about this:
+- [Devcon Presentation](https://www.youtube.com/watch?v=p7JPRTELnJc&embeds_referring_euri=https%3A%2F%2Fapp.devcon.org%2F&source_ve_path=OTY3MTQ)
+- [PEEPanEIP Presentation](https://www.youtube.com/watch?v=dZU-Ch22MKY)
+- [ethresear.ch blo post](https://ethresear.ch/t/confirmation-rule-for-ethereum-pos/15454)
+- [Detailed technical report](https://arxiv.org/abs/2405.00549)
+- Current alternative specifications: [https://github.com/ethereum/consensus-specs/pull/3339](https://github.com/ethereum/consensus-specs/pull/3339), [https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py](https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py)
+
