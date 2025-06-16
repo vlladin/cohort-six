@@ -21,6 +21,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Grapebaba](https://github.com/GrapeBaBa)                       | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                    |        |        |
 | [Rimeeeeee](https://github.com/Rimeeeeee)                  | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)     |        |        |
 | [Shariq](https://github.com/shariqnaiyer)                       | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                    |        |        |
+| [thinkAfCod](https://github.com/thinkAfCod)                       | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                    |        |        |
 
 ## Phase 2: Deep dive
 
