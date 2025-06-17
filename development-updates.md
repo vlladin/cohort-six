@@ -10,15 +10,23 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 | Name/GH                                                | Week 0                                                    | Week 1 | Week 2 |
 | ------------------------------------------------------ | --------------------------------------------------------- | ------ | ------ |
+| [Developeruche](https://github.com/developeruche)                       | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                    |        |        |
 | [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)  |        |        |
 | [Mario](https://github.com/taxmeifyoucan/)             | [Update 0 ](https://notes.ethereum.org/@MarioHavel/week0) |        |        |
+| [Nando](https://github.com/fernantho/)                 | [Update 0 ](https://hackmd.io/@fernantho/BJKm-dTXge)      |        |        |
 | [Owanikin](https://github.com/owanikin) | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg) |        |        |
 | [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)     |        |        |
 | [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)     |        |        |
 | [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                    |        |        |
 | [Pelle](https://github.com/pellekrab)                       | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)                    |        |        |
 | [Grapebaba](https://github.com/GrapeBaBa)                       | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                    |        |        |
-| [Developeruche](https://github.com/developeruche)                       | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                    |        |        |
+| [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl) |        |        |
+| [Rimeeeeee](https://github.com/Rimeeeeee)                  | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)     |        |        |
+| [Shariq](https://github.com/shariqnaiyer)                       | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                    |        |        |
+| [thinkAfCod](https://github.com/thinkAfCod)                       | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                    |        |        |
+| [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx) |       |           |
+| [Li@only4sim](https://github.com/only4sim)                       | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                    |        |        |
+| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg) |        |        |
 
 ## Phase 2: Deep dive
 
