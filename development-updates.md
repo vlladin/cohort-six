@@ -29,6 +29,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |        |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
 | [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |        |        |
+| [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |        |        |
 
 ## Phase 2: Deep dive
 
