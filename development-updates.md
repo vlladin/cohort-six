@@ -25,7 +25,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [thinkAfCod](https://github.com/thinkAfCod)                       | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                    |        |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx) |       |           |
 | [Li@only4sim](https://github.com/only4sim)                       | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                    |        |        |
-
+| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg) |        |        |
 
 ## Phase 2: Deep dive
 
