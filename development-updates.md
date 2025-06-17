@@ -22,6 +22,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Grapebaba](https://github.com/GrapeBaBa)                       | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                    |        |        | 
 | [Rahul](https://github.com/guha-rahul)                 | [Update 0](https://hackmd.io/@0xrguha/SyATWTh7le)
 | [Grapebaba](https://github.com/GrapeBaBa)                       | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                    |        |        |
+| [Dimitris](https://gitlab.com/dmitsios) | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |        |        |
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl) |        |        |
 | [Rimeeeeee](https://github.com/Rimeeeeee)                  | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)     |        |        |
 | [Shariq](https://github.com/shariqnaiyer)                       | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                    |        |        |
