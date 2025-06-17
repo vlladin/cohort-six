@@ -256,6 +256,11 @@ By Nimbus Team
 
 FOCIL facilitates scaling L1 while retaining censorship-resistance. The goal of this project is to enable Nimbus to participate in upcoming FOCIL devnets and testnets, to help enable FOCIL adoption more broadly.
 
+### Nimbus CL: Peerdas Performance Optimization Assistance
+By Agnish (Nimbus)
+
+While the Nimbus CL is getting ready with Peerdas for the upcoming Fusaka hardfork, there _exists_ some valuable effort in monitoring and investigation, to identify performance bottlenecks during devnet runs. The goal of this project is to join hands with the team, work as a devnet hardenoor to stress test Nimbus CL's Peerdas edition and to contribute in optimizing their overall performance. The scope of this project is _fairly_ open, as bottlenecks can be only observed with rigorous testing in the upcoming devnets. Also note that none of performance related work is very critical in the path of Fusaka development, they are all essentially nice-to-haves!
+
 ### Nimbus EL: Discovery V5 support
 By Nimbus Team
 
