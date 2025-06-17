@@ -10,6 +10,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 | Name/GH                                                | Week 0                                                                                  | Week 1 | Week 2 |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------ | ------ |
+| [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |        |        |
 | [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |        |        |
 | [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               |        |        |
 | [Dimitris](https://gitlab.com/dmitsios)                | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |        |        |
