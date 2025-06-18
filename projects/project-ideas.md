@@ -14,9 +14,11 @@ In project ideas from previous cohorts, you might find some up to date ideas whi
 - [Project ideas in the second cohort](https://github.com/ethereum-cdap/cohort-zero/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - [Project ideas in the first cohort](https://github.com/ethereum-cdap/cohort-one/issues?q=is%3Aissue+Project+idea)
 
-## Ideas proposed by core devs 
+## Ongoing whishlists 
 
-## Protocol Security tooling wishlist
+These are collections of projects proposed by some teams and might not be fully updated. 
+
+### Protocol Security tooling wishlist
 
 By Fredrik
 
@@ -38,13 +40,7 @@ By Barnabé Monnot
 
 Explore Robus Incentives Group Opened Problems. Most relevant for EPF are tagged https://efdn.notion.site/ROPs-RIG-Open-Problems-c11382c213f949a4b89927ef4e962adf
 
-### Ephemery testnet
-
-By Mario Havel
-
-Contribute to integrations of public ephemeral testnet defined in eip-6916. Missing implementations in clients, deployments, devops tooling and client testing.
-https://github.com/ephemery-testnet/ephemery-resources/blob/master/client-implementations.md
-https://ephemery.dev/
+## Proposed by client teams 
 
 ### Lodestar: Backfill
 
@@ -82,7 +78,6 @@ By Besu
 Implementing this EIP in one or more of the above mentioned clients is a low hanging-fruit as well as [super valuable](https://hackmd.io/@linoscope/eip-7917-from-preconf-protocol), and may serve as an excellent starting point for a fellow to get involved with core protocol work.
 
 By Justin Drake & Lin Oshitani
-
 
 
 ### Erigon: FOCIL & Alternatives 
@@ -261,6 +256,11 @@ By Nimbus Team
 
 FOCIL facilitates scaling L1 while retaining censorship-resistance. The goal of this project is to enable Nimbus to participate in upcoming FOCIL devnets and testnets, to help enable FOCIL adoption more broadly.
 
+### Nimbus CL: Peerdas Performance Optimization Assistance
+By Agnish (Nimbus)
+
+While the Nimbus CL is getting ready with Peerdas for the upcoming Fusaka hardfork, there _exists_ some valuable effort in monitoring and investigation, to identify performance bottlenecks during devnet runs. The goal of this project is to join hands with the team, work as a devnet hardenoor to stress test Nimbus CL's Peerdas edition and to contribute in optimizing their overall performance. The scope of this project is _fairly_ open, as bottlenecks can be only observed with rigorous testing in the upcoming devnets. Also note that none of performance related work is very critical in the path of Fusaka development, they are all essentially nice-to-haves!
+
 ### Nimbus EL: Discovery V5 support
 By Nimbus Team
 
@@ -329,6 +329,14 @@ The objective of this project is to implement the Fast Confirmation Rule in one 
 To know more about this:
 - [Devcon Presentation](https://www.youtube.com/watch?v=p7JPRTELnJc&embeds_referring_euri=https%3A%2F%2Fapp.devcon.org%2F&source_ve_path=OTY3MTQ)
 - [PEEPanEIP Presentation](https://www.youtube.com/watch?v=dZU-Ch22MKY)
+
+### Ephemery testnet
+
+By Mario Havel
+
+Contribute to integrations of public ephemeral testnet defined in eip-6916. Missing implementations in clients, deployments, devops tooling and client testing.
+https://github.com/ephemery-testnet/ephemery-resources/blob/master/client-implementations.md
+https://ephemery.dev/
 - [ethresear.ch blo post](https://ethresear.ch/t/confirmation-rule-for-ethereum-pos/15454)
 - [Detailed technical report](https://arxiv.org/abs/2405.00549)
 - Current alternative specifications: [https://github.com/ethereum/consensus-specs/pull/3339](https://github.com/ethereum/consensus-specs/pull/3339), [https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py](https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py)
