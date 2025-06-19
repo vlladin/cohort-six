@@ -8,6 +8,7 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
+
 | Name/GH                                                | Week 0                                                                                  | Week 1 | Week 2 |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------ | ------ |
 | [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |        |        |
@@ -20,6 +21,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Grapebaba](https://github.com/GrapeBaBa)              | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                                     |        |        |
 | [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)                                |        |        |
 | [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)                       |        |        |
+| [Jun](https://github.com/syjn99)                       | [Update 0](https://hackmd.io/@junsong/By7s6Dp7eg)                                       |        |        |
 | [Li@only4sim](https://github.com/only4sim)             | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                                      |        |        |
 | [Mark](https://github.com/Patchoulis)                  | [Update 0](https://hackmd.io/@Lqy42nMMQMmDggfl3PS1_g/S16QKHTmge)                        |        |        |
 | [Nando](https://github.com/fernantho/)                 | [Update 0 ](https://hackmd.io/@fernantho/BJKm-dTXge)                                    |        |        |
