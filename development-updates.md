@@ -32,6 +32,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Rahul](https://github.com/guha-rahul)                 | [Update 0](https://hackmd.io/@0xrguha/SyATWTh7le)                                       |        |        |
 | [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       |        |        |
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |        |        |
+| [Sambhav](https://github.com/DarkLord017)              ||[Update 1 ](https://hackmd.io/KxffE3ZaR12XQJC8FxTUFg)        |        |
 | [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |        |        |
 | [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |        |        |
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |        |        |
