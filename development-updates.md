@@ -28,7 +28,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Owanikin](https://github.com/owanikin)                | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg)                       |        |        |
 | [Pelle](https://github.com/pellekrab)                  | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)                                     |        |        |
 | [Peter](https://github.com/pbkompasz)                  | [Update 0](https://hackmd.io/BX9obxqkSgSUCrmtceVLbg)                                    |        |        |
-| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg)                                       |        |        |
+| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg)                                       | [Update 1](https://hackmd.io/@Odinson/SySlk4HEex)        |        |
 | [Rahul](https://github.com/guha-rahul)                 | [Update 0](https://hackmd.io/@0xrguha/SyATWTh7le)                                       |        |        |
 | [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       |        |        |
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |        |        |
