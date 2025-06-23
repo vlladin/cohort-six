@@ -33,7 +33,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       |        |        |
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |        |        |
 | [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |        |        |
-| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |        |        |
+| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |        | [Update 1 ](https://hackmd.io/@gk32CG_5S26favMLDmI06A/Sy0TBzzNxe)       |
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |        |        |
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |        |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
