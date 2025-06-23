@@ -9,38 +9,38 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
 
-| Name/GH                                                | Week 0                                                                                  | Week 1 | Week 2 |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------ | ------ |
-| [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |        |        |
-| [Bhaskar](https://github.com/bhaskar1001101)           | [Update 0](https://hackmd.io/@zyzyzynn/SyDjf90Qxe)                                      |        |        |
-| [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |        |        |
-| [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               |        |        |
-| [Dimitris](https://gitlab.com/dmitsios)                | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |        |        |
-| [Fabio](https://github.com/fabioz888)                  | [Update 0](https://hackmd.io/@fzammit/Bk1HjI6mll)                                       |        |        |
-| [Faheel](https://github.com/faheelsattar)              | [Update 0](https://hackmd.io/@faheelsattar/r17IeU6Qle)                                  |        |        |
-| [Grapebaba](https://github.com/GrapeBaBa)              | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                                     |        |        |
-| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)                                |        |        |
-| [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)                       |        |        |
-| [Jun](https://github.com/syjn99)                       | [Update 0](https://hackmd.io/@junsong/By7s6Dp7eg)                                       |        |        |
-| [Li@only4sim](https://github.com/only4sim)             | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                                      |        |        |
-| [Mark](https://github.com/Patchoulis)                  | [Update 0](https://hackmd.io/@Lqy42nMMQMmDggfl3PS1_g/S16QKHTmge)                        |        |        |
-| [Nando](https://github.com/fernantho/)                 | [Update 0 ](https://hackmd.io/@fernantho/BJKm-dTXge)                                    |        |        |
-| [Owanikin](https://github.com/owanikin)                | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg)                       |        |        |
-| [Pelle](https://github.com/pellekrab)                  | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)                                     |        |        |
-| [Peter](https://github.com/pbkompasz)                  | [Update 0](https://hackmd.io/BX9obxqkSgSUCrmtceVLbg)                                    |        |        |
-| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg)                                       |        |        |
-| [Rahul](https://github.com/guha-rahul)                 | [Update 0](https://hackmd.io/@0xrguha/SyATWTh7le)                                       |        |        |
-| [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       |        |        |
-| [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |        |        |
-| [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |        |        |
-| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |        |        |
-| [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |        |        |
-| [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |        |        |
-| [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
-| [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |        |        |
-| [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |        |        |
-| [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  |        |        | 
-| [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |        |        | 
+| Name/GH                                                | Week 0                                                                                  | Week 1                                              | Week 2 |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------|--------|
+| [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |                                                     |        |
+| [Bhaskar](https://github.com/bhaskar1001101)           | [Update 0](https://hackmd.io/@zyzyzynn/SyDjf90Qxe)                                      |                                                     |        |
+| [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |                                                     |        |
+| [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               |                                                     |        |
+| [Dimitris](https://gitlab.com/dmitsios)                | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |                                                     |        |
+| [Fabio](https://github.com/fabioz888)                  | [Update 0](https://hackmd.io/@fzammit/Bk1HjI6mll)                                       |                                                     |        |
+| [Faheel](https://github.com/faheelsattar)              | [Update 0](https://hackmd.io/@faheelsattar/r17IeU6Qle)                                  |                                                     |        |
+| [Grapebaba](https://github.com/GrapeBaBa)              | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                                     |                                                     |        |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)                                |                                                     |        |
+| [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)                       |                                                     |        |
+| [Jun](https://github.com/syjn99)                       | [Update 0](https://hackmd.io/@junsong/By7s6Dp7eg)                                       |                                                     |        |
+| [Li@only4sim](https://github.com/only4sim)             | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                                      |                                                     |        |
+| [Mark](https://github.com/Patchoulis)                  | [Update 0](https://hackmd.io/@Lqy42nMMQMmDggfl3PS1_g/S16QKHTmge)                        |                                                     |        |
+| [Nando](https://github.com/fernantho/)                 | [Update 0 ](https://hackmd.io/@fernantho/BJKm-dTXge)                                    | [Update 1](https://hackmd.io/@fernantho/r1R1_d8Elg) |        |
+| [Owanikin](https://github.com/owanikin)                | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg)                       |                                                     |        |
+| [Pelle](https://github.com/pellekrab)                  | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)                                     |                                                     |        |
+| [Peter](https://github.com/pbkompasz)                  | [Update 0](https://hackmd.io/BX9obxqkSgSUCrmtceVLbg)                                    |                                                     |        |
+| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 0](https://hackmd.io/@Odinson/ByDJiD27eg)                                       |                                                     |        |
+| [Rahul](https://github.com/guha-rahul)                 | [Update 0](https://hackmd.io/@0xrguha/SyATWTh7le)                                       |                                                     |        |
+| [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       |                                                     |        |
+| [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |                                                     |        |
+| [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |                                                     |        |
+| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |                                                     |        |
+| [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |                                                     |        |
+| [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |                                                     |        |
+| [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |                                                     |        |
+| [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |                                                     |        |
+| [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |                                                     |        |
+| [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  |                                                     |        |
+| [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |                                                     |        |
 
 ## Phase 2: Deep dive
 
