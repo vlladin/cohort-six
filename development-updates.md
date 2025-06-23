@@ -8,6 +8,17 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
+| Name/GH                                                | Week 0                                                            | Week 1                                                 | Week 2 |
+|--------------------------------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|--------|
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)          |                                                        |        |
+| [Mario](https://github.com/taxmeifyoucan/)             | [Update 0 ](https://notes.ethereum.org/@MarioHavel/week0)         |                                                        |        |
+| [Owanikin](https://github.com/owanikin)                | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg) |                                                        |        |
+| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)             |                                                        |        |
+| [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe) |                                                        |        |
+| [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                    |                                                        |        |
+| [Pelle](https://github.com/pellekrab)                  | [Update 0](https://hackmd.io/@pellekrab/HJ0-RTv7eg)               |                                                        |        |
+| [Grapebaba](https://github.com/GrapeBaBa)              | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)               |                                                        |        |
+| [Faheel](https://github.com/faheelsattar)              | [Update 0](https://hackmd.io/@faheelsattar/r17IeU6Qle)            | [Update 1](https://hackmd.io/@faheelsattar/SJRN8WLNee) |        |
 
 | Name/GH                                                | Week 0                                                                                  | Week 1 | Week 2 |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------ | ------ |
