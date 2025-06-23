@@ -21,7 +21,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Grapebaba](https://github.com/GrapeBaBa)              | [Update 0](https://hackmd.io/@grapebaba/SJ8QHComgl)                                     |        |        |
 | [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)                                |        |        |
 | [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)                       |        |        |
-| [Jun](https://github.com/syjn99)                       | [Update 0](https://hackmd.io/@junsong/By7s6Dp7eg)                                       |        |        |
+| [Jun](https://github.com/syjn99)                       | [Update 0](https://hackmd.io/@junsong/By7s6Dp7eg)                                       | [Update 1](https://hackmd.io/@junsong/S1gNy3INgx)       |        |
 | [Li@only4sim](https://github.com/only4sim)             | [Update 0](https://hackmd.io/@only4sim/ByQzRjTXll)                                      |        |        |
 | [Mark](https://github.com/Patchoulis)                  | [Update 0](https://hackmd.io/@Lqy42nMMQMmDggfl3PS1_g/S16QKHTmge)                        |        |        |
 | [Nando](https://github.com/fernantho/)                 | [Update 0 ](https://hackmd.io/@fernantho/BJKm-dTXge)                                    |        |        |
