@@ -21,7 +21,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Faheel](https://github.com/faheelsattar)              | [Update 0](https://hackmd.io/@faheelsattar/r17IeU6Qle)            | [Update 1](https://hackmd.io/@faheelsattar/SJRN8WLNee) |        |
 
 | Name/GH                                                | Week 0                                                                                  | Week 1 | Week 2 |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------ | ------ |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|--------|
 | [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |        |        |
 | [Bhaskar](https://github.com/bhaskar1001101)           | [Update 0](https://hackmd.io/@zyzyzynn/SyDjf90Qxe)                                      |        |        |
 | [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |        |        |
@@ -50,8 +50,8 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
 | [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |        |        |
 | [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |        |        |
-| [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  |        |        | 
-| [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |        |        | 
+| [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  |        |        |
+| [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |        |        |
 
 ## Phase 2: Deep dive
 
