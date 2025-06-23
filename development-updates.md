@@ -37,7 +37,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |        |        |
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |        |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
-| [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |        |        |
+| [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |  [Update 1](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/HkhwNOLExl)      |        |
 | [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |        |        |
 | [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  |        |        | 
 | [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |        |        | 
