@@ -14,7 +14,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |        |        |
 | [Bhaskar](https://github.com/bhaskar1001101)           | [Update 0](https://hackmd.io/@zyzyzynn/SyDjf90Qxe)                                      |        |        |
 | [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |        |        |
-| [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               |        |        |
+| [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               |   [Update 1](https://hackmd.io/@0xdeveloperuche/BkSyxy_Vxl)     |        |
 | [Dimitris](https://gitlab.com/dmitsios)                | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |        |        |
 | [Fabio](https://github.com/fabioz888)                  | [Update 0](https://hackmd.io/@fzammit/Bk1HjI6mll)                                       |        |        |
 | [Faheel](https://github.com/faheelsattar)              | [Update 0](https://hackmd.io/@faheelsattar/r17IeU6Qle)                                  |        |        |
