@@ -34,7 +34,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     |        |        |
 | [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |        |        |
 | [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |        |        |
-| [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |        |        |
+| [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        |[Update 1](https://hackmd.io/@shariq/rJ9AUmLNle)           |        |
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       |        |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |        |        |
 | [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        |        |        |
