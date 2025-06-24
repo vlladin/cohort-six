@@ -62,7 +62,7 @@ The program will run for 5 months, from June through mid-November. This gives us
 Timeline of the 5 month program will follow these stages:
 
 ### Phase Zero
-- Those selected for EPF6 should spend the month prior getting up to speed on the current state of the art in Ethereum protocol development. A great place for this is [epf.wiki](https://epf.wiki) and our [reading list](/reading.md)
+- Those selected for EPF6 should spend the month prior getting up to speed on the current state of the art in Ethereum protocol development. A great place for this is [epf.wiki](https://epf.wiki) and our [reading list](./reading.md)
 - Fellows should also make arrangements to attend EthCC, including securing a visa, if needed
 ### Phase One
 - Initial meeting with individual participants and providing program orientation.
