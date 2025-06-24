@@ -25,4 +25,4 @@ Make sure to do your own research before you ask a question, e.g. making sure so
 
 ## Mentors
 
-There are a variety of core developers and researchers who are aware of EPF and willing to help fellows with their contributions. Most mentors will have [proposed a poject](/projects/project-ideas.md) and will be available to mentor progress on that project. There are also other potential mentors in client teams that will be happy to work with new contributors. 
+There are a variety of core developers and researchers who are aware of EPF and willing to help fellows with their contributions. Most mentors will have [proposed a project](/projects/project-ideas.md) and will be available to mentor progress on that project. There are also other potential mentors in client teams that will be happy to work with new contributors. 
