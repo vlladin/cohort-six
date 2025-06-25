@@ -42,6 +42,8 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |                                                                  |                                                                   |
 | [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  | [Update 1](https://hackmd.io/@ShiroObiJohn/rJkIIkDNle)                                                                 |                                                                   |
 | [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |                                                                  |                                                                   |
+| [Vukašin Marković](https://github.com/sntntn) |  | [Update 1](https://hackmd.io/@sntntn/B14kvPF4lg) |  |
+
 
 ## Phase 2: Deep dive
 
