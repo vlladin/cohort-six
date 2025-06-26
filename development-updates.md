@@ -8,13 +8,12 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
-
 | Name/GH                                                | Week 0                                                                                  | Week 1                                                           | Week 2                                                            |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------- |
 | [Aman](https://github.com/0xprivateChaos)              |                                                                                         | [Update 1](https://hackmd.io/@0xprivateChaos/rJxkWfOEll)         |                                                                   |
 | [Amelia](https://github.com/amebru)                    | [Update 0](https://hackmd.io/@amel1a/SyjDEnRmle)                                        |                                                                  |                                                                   |
 | [Bhaskar](https://github.com/bhaskar1001101)           | [Update 0](https://hackmd.io/@zyzyzynn/SyDjf90Qxe)                                      |                                                                  |                                                                   |
-| [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |                                                                  |                                                                   |
+| [Brage](https://github.com/2xic)                       | [Update 0](https://hackmd.io/@2xic/ByG_dri7xg)                                          |   [Update 1](https://hackmd.io/@2xic/BJZgS0HNxe)                 |                                                                   |
 | [Developeruche](https://github.com/developeruche)      | [Update 0](https://hackmd.io/@0xdeveloperuche/B193xeTQxx)                               | [Update 1](https://hackmd.io/@0xdeveloperuche/BkSyxy_Vxl)        |                                                                   |
 | [Dimitris](https://gitlab.com/dmitsios)                | [Update 0](https://weekly-updates-2bb600.gitlab.io/jekyll/update/2025/06/14/week0.html) |                                                                  |                                                                   |
 | [Fabio](https://github.com/fabioz888)                  | [Update 0](https://hackmd.io/@fzammit/Bk1HjI6mll)                                       |                                                                  |                                                                   |
@@ -37,7 +36,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |                                                                  |                                                                   |
 | [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |                                                                  | [Update 1 ](https://hackmd.io/@gk32CG_5S26favMLDmI06A/Sy0TBzzNxe) |
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        | [Update 1](https://hackmd.io/@shariq/rJ9AUmLNle)                 |                                                                   |
-| [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       | [Update 1](https://hackmd.io/@soubhiksmp/Bka1BFB4xg)       |        |
+| [Soubhik](https://github.com/Soubhik-10)               | [Update 0 ](https://hackmd.io/@my3UXTQzRzm1Y7YZMnBSUQ/HkZX7B3Xgl)                       | [Update 1](https://hackmd.io/@soubhiksmp/Bka1BFB4xg)             |        |
 | [Tamaghna](https://github.com/RazorClient)             | [Update 0](https://hackmd.io/@HNdrz3iIRmSW2mmXRO2Nxg/r1oBywomxx)                        |                                                                  |                                                                   |
 | [thinkAfCod](https://github.com/thinkAfCod)            | [Update 0](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/r1uuataQgx)                        | [Update 1](https://hackmd.io/@iMlbgmAwT3etbc92P38qlA/HkhwNOLExl) |                                                                   |
 | [Vineet](https://github.com/vineetpant)                | [Update 0](https://hackmd.io/@vineetpant/HJPoBQ3mel)                                    |                                                                  |                                                                   |
@@ -45,7 +44,6 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Prototype](https://github.com/ShiroObiJohn)           | [Update 0](https://hackmd.io/@ShiroObiJohn/H1f3o_TXgg)                                  | [Update 1](https://hackmd.io/@ShiroObiJohn/rJkIIkDNle)                                                                 |                                                                   |
 | [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |                                                                  |                                                                   |
 | [Vukašin Marković](https://github.com/sntntn) |  | [Update 1](https://hackmd.io/@sntntn/B14kvPF4lg) |  |
-
 
 ## Phase 2: Deep dive
 
