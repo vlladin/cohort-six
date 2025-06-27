@@ -241,6 +241,24 @@ By Saulius Grigaitis
 
 Grandine only has built-in Validator Client currently. Standalone Validator Client would help to attract some users that prefers a separate Validator Client.
 
+### Grandine: ePBS (EIP-7732)
+
+By Saulius Grigaitis
+
+Grandine currently has no implementation of [EIP-7732](https://ethereum-magicians.org/t/eip-7732-enshrined-proposer-builder-separation-epbs/19634): Enshrined Proposer-Builder Separation (ePBS).
+
+### Grandine: Additional BLS backends
+
+By Saulius Grigaitis
+
+Grandine currently supports [multiple BLS backends](https://github.com/grandinetech/grandine/blob/develop/kzg_utils/src/bls.rs) for KZG cryptography, however for BLS signature we only [support BLST and Zkcrypto](https://github.com/grandinetech/grandine/tree/develop/bls). We would like to support for BLS signature all the backends that KZG cryptography supports.
+
+### Grandine: Additional database backends
+
+By Saulius Grigaitis
+
+Grandine currently supports only libmdbx database. The database [wrapper](https://github.com/grandinetech/grandine/blob/develop/database/src/lib.rs) is relatively small. We would like to have a more database backends such as [RocksDB](https://github.com/rust-rocksdb/rust-rocksdb), [Sled](https://github.com/spacejam/sled) and others.
+
 ### Grandine: Open Call for Collaboration
 By Saulius Grigaitis
 
