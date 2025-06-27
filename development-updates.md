@@ -45,7 +45,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Skanda](https://github.com/skandabhat)                | [Update 0](https://hackmd.io/@skandabhat/HJvM0bVNlg)                                    |                                                                  |                                                                   |
 | [Utsav](https://github.com/x-senpai-x)                 |                                                                                         | [Update 1](https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/B14tCp8Nee) |                                                                   |
 | [Vukašin Marković](https://github.com/sntntn)          | [Update 1](https://hackmd.io/@sntntn/B14kvPF4lg)                                        |                                                                  |                                                                   |
-
+| [yunsig](https://github.com/Ham3798)          |                                                                  | [Update 1](https://hackmd.io/@ham3798/HkaGfdo4xx)                                        |                                                                   |
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. Read about [proposed projects](/projects/project-ideas.md) and choose one to dive into. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
