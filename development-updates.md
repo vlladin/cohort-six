@@ -50,6 +50,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Utsav](https://github.com/x-senpai-x)                 |                                                                                         | [Update 1](https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/B14tCp8Nee)  |                                                                   |
 | [Vukašin Marković](https://github.com/sntntn)          | [Update 1](https://hackmd.io/@sntntn/B14kvPF4lg)                                        |                                                                   |                                                                   |
 | [yunsig](https://github.com/Ham3798)                   |                                                                                         | [Update 1](https://hackmd.io/@ham3798/HkaGfdo4xx)                 |                                                                   |
+| [Shourya](https://github.com/18aaddy)                   |                                                                                         |                  | [Update 2](https://hackmd.io/@0xAaddy/SJoxVs9Exl)         |
 
 ## Phase 2: Deep dive
 
