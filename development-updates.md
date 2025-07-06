@@ -59,7 +59,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 
 | Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
 | ------- | ------ | ------ | ------ | ---------------- |
-|         |        |        |        |                  |
+|     [Vukašin Marković](https://github.com/sntntn)     |   [Update 3](https://hackmd.io/@sntntn/ryq7TUuHlx)     |        |        |                  |
 
 ## Phase 3: Execution
 
