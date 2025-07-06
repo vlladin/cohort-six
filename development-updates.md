@@ -8,19 +8,21 @@ Add your name **alphabetically** and link your updates to the corresponding tabl
 
 Phase one is the very beginning of the cohort. The first few weeks are dedicated to general learning about the EPF program, the Ethereum protocol as a whole and its development. Use resources from [EPF Study group](https://epf.wiki) to get started and make yourself familiar with various areas of Ethereum.
 
-| Name/GH | Week 0 | Week 1 | Week 2 |
-| ------- | ------ | ------ | ------ |
-|         |        |        |        |
+| Name/GH                                                | Week 0                                                    | Week 1 | Week 2 |
+| ------------------------------------------------------ | --------------------------------------------------------- | ------ | ------ |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 0 ](https://hackmd.io/@harsh-ps-2003/rk4ZFSwXxx)  |        |        |
+| [Mario](https://github.com/taxmeifyoucan/)             | [Update 0 ](https://notes.ethereum.org/@MarioHavel/week0) |        |        |
+| [Owanikin](https://github.com/owanikin) | [Update 0 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/ByOCT4sQlg) |   https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/HJBz5AHEgg     |  [Update 2 ](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/BJ_Wr5wSeg)      |
+| [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)     |        |        |
+| [Irene](https://github.com/IreneBa26)                  | [Update 0 ](https://hackmd.io/@bfhksCOrQMuOAxlbaEd4OQ/SJoSdJiXxe)     |        |        |
 
 ## Phase 2: Deep dive
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. Read about [proposed projects](/projects/project-ideas.md) and choose one to dive into. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
 
-
 | Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
 | ------- | ------ | ------ | ------ | ---------------- |
 |         |        |        |        |                  |
-
 
 ## Phase 3: Execution
 
@@ -33,7 +35,6 @@ The actual project development is the main part of the program. Post your regula
 ## Cohort end
 
 The final weeks of the cohort should mark the finalization of your project. Submit your last dev update which is reflecting the overall project progress, its next steps and your experience with EPF. You can also link a video or document presenting the final stage of your project.
-
 
 | Name/GH | Final report | Project presentation |
 | ------- | ------------ | -------------------- |
