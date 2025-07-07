@@ -37,7 +37,7 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 | [Rimeeeeee](https://github.com/Rimeeeeee)              | [Update 0 ](https://hackmd.io/@I_wpxw-ZSHuFnbiLSMHGmA/HkleM8nXgx)                       | [Update 1](https://hackmd.io/@Rimeeeeee/S1-dtKBVgl)               | [Update 2](https://hackmd.io/@Rimeeeeee/rJ825v-Sll)               |
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 0 ](https://hackmd.io/@rhinorit/BytnPHWNeg)                                     | [Update 1](https://hackmd.io/@rhinorit/S1tE6JP4le)                | [Update 2](https://hackmd.io/@rhinorit/SktVJLGBeg)                |
 | [Sambhav](https://github.com/DarkLord017)              |                                                                                         | [Update 1 ](https://hackmd.io/KxffE3ZaR12XQJC8FxTUFg)             | [Update 2](https://hackmd.io/sNufxFwCRDSw6J0jtFJp5g)              |
-| [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |                                                                                            |    [Update 1](https://github.com/githubgitlabuser/weekly-updates/blob/main/week-1-2.md)                                                               |
+| [Sato](https://github.com/githubgitlabuser)            | [Update 0](https://hackmd.io/@satosato/SJt-0u27ee)                                      |                                                                   |    [Update 1](https://github.com/githubgitlabuser/weekly-updates/blob/main/week-1-2.md)                                                               |
 | [Shane](https://github.com/shane-moore/)               | [Update 0 ](https://hackmd.io/BcOdWcPWQUmWUQqy2MktRQ)                                   |                                                                   | [Update 1 ](https://hackmd.io/@gk32CG_5S26favMLDmI06A/Sy0TBzzNxe) |
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 0](https://hackmd.io/@shariq/HJiHbw3Xxe)                                        | [Update 1](https://hackmd.io/@shariq/rJ9AUmLNle)                  | [Update 2](https://hackmd.io/@shariq/HkgeDXxBeg)                  |
 | [Shourya](https://github.com/18aaddy)                  |                                                                                         |                                                                   | [Update 2](https://hackmd.io/@0xAaddy/SJoxVs9Exl)                 |
@@ -57,9 +57,49 @@ Phase one is the very beginning of the cohort. The first few weeks are dedicated
 
 With the gained insight into the protocol, the following weeks serve as a deep dive into a chosen topic. Read about [proposed projects](/projects/project-ideas.md) and choose one to dive into. By the first month, you should finish the initial research about a specific problem and propose a project, including a roadmap. Get some ideas from the [project proposal template](projects/project-template.md).
 
-| Name/GH | Week 3 | Week 4 | Week 5 | Project proposal |
-| ------- | ------ | ------ | ------ | ---------------- |
-|         |        |        |        |                  |
+| Name/GH                                                | Week 3 | Week 4 | Week 5 | Project Proposal |
+| ------------------------------------------------------ | ------ | ------ | ------ | ---------------- |
+| [Akash](https://github.com/h3lio5)                     |        |        |        |                  |
+| [Aman](https://github.com/0xprivateChaos)              |        |        |        |                  |
+| [Amelia](https://github.com/amebru)                    |        |        |        |                  |
+| [Bhaskar](https://github.com/bhaskar1001101)           |        |        |        |                  |
+| [Brage](https://github.com/2xic)                       |        |        |        |                  |
+| [Developeruche](https://github.com/developeruche)      |        |        |        |                  |
+| [Dimitris](https://gitlab.com/dmitsios)                |        |        |        |                  |
+| [Fabio](https://github.com/fabioz888)                  |        |        |        |                  |
+| [Faheel](https://github.com/faheelsattar)              |        |        |        |                  |
+| [Grapebaba](https://github.com/GrapeBaBa)              |        |        |        |                  |
+| [Harrish](https://github.com/haxry)                    |        |        |        |                  |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) |        |        |        |                  |
+| [Irene](https://github.com/IreneBa26)                  |        |        |        |                  |
+| [Jay](https://github.com/jveer634)                     |        |        |        |                  |
+| [Jun](https://github.com/syjn99)                       |        |        |        |                  |
+| [Li@only4sim](https://github.com/only4sim)             |        |        |        |                  |
+| [Nando](https://github.com/fernantho/)                 |        |        |        |                  |
+| [Mark](https://github.com/Patchoulis)                  |        |        |        |                  |
+| [Owanikin](https://github.com/owanikin)                |        |        |        |                  |
+| [Pelle](https://github.com/pellekrab)                  |        |        |        |                  |
+| [Peter](https://github.com/pbkompasz)                  |        |        |        |                  |
+| [Poulav](https://github.com/PoulavBhowmick03)          |        |        |        |                  |
+| [Prototype](https://github.com/ShiroObiJohn)           |        |        |        |                  |
+| [Rahul](https://github.com/guha-rahul)                 |        |        |        |                  |
+| [Rimeeeeee](https://github.com/Rimeeeeee)              |        |        |        |                  |
+| [Ritesh](https://github.com/Dyslex7c)                  |        |        |        |                  |
+| [Sambhav](https://github.com/DarkLord017)              |        |        |        |                  |
+| [Sato](https://github.com/githubgitlabuser)            |        |        |        |                  |
+| [Shane](https://github.com/shane-moore/)               |        |        |        |                  |
+| [Shariq](https://github.com/shariqnaiyer)              |        |        |        |                  |
+| [Shourya](https://github.com/18aaddy)                  |        |        |        |                  |
+| [Skanda](https://github.com/skandabhat)                |        |        |        |                  |
+| [Soubhik](https://github.com/Soubhik-10)               |        |        |        |                  |
+| [Tamaghna](https://github.com/RazorClient)             |        |        |        |                  |
+| [thinkAfCod](https://github.com/thinkAfCod)            |        |        |        |                  |
+| [Vineet](https://github.com/vineetpant)                |        |        |        |                  |
+| [Vedant](https://github.com/vedant-asati)              |        |        |        |                  |
+| [Veer](https://github.com/VeerChaurasia)               |        |        |        |                  |
+| [Utsav](https://github.com/x-senpai-x)                 |        |        |        |                  |
+| [Vukašin Marković](https://github.com/sntntn)          |        |        |        |                  |
+| [yunsig](https://github.com/Ham3798)                   |        |        |        |                  |
 
 ## Phase 3: Execution
 
