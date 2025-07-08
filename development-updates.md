@@ -80,7 +80,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Owanikin](https://github.com/owanikin)                |        |        |        |                  |
 | [Pelle](https://github.com/pellekrab)                  |        |        |        |                  |
 | [Peter](https://github.com/pbkompasz)                  |        |        |        |                  |
-| [Poulav](https://github.com/PoulavBhowmick03)          |        |        |        |                  |
+| [Poulav](https://github.com/PoulavBhowmick03)          | [Update 3](https://hackmd.io/@Odinson/SJaiTbuHxe)       |        |        |                  |
 | [Prototype](https://github.com/ShiroObiJohn)           |        |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                 |        |        |        |                  |
 | [Rimeeeeee](https://github.com/Rimeeeeee)              |        |        |        |                  |
