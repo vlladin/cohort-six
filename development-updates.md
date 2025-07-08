@@ -70,7 +70,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Faheel](https://github.com/faheelsattar)              |        |        |        |                  |
 | [Grapebaba](https://github.com/GrapeBaBa)              |        |        |        |                  |
 | [Harrish](https://github.com/haxry)                    |        |        |        |                  |
-| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 3](https://hackmd.io/@harsh-ps-2003/SyIGMAXHgx) |        |        | [Fast Confirmation Rule](https://hackmd.io/@harsh-ps-2003/SJSOZISVge) |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 3](https://hackmd.io/@harsh-ps-2003/SyIGMAXHgx) |        |        |                  |
 | [Irene](https://github.com/IreneBa26)                  |        |        |        |                  |
 | [Jay](https://github.com/jveer634)                     |        |        |        |                  |
 | [Jun](https://github.com/syjn99)                       |        |        |        |                  |
