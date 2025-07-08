@@ -78,7 +78,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Nando](https://github.com/fernantho/)                 |        |        |        |                  |
 | [Mark](https://github.com/Patchoulis)                  |        |        |        |                  |
 | [Owanikin](https://github.com/owanikin)                |        |        |        |                  |
-| [Pelle](https://github.com/pellekrab)                  |        |        |        |                  |
+| [Pelle](https://github.com/pellekrab)                  | [Week 3](https://hackmd.io/@pellekrab/SkaYJ7qrgl) |        |        |                  |
 | [Peter](https://github.com/pbkompasz)                  |        |        |        |                  |
 | [Poulav](https://github.com/PoulavBhowmick03)          |        |        |        |                  |
 | [Prototype](https://github.com/ShiroObiJohn)           |        |        |        |                  |
