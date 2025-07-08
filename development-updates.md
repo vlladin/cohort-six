@@ -89,7 +89,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Sambhav](https://github.com/DarkLord017)              |        |        |        |                  |
 | [Sato](https://github.com/githubgitlabuser)            |        |        |        |                  |
 | [Shane](https://github.com/shane-moore/)               |        |        |        |                  |
-| [Shariq](https://github.com/shariqnaiyer)              |        |        |        |                  |
+| [Shariq](https://github.com/shariqnaiyer)              |[Update 3](https://hackmd.io/@shariq/S1wefwtSge)        |        |        |                  |
 | [Shourya](https://github.com/18aaddy)                  |        |        |        |                  |
 | [Skanda](https://github.com/skandabhat)                |        |        |        |                  |
 | [Soubhik](https://github.com/Soubhik-10)               |        |        |        |                  |
