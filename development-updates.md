@@ -99,7 +99,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Vedant](https://github.com/vedant-asati)              |                                                                   |        |        |                  |
 | [Veer](https://github.com/VeerChaurasia)               |                                                                   |        |        |                  |
 | [Utsav](https://github.com/x-senpai-x)                 |                                                                   |        |        |                  |
-| [Vukašin Marković](https://github.com/sntntn)          |                                                                   |        |        |                  |
+| [Vukašin Marković](https://github.com/sntntn)          | [Update 3](https://hackmd.io/@sntntn/ryq7TUuHlx)                  |        |        |                  |
 | [yunsig](https://github.com/Ham3798)                   |                                                                   |        |        |                  |
 
 ## Phase 3: Execution
