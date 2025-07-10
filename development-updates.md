@@ -92,7 +92,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 3](https://hackmd.io/@shariq/S1wefwtSge)                  |        |        |                  |
 | [Shourya](https://github.com/18aaddy)                  |                                                                   |        |        |                  |
 | [Skanda](https://github.com/skandabhat)                |                                                                   |        |        |                  |
-| [Soubhik](https://github.com/Soubhik-10)               |                                                                   |        |        |                  |
+| [Soubhik](https://github.com/Soubhik-10)               | [Update 3](https://hackmd.io/@soubhiksmp/HyelJ13rgl)                                                                  |        |        |                  |
 | [Tamaghna](https://github.com/RazorClient)             |                                                                   |        |        |                  |
 | [thinkAfCod](https://github.com/thinkAfCod)            |                                                                   |        |        |                  |
 | [Vineet](https://github.com/vineetpant)                |                                                                   |        |        |                  |
