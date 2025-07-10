@@ -84,7 +84,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Poulav](https://github.com/PoulavBhowmick03)          | [Update 3](https://hackmd.io/@Odinson/SJaiTbuHxe)                 |        |        |                  |
 | [Prototype](https://github.com/ShiroObiJohn)           |                                                                   |        |        |                  |
 | [Rahul](https://github.com/guha-rahul)                 |                                                                   |        |        |                  |
-| [Rimeeeeee](https://github.com/Rimeeeeee)              |                                                                   |        |        |                  |
+| [Rimeeeeee](https://github.com/Rimeeeeee)              |        [Update 3](https://hackmd.io/@Rimeeeeee/HyUVdq5rgx)                                                           |        |        |                  |
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 3](https://hackmd.io/@rhinorit/B1sGdVFBeg)                |        |        |                  |
 | [Sambhav](https://github.com/DarkLord017)              |                                                                   |        |        |                  |
 | [Sato](https://github.com/githubgitlabuser)            |                                                                   |        |        |                  |
