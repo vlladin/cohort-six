@@ -98,7 +98,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Vineet](https://github.com/vineetpant)                |                                                                   |        |        |                  |
 | [Vedant](https://github.com/vedant-asati)              | [Update 3](https://hackmd.io/@vedant-asati/Bk3bgu2See)            |        |        |                  |
 | [Veer](https://github.com/VeerChaurasia)               |                                                                   |        |        |                  |
-| [Utsav](https://github.com/x-senpai-x)                 |                                                                   |        |        |                  |
+| [Utsav](https://github.com/x-senpai-x)                 | [Update 3](https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/S1cNU1yIle)  |        |        |                  |
 | [Vukašin Marković](https://github.com/sntntn)          | [Update 3](https://hackmd.io/@sntntn/ryq7TUuHlx)                  |        |        |                  |
 | [yunsig](https://github.com/Ham3798)                   |                                                                   |        |        |                  |
 
