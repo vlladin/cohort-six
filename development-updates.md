@@ -74,7 +74,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 3](https://hackmd.io/@harsh-ps-2003/SyIGMAXHgx)           |        |        |                  |
 | [Irene](https://github.com/IreneBa26)                  |                                                                   |        |        |                  |
 | [Jay](https://github.com/jveer634)                     |                                                                   |        |        |                  |
-| [Jun](https://github.com/syjn99)                       |                                                                   |        |        |                  |
+| [Jun](https://github.com/syjn99)                       | [Update 3](https://hackmd.io/@junsong/SJXFU1uHxg)                 |        |        |                  |
 | [Li@only4sim](https://github.com/only4sim)             |                                                                   |        |        |                  |
 | [Nando](https://github.com/fernantho/)                 | [Update 3](https://hackmd.io/@fernantho/SkR1nQFrle)               |        |        |                  |
 | [Mark](https://github.com/Patchoulis)                  |                                                                   |        |        |                  |
