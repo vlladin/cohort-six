@@ -14,9 +14,11 @@ In project ideas from previous cohorts, you might find some up to date ideas whi
 - [Project ideas in the second cohort](https://github.com/ethereum-cdap/cohort-zero/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - [Project ideas in the first cohort](https://github.com/ethereum-cdap/cohort-one/issues?q=is%3Aissue+Project+idea)
 
-## Ideas proposed by core devs 
+## Ongoing whishlists 
 
-## Protocol Security tooling wishlist
+These are collections of projects proposed by some teams and might not be fully updated. 
+
+### Protocol Security tooling wishlist
 
 By Fredrik
 
@@ -38,13 +40,7 @@ By Barnabé Monnot
 
 Explore Robus Incentives Group Opened Problems. Most relevant for EPF are tagged https://efdn.notion.site/ROPs-RIG-Open-Problems-c11382c213f949a4b89927ef4e962adf
 
-### Ephemery testnet
-
-By Mario Havel
-
-Contribute to integrations of public ephemeral testnet defined in eip-6916. Missing implementations in clients, deployments, devops tooling and client testing.
-https://github.com/ephemery-testnet/ephemery-resources/blob/master/client-implementations.md
-https://ephemery.dev/
+## Proposed by client teams 
 
 ### Lodestar: Backfill
 
@@ -76,13 +72,12 @@ Besu - ephemery - basic support is implemented but there are still some remainin
 
 By Besu
 
-### Teku / Nimbus / Lodestar / Grandine: Implement EIP-7917 - Deterministic proposer lookahead  
+### Teku / Nimbus / Grandine: Implement EIP-7917 - Deterministic proposer lookahead  
 
 [EIP-7917](https://eips.ethereum.org/EIPS/eip-7917) is a mechanism to pre-calculate and store a deterministic proposer lookahead in the beacon state at the start of every epoch.
 Implementing this EIP in one or more of the above mentioned clients is a low hanging-fruit as well as [super valuable](https://hackmd.io/@linoscope/eip-7917-from-preconf-protocol), and may serve as an excellent starting point for a fellow to get involved with core protocol work.
 
 By Justin Drake & Lin Oshitani
-
 
 
 ### Erigon: FOCIL & Alternatives 
@@ -246,6 +241,24 @@ By Saulius Grigaitis
 
 Grandine only has built-in Validator Client currently. Standalone Validator Client would help to attract some users that prefers a separate Validator Client.
 
+### Grandine: ePBS (EIP-7732)
+
+By Saulius Grigaitis
+
+Grandine currently has no implementation of [EIP-7732](https://ethereum-magicians.org/t/eip-7732-enshrined-proposer-builder-separation-epbs/19634): Enshrined Proposer-Builder Separation (ePBS).
+
+### Grandine: Additional BLS backends
+
+By Saulius Grigaitis
+
+Grandine currently supports [multiple BLS backends](https://github.com/grandinetech/grandine/blob/develop/kzg_utils/src/bls.rs) for KZG cryptography, however for BLS signature we only [support BLST and Zkcrypto](https://github.com/grandinetech/grandine/tree/develop/bls). We would like to support for BLS signature all the backends that KZG cryptography supports.
+
+### Grandine: Additional database backends
+
+By Saulius Grigaitis
+
+Grandine currently supports only libmdbx database. The database [wrapper](https://github.com/grandinetech/grandine/blob/develop/database/src/lib.rs) is relatively small. We would like to have a more database backends such as [RocksDB](https://github.com/rust-rocksdb/rust-rocksdb), [Sled](https://github.com/spacejam/sled) and others.
+
 ### Grandine: Open Call for Collaboration
 By Saulius Grigaitis
 
@@ -260,6 +273,11 @@ https://github.com/eth-clients/e2store-format-specs defines these. They allow an
 By Nimbus Team
 
 FOCIL facilitates scaling L1 while retaining censorship-resistance. The goal of this project is to enable Nimbus to participate in upcoming FOCIL devnets and testnets, to help enable FOCIL adoption more broadly.
+
+### Nimbus CL: Peerdas Performance Optimization Assistance
+By Agnish (Nimbus)
+
+While the Nimbus CL is getting ready with Peerdas for the upcoming Fusaka hardfork, there _exists_ some valuable effort in monitoring and investigation, to identify performance bottlenecks during devnet runs. The goal of this project is to join hands with the team, work as a devnet hardenoor to stress test Nimbus CL's Peerdas edition and to contribute in optimizing their overall performance. The scope of this project is _fairly_ open, as bottlenecks can be only observed with rigorous testing in the upcoming devnets. Also note that none of performance related work is very critical in the path of Fusaka development, they are all essentially nice-to-haves!
 
 ### Nimbus EL: Discovery V5 support
 By Nimbus Team
@@ -329,6 +347,14 @@ The objective of this project is to implement the Fast Confirmation Rule in one 
 To know more about this:
 - [Devcon Presentation](https://www.youtube.com/watch?v=p7JPRTELnJc&embeds_referring_euri=https%3A%2F%2Fapp.devcon.org%2F&source_ve_path=OTY3MTQ)
 - [PEEPanEIP Presentation](https://www.youtube.com/watch?v=dZU-Ch22MKY)
+
+### Ephemery testnet
+
+By Mario Havel
+
+Contribute to integrations of public ephemeral testnet defined in eip-6916. Missing implementations in clients, deployments, devops tooling and client testing.
+https://github.com/ephemery-testnet/ephemery-resources/blob/master/client-implementations.md
+https://ephemery.dev/
 - [ethresear.ch blo post](https://ethresear.ch/t/confirmation-rule-for-ethereum-pos/15454)
 - [Detailed technical report](https://arxiv.org/abs/2405.00549)
 - Current alternative specifications: [https://github.com/ethereum/consensus-specs/pull/3339](https://github.com/ethereum/consensus-specs/pull/3339), [https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py](https://github.com/mkalinin/confirmation-rule/blob/master/confirmation_rule.py)
