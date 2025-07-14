@@ -79,7 +79,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Li@only4sim](https://github.com/only4sim)             |                                                                   |        |        |                  |
 | [Nando](https://github.com/fernantho/)                 | [Update 3](https://hackmd.io/@fernantho/SkR1nQFrle)               |        |        |                  |
 | [Mark](https://github.com/Patchoulis)                  |                                                                   |        |        |                  |
-| [Owanikin](https://github.com/owanikin)                |                                                                   |        |        |                  |
+| [Owanikin](https://github.com/owanikin)                | [Update 3](https://hackmd.io/@ZpBFaS-NSO-5Xkdm4jwolg/BkTwggXLgg)                                                                  |        |        |                  |
 | [Pelle](https://github.com/pellekrab)                  | [Week 3](https://hackmd.io/@pellekrab/SkaYJ7qrgl)                 |        |        |                  |
 | [Peter](https://github.com/pbkompasz)                  |                                                                   |        |        |                  |
 | [Poulav](https://github.com/PoulavBhowmick03)          | [Update 3](https://hackmd.io/@Odinson/SJaiTbuHxe)                 | [Update 4](https://hackmd.io/@Odinson/r1dpjDb8xl)        |        |                  |
