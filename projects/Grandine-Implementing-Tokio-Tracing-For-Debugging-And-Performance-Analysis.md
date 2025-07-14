@@ -157,10 +157,10 @@ flowchart TD
     style C fill:#e6f7ff,stroke:#1890ff,stroke-width:2px
     style D fill:#e6f7ff,stroke:#1890ff,stroke-width:2px
 
-    A[Phase 1: Foundational Setup]
-    B[Phase 2: Network Instrumentation]
-    C[Phase 3: Core Logic Instrumentation]
-    D[Phase 4: Advanced Tooling & Migration]
+    A[Phase 1: <br>Foundational Setup]
+    B[Phase 2: <br>Network Instrumentation]
+    C[Phase 3: Core Logic <br>Instrumentation]
+    D[Phase 4: <br> Advanced Tooling <br>& FInal Migration]
 
     A --> B --> C --> D
 
