@@ -99,7 +99,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Vedant](https://github.com/vedant-asati)              | [Update 3](https://hackmd.io/@vedant-asati/Bk3bgu2See)            |        |        |                  |
 | [Veer](https://github.com/VeerChaurasia)               |                                                                   |        |        |                  |
 | [Utsav](https://github.com/x-senpai-x)                 | [Update 3](https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/S1cNU1yIle)  |        |        |                  |
-| [Vukašin Marković](https://github.com/sntntn)          | [Update 3](https://hackmd.io/@sntntn/ryq7TUuHlx)                  |        |        |                  |
+| [Vukašin Marković](https://github.com/sntntn)          | [Update 3](https://hackmd.io/@sntntn/ryq7TUuHlx)                  | [Update 4](https://hackmd.io/@sntntn/BJWPudM8ge) |        |                  |
 | [yunsig](https://github.com/Ham3798)                   |                                                                   |        |        |                  |
 
 ## Phase 3: Execution
