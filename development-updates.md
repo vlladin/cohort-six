@@ -88,7 +88,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Ritesh](https://github.com/Dyslex7c)                  | [Update 3](https://hackmd.io/@rhinorit/B1sGdVFBeg)                |        |        |                  |
 | [Sambhav](https://github.com/DarkLord017)              |                                                                   |        |        |                  |
 | [Sato](https://github.com/githubgitlabuser)            |                                                                   |        |        |                  |
-| [Shane](https://github.com/shane-moore/)               | [Update 3 ](https://hackmd.io/@gk32CG_5S26favMLDmI06A/B1A2_XBrgg) |        |        |                  |
+| [Shane](https://github.com/shane-moore/)               | [Update 3](https://hackmd.io/@blockshane/B1A2_XBrgg) | [Update 4](https://hackmd.io/@blockshane/BkBR9E-Lgx)      |        |                  |
 | [Shariq](https://github.com/shariqnaiyer)              | [Update 3](https://hackmd.io/@shariq/S1wefwtSge)                  |        |        |                  |
 | [Shourya](https://github.com/18aaddy)                  | [Update 3](https://hackmd.io/@0xAaddy/SkiD5IaBgx)                |        |        |                  |
 | [Skanda](https://github.com/skandabhat)                |                                                                   |        |        |                  |
