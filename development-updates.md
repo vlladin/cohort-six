@@ -72,7 +72,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Faheel](https://github.com/faheelsattar)              |                                                                   |        |        |                  |
 | [Grapebaba](https://github.com/GrapeBaBa)              | [Update 3](https://hackmd.io/@grapebaba/HyReMdsHgl)                                                                  |        |        |                  |
 | [Harrish](https://github.com/haxry)                    |                                                                   |        |        |                  |
-| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 3](https://hackmd.io/@harsh-ps-2003/SyIGMAXHgx)           |        |        |                  |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) | [Update 3](https://hackmd.io/@harsh-ps-2003/SyIGMAXHgx)           | [Update 4](https://hackmd.io/@harsh-ps-2003/S1hsz3TSge) |        |                  |
 | [Irene](https://github.com/IreneBa26)                  | [Update 3](https://hackmd.io/@IB26/Sy_Okporxg)                    |        |        |                  |
 | [Jay](https://github.com/jveer634)                     |                                                                   |        |        |                  |
 | [Jun](https://github.com/syjn99)                       | [Update 3](https://hackmd.io/@junsong/SJXFU1uHxg)                 | [Update 4](https://hackmd.io/@junsong/HJFLFFfUgg) |        |                  |
