@@ -65,7 +65,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Aman](https://github.com/0xprivateChaos)              |                                                                   |        |        |                  |
 | [Amelia](https://github.com/amebru)                    |                                                                   |        |        |                  |
 | [Bhaskar](https://github.com/bhaskar1001101)           |                                                                   |        |        |                  |
-| [Brage](https://github.com/2xic)                       | [Update 3](https://hackmd.io/@2xic/ByHVramrxl)                    |        |        |                  |
+| [Brage](https://github.com/2xic)                       | [Update 3](https://hackmd.io/@2xic/ByHVramrxl)                    | [Update 4](https://hackmd.io/@2xic/rkvJfaGIle)       |        |                  |
 | [Developeruche](https://github.com/developeruche)      |[Update 3](https://hackmd.io/@0xdeveloperuche/B1ye_85Hee)        |        |        |                  |
 | [Dimitris](https://gitlab.com/dmitsios)                |                                                                   |        |        |                  |
 | [Fabio](https://github.com/fabioz888)                  |                                                                   |        |        |                  |
