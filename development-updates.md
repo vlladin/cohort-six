@@ -96,7 +96,7 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 | [Soubhik](https://github.com/Soubhik-10)               | [Update 3](https://hackmd.io/@soubhiksmp/HyelJ13rgl)                                                                  |        |        |                  |
 | [Tamaghna](https://github.com/RazorClient)             |                                                                   |        |        |                  |
 | [thinkAfCod](https://github.com/thinkAfCod)            |                                                                   |        |        |                  |
-| [Vineet](https://github.com/vineetpant)                |                                                                   |        |        |                  |
+| [Vineet](https://github.com/vineetpant)                |                                 |[Update week3 & week4](https://hackmd.io/@vineetpant/BkcpwUXUel)       |        |                  |
 | [Vedant](https://github.com/vedant-asati)              | [Update 3](https://hackmd.io/@vedant-asati/Bk3bgu2See)            |        |        |                  |
 | [Veer](https://github.com/VeerChaurasia)               |                                                                   |        |        |                  |
 | [Utsav](https://github.com/x-senpai-x)                 | [Update 3](https://hackmd.io/@CwibKqIARdCG7pJIqwzJeg/S1cNU1yIle)  |        |        |                  |
