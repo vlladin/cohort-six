@@ -63,7 +63,9 @@ The goal of this project is to make sure Lighthouse nodes can operate through ex
 
 ### Mentors
 
-TBA
+[Dapplion](https://github.com/dapplion)
+
+[Michael Sproul](https://github.com/michaelsproul)
 
 ## Resources
 
