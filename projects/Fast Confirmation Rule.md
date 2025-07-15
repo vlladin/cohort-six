@@ -1,8 +1,7 @@
 # Fast Confirmation Rule
 
 ### Collaborators 
-Mentors - *Roberto Saltini (EF Protocol Consensus Lead)* and *Michael Sproul (from Lighthouse)*
-
+Mentors - *Roberto Saltini (EF Protocol Consensus Lead)*, Mikhail Kalinin (from Consensys) *Michael Sproul (from Lighthouse)*
 Permissioned Protocol Fellow - [Harsh Pratap Singh](https://harsh-ps-2003.bearblog.dev/)
 
 ## Motivation and Overview
@@ -24,14 +23,13 @@ The Fast Confirmation Rule operates under two primary assumptions:
 * *Network Synchrony*: LMD-GHOST votes sent by honest validators are delivered by the end of each slot (within 8 seconds)
 * *Byzantine Threshold (β)*: A known maximum fraction of Byzantine stake across any set of committees, typically set to 20-30%
 
+In every slot the Q-Indicator compares :
+S = observed LMD-GHOST support for block b
+W = maximum committee weight that could still attest before our decision instant
+
 The algorithm works by checking whether a block's LMD-GHOST weight exceeds a threshold of `(committee_weight × 0.5) + (committee_weight × β)`. This ensures sufficient honest validator support to guarantee the block remains canonical.
 
-
-    S = LMD-GHOST support weight for a block
-
-    W = total committee weight
-
-    β = Byzantine threshold
+If W is under-estimated we might confirm a block that is missing too much honest weight; if it is grossly over-estimated we will never confirm.
 
 FCR only influences the safe head sent to EL; canonical head selection remains LMD-GHOST+FFG. A bug therefore cannot fork consensus, but could expose users to re-org risk. 
 
@@ -41,13 +39,7 @@ Tests should simulate 20 % equivocation.
 
 The [original consensus specification](https://github.com/ethereum/consensus-specs/pull/3339) was designed as a formal integration into Ethereum's consensus layer specifications. It included both LMD-GHOST and FFG vote integration for complete safety guarantees,  defined network-level parameters like `CONFIRMATION_BYZANTINE_THRESHOLD` and `CONFIRMATION_SLASHING_THRESHOLD`, etc, included extensive test vectors and validation frameworks and would have required all consensus clients to implement the specification. 
 
-But now, the authors have moved to a [new and better specification](https://github.com/mkalinin/confirmation-rule). It includes several architectural improvements:
-* *Enhanced Store Structure*: Added fields for confirmation tracking
-* *Committee Weight Estimation*: Sophisticated handling of cross-epoch scenarios with safety adjustments
-* *FFG Integration*: More nuanced handling of FFG checkpoints and justification conditions. The new implementation includes several algorithmic improvements as well:
-* *Safety-First Fallback*: Reverts to finalized checkpoint when synchrony assumptions fail
-* *Epoch Boundary Handling*: Enhanced logic for cross-epoch confirmation scenarios
-* *Proposer Boost Integration*: Careful handling of proposer boost only for applicable slots
+But now, the authors have moved to a [new and better specification](https://github.com/mkalinin/confirmation-rule). Our plan is to eventually get the new spec to a state where it can be integrated into the current Ethereum spec. Perhaps marking it as optional. It includes several architectural improvements.
 
 Core FCR Methods:
 
@@ -60,7 +52,7 @@ Core FCR Methods:
 
 Support Functions:
 * *get_weight(store, root, checkpoint_state)* - Modified to support FCR with additional checkpoint_state parameter
-* *adjust_committee_weight_estimate_to_ensure_safety(estimate)* - Adjusts committee weight estimates for safety
+* *adjust_committee_weight_estimate_to_ensure_safety(estimate)* - Adjusts committee weight estimates for safety and applied confidence intervals
 * *get_checkpoint_weight(store, checkpoint, checkpoint_state)* - Estimates FFG support for checkpoints
 * *get_ffg_weight_till_slot(slot, epoch, total_active_balance)* - Calculates FFG weight till specific slot
 
@@ -722,7 +714,9 @@ impl FastConfirmation {
 
 Next, the Fast Confirmation Rule implementation requires efficient state access patterns to perform rapid Q-indicator calculations across multiple beacon states. [Lighthouse has a Tree-States architecture](https://blog.sigmaprime.io/tree-states-part1.html), differing from Prysm's State Caching. 
 
-Tree-states leverages the fact that beacon states are mutated very sparsely, enabling representation of states in ways that de-duplicate data such that each additional state costs much less than 500MB of RAM. This structural sharing allows Lighthouse to maintain almost all unfinalized states in memory, enabling near-instant jumps to any unfinalized state. The system implements a binary merkle tree structure where copying operations shift from O(n) to O(1), dramatically improving reorg processing speed. During regular block processing, the expensive copying step required to retain previous states is eliminated. The tree-states approach introduces computational overhead for data access patterns . Random access operations shift from O(1) in linear arrays to O(log(n)) in binary merkle trees, requiring traversal of multiple pointers that may not be contiguous in memory. Iteration also becomes more expensive due to pointer chasing, despite maintaining O(n) complexity. To mitigate these costs, Lighthouse implements sophisticated optimization strategies including batch apply updates that create temporary layers of pending updates, minimizing tree traversals and re-bindings during beacon block execution. 
+Tree-states leverages the fact that beacon states are mutated very sparsely, enabling representation of states in ways that de-duplicate data such that each additional state costs much less than 500MB of RAM. This structural sharing allows Lighthouse to maintain almost all unfinalized states in memory, enabling near-instant jumps to any unfinalized state. This structural sharing means FCR does not need to load additional states from disk for its calculations, significantly reducing I/O and memory overhead.
+
+The system implements a binary merkle tree structure where copying operations shift from `O(n)` to `O(1)`, dramatically improving reorg processing speed. During regular block processing, the expensive copying step required to retain previous states is eliminated. The tree-states approach introduces computational overhead for data access patterns. Random access operations shift from `O(1)` in linear arrays to `O(log(n))` in binary merkle trees, requiring traversal of multiple pointers that may not be contiguous in memory. Iteration also becomes more expensive due to pointer chasing, despite maintaining `O(n)` complexity. To mitigate these costs, Lighthouse implements sophisticated optimization strategies including batch apply updates that create temporary layers of pending updates, minimizing tree traversals and re-bindings during beacon block execution. 
 
 Whereas, [Prysm employs a conventional approach where beacon states are stored as protobuf objects with direct memory access patterns.](https://hackmd.io/@prysmaticlabs/SkxxX76x_) The system maintains states at key checkpoints with a default frequency of one state per 64 epochs (2048 slots), requiring retrospective fetching for detailed historical information. [For FCR implementation, Prysm's architecture requires direct access to validator balances and vote weights through its doubly-linked tree fork choice structure. The system tracks node weights in a nodeByRoot map where each node contains balance information and vote tallies.](https://github.com/OffchainLabs/prysm/pull/15164/files#diff-1f3c1c09332acff6b73d020afc7c4283456c113dd4dcfb8cf09131d65356b0ca) 
 
@@ -744,15 +738,19 @@ As the Fast Confirmation Rule requires frequent queries across multiple historic
 
 Prysm's traditional approach requires approximately 500MB per state, making it prohibitively expensive to maintain the multiple states needed for optimal FCR performance. In contrast, Lighthouse's tree-states achieves dramatic memory savings through de-duplication, allowing storage of numerous states with bounded memory usage. For FCR calculations that may need to examine confirmation status across several recent slots, this memory efficiency translates directly to performance improvements. Tree-states provides consistent performance characteristics regardless of the number of states maintained, while traditional caching approaches like Prysm's can experience cache misses and degraded performance as state count increases . The persistent data structure approach ensures that confirmation rule calculations maintain predictable latency.
 
-Q-indicator requires frequent tree lookups at O(log n) per access; repeated traversals could degrade performance under large validator sets. To tackle this, we can precompute and cache per-block committee weights and attesting balances at block import time, amortizing tree traversals across slots.
+Q-indicator requires frequent tree lookups at `O(log n)` per access; repeated traversals could degrade performance under large validator sets. To tackle this, we can precompute and cache per-block committee weights and attesting balances at block import time, amortizing tree traversals across slots.
 
 Understanding these architectural differences is essential because FCR's safety guarantees depend on sub-slot confirmation timing. Any delays in state access or computation can impact the algorithm's ability to provide fast confirmation within the required 1-2 slot window. The Fast Confirmation Rule implementation places unique demands on state management systems:
 
-* Rapid Multi-State Queries: FCR algorithms must quickly access validator voting patterns across multiple recent slots for Q-indicator calculations
-* Committee Weight Calculations: Efficient computation of maximum possible voting weights requires access to validator registry data
-* Threshold Comparisons: Byzantine threshold calculations need consistent access to vote tallies and proposer boost information
+* *Rapid Multi-State Queries*: FCR algorithms must quickly access validator voting patterns across multiple recent slots for Q-indicator calculations. Lighthouse shines here.
+* *Committee Weight Calculations*: Efficient computation of maximum possible voting weights requires access to validator registry data
+* *Threshold Comparisons*: Byzantine threshold calculations need consistent access to vote tallies and proposer boost information
 
 ##### Committee Weight Estimation and Safety Adjustments
+
+Tree-States gives us cheap access to epoch-boundary states but not arbitrary within-epoch states, so we can’t compute W exactly for every `start_slot - end_slot` pair.
+
+Confidence level is the safety margin we add to the raw estimator so that, with high probability, the true W is ≥ our estimate. The new spec suggests multiplying by (1 + ε) where ε ≈ 0.005.
 
 ```rust
 impl FastConfirmation {
@@ -768,6 +766,7 @@ impl FastConfirmation {
             return Ok(total_active_balance);
         }
         
+        // estimator
         let estimate = self.calculate_pro_rata_weight(start_slot, end_slot, total_active_balance);
         
         // Apply safety adjustment factor for partial epoch coverage
@@ -775,6 +774,8 @@ impl FastConfirmation {
     }
 }
 ```
+
+This estimation approach is crucial because it avoids the need to access and process detailed information from every single state within an epoch, which would be too slow. It provides a sufficiently accurate and safe approximation of W without incurring significant overhead.
 
 This addresses cross-epoch weight calculation challenges identified in Prysm's implementation.
 
@@ -943,7 +944,7 @@ The lazy evaluation strategy provides sub-millisecond FFG support estimation com
 Performance is critical. This implementation is designed to heavily leverage Lighthouse's existing caching infrastructure to minimize CPU load.
 
 **`StateCache`**: 
-The FCR logic will not build states from scratch. It will hook into the `BeaconChain`'s `StateCache` to request "hot" (already in-memory) states. Lighthouse's tree-states architecture makes retrieving recent historical states extremely efficient. 
+Lighthouse's `BeaconState` objects come with pre-built internal caches (such as `committee_caches` and `epoch_cache`) which are updated during block import or per-slot processing. When FCR needs state data, it first attempts to retrieve "hot" (already in-memory) states from the `StateCache`. This means FCR logic does not have to rebuild these caches or re-execute (replay) state transitions to get the necessary data, as the expensive computations have already been performed and cached. Lighthouse's tree-states architecture makes retrieving recent historical states extremely efficient. 
 ```rust
 pub struct StateCache<E: EthSpec> {
     finalized_state: Option<FinalizedState<E>>,
@@ -1002,9 +1003,102 @@ No per-slot replay, no duplicate hashing, and every call further warms the cache
 
 This strategy ensures that FCR calculations are consistently fast, piggy-backing on Lighthouse's existing hot/cold store and LRU cache, giving `is_confirmed()` a micro-second hot-path while avoiding expensive state.
 
+#### Another Architectural Advantage
+One key requirement for the performance of the FCR is that when running the algorithm at the beginning of slot `t`, we process any attestation received so far for any `slot < t`.
+
+In Slot `t - 1`, attestations arrive and are queued (not processed). Slot `t` beings and `update_time()` is called (before `get_head()`) with the new slot, `process_attestation_queue()` immediately processes all queued attestations from previous `slots < t`, i.e. processes attestations where `attestation.slot < current_slot`. After attestation processing, FCR can safely calculate Q-indicators. The fork choice lock is already held, so FCR operations are safe.
+
+Every attestation with `data.slot = t-1` that has arrived up to 11.5 s is processed 0.5 s before slot t actually starts :
+```rust
+// In update_time() method (lines 1110-1130)
+pub fn update_time(&mut self, current_slot: Slot) -> Result<Slot, Error<T::Error>> {
+    while self.fc_store.get_current_slot() < current_slot {
+        let previous_slot = self.fc_store.get_current_slot();
+        self.on_tick(previous_slot + 1)?  // Advance slot
+    }
+    
+    // Process any attestations that might now be eligible
+    self.process_attestation_queue()?;
+    
+    Ok(self.fc_store.get_current_slot())
+}
+
+```
+```rust
+// In on_attestation() method (lines 1075-1085)
+if attestation.data().slot < self.fc_store.get_current_slot() {
+    // Process immediately - attestation is from a past slot
+    for validator_index in attestation.attesting_indices_iter() {
+        self.proto_array.process_attestation(...)?;
+    }
+} else {
+    // Queue for later processing - attestation is from current/future slot
+    self.queued_attestations.push(QueuedAttestation::from(attestation));
+}
+```
+
+Attestations from `slots < t` must be processed exactly at the beginning of `slot t`. This is essential for FCR's safety guarantees and Q-indicator calculations. [Fork choice runs at 11.5 seconds into a 12-second slot (23/24 of the way through). This means attestations from slot t-1 are processed 11.5 seconds into slot t, NOT at the beginning.](https://hackmd.io/@prysmaticlabs/HyE0pGjO2) FCR requires processing attestations at the beginning of slot t (around 0 seconds) to achieve its target confirmation time of 12-24 seconds. Lighthouse processes `slot < t` attestations before `slot t` begins, and FCR can safely run at the 11.5 s mark with a 7.5 s synchrony assumption, 0.5s earlier! So, the confirmation time should range in 11.5-23.5 secconds. 
+
+```rust
+// Run fork choice 23/24s of the way through the slot (11.5s on mainnet).
+        // We need to run after the state advance, so use the same condition as above.
+        let fork_choice_offset = slot_duration / FORK_CHOICE_LOOKAHEAD_FACTOR;
+        let fork_choice_instant = if duration_to_next_slot > state_advance_offset {
+            Instant::now() + duration_to_next_slot - fork_choice_offset
+        } else {
+            Instant::now() + duration_to_next_slot + slot_duration - fork_choice_offset
+        };
+
+        // Wait for the state advance.
+        sleep_until(state_advance_instant).await;
+
+        // Compute the current slot here at approx 3/4 through the slot. Even though this slot is
+        // only used by fork choice we need to calculate it here rather than after the state
+        // advance, in case the state advance flows over into the next slot.
+        let current_slot = match beacon_chain.slot() {
+            Ok(slot) => slot,
+            Err(e) => {
+                warn!(
+                    error = ?e,
+                    "Unable to determine slot in state advance timer"
+                );
+                // If we can't read the slot clock, just wait another slot.
+                sleep(slot_duration).await;
+                continue;
+            }
+        };
+```
+
+So, in Lighthouse : 
+```
+Slot t-1: [0s] [1s] [2s] ... [11s] [12s]
+Slot t:   [0s] [1s] [2s] ... [11.5s] ← Attestations from t-1 processed HERE (0.5s early)
+```
+which is better than what it should have been : 
+```
+Slot t-1: [0s] [1s] [2s] ... [11s] [12s]
+Slot t:   [0s] ← Attestations from t-1 processed HERE
+```
+
+FCR logic that runs inside this same `get_head()` call therefore sees a complete view of all t-1 attestations that arrived within 7.5 s of network time.
+
+Network delays might cause attestations to arrive late. FCR's Byzantine threshold accounts for this by assuming some attestations may be delayed. FCR assumes 8-second network synchrony
+but with Lighthouse it can be reduced to 7.5 seconds before processing attestations. This imprves FCR performance. Late attestations that arrive in the final 0.5 s of `slot t-1` will miss this run, but they are still processed the moment they appear (either immediately, or in the next timer tick). The Byzantine-threshold safety margin is meant to cover that small shortfall.
+
+This 11.5-second timing in Lighthouse is intentional and serves important purposes:
+* *Avoid slot boundary conflicts*: The timing "tries to run fork choice 23/24s of the way through the slot (11.5s on mainnet), to not conflict exactly with the slot boundary"
+* *Allow attestation propagation*: This gives attestations time to propagate through the network before processing
+* *State advance optimization*: Lighthouse runs a "state advance timer" at 3/4 through the slot (9s) to pre-compute state transitions
+
+Another thing to notice is that attestations are processed in FIFO order, not necessarily by slot. This is acceptable for FCR since it only needs the final vote state, not the order
+
+I pointed this out because, different clients might not process  at all attestations for `slots < t` during `t-1` (this is because per the Etheruem spec attestations in slot `t-1` must not be counted during slot `t-1`) and I am not sure when they process them. They might not process them exactly at the beginning of `slot t` which is what we need for the FCR.
+
 ### Challenges and Mitigations
 
-The most challenging parts of implementing the new FCR spec in Lighthouse are the correct, performant integration of head votes (LMD-GHOST) and FFG votes, efficient state access under tree-states architecture, and minimizing performance impact on consensus-critical paths, extending this to efficiently and correctly track FFG votes—especially for rapid, lazy evaluation as required by the spec. The rest of the implementation, while still requiring care and attention to detail, is more routine and follows the established specification closely
+The most challenging parts of implementing the new FCR spec in Lighthouse are the correct, performant integration of head votes (LMD-GHOST) and FFG votes, efficient state access under tree-states architecture, and minimizing performance impact on consensus-critical paths, extending this to efficiently and correctly track FFG votes—especially for rapid, lazy evaluation as required by the spec. The rest of the implementation, while still requiring care and attention to detail, is more routine and follows the established specification closely.
+
+#### General Challenges 
 
 - **Lock Contention**:
     - **Challenge**: The `fork_choice` global write lock that protects the entire `ProtoArray` structure during critical operations. Historical performance data shows that lock contention in consensus-critical paths can cause significant degradation. The FCR implementation requires additional computation during the already intensive `apply_score_changes` phase, potentially doubling lock hold time and creating serious bottlenecks when processing attestations from over 1 million validators. Adding work could cause consensus delays.
@@ -1165,7 +1259,7 @@ The primary goal of this project is to have a near-complete implementation of FC
   - Add memory leak detection and pruning correctness tests
 - **Success Criteria**: >95% test coverage, all edge cases handled gracefully
 
-#### Week 15: Benchmarking and Performance Validation
+#### Week 15 and 16: Benchmarking and Performance Validation
 **Milestone**: Validate performance characteristics and optimize bottlenecks
 - **Deliverables**:
   - Implement comprehensive benchmarking suite for FCR operations
@@ -1176,7 +1270,7 @@ The primary goal of this project is to have a near-complete implementation of FC
   - Optimize identified bottlenecks and re-benchmark
 - **Success Criteria**: FCR adds <50μs to fork choice operations, scales linearly with validator count
 
-#### Week 16: Documentation, Cleanup, and Research Analysis
+#### Week 17: Documentation, Cleanup, and Research Analysis
 **Milestone**: Complete implementation with documentation and research insights
 - **Deliverables**:
   - Create comprehensive implementation documentation and API reference
