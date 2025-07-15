@@ -27,6 +27,8 @@ In every slot the Q-Indicator compares :
 S = observed LMD-GHOST support for block b
 W = maximum committee weight that could still attest before our decision instant
 
+> The committee weight for a slot is the sum of the effective balances of all validators assigned to those committees. When FCR needs to check if a block is confirmed, it must estimate the maximum possible attesting weight (W) for all slots in a range (e.g., from the parent block’s slot up to the current slot). However, due to epoch boundaries and committee shuffling, the set of validators in committees can change between slots, and some validators may appear in multiple committees. The challenge is to efficiently estimate the total unique effective balance (union) of all validators who could have attested in a given slot range, without double-counting or expensive state traversals.
+
 The algorithm works by checking whether a block's LMD-GHOST weight exceeds a threshold of `(committee_weight × 0.5) + (committee_weight × β)`. This ensures sufficient honest validator support to guarantee the block remains canonical.
 
 If W is under-estimated we might confirm a block that is missing too much honest weight; if it is grossly over-estimated we will never confirm.
@@ -750,7 +752,7 @@ Understanding these architectural differences is essential because FCR's safety 
 
 Tree-States gives us cheap access to epoch-boundary states but not arbitrary within-epoch states, so we can’t compute W exactly for every `start_slot - end_slot` pair.
 
-Confidence level is the safety margin we add to the raw estimator so that, with high probability, the true W is ≥ our estimate. The new spec suggests multiplying by (1 + ε) where ε ≈ 0.005.
+Confidence level is the safety margin we add to the raw estimator so that, with high probability, the true W is ≥ our estimate. The new spec suggests multiplying by (1 + ε) where ε ≈ 0.005. Under-estimating W by more than the β slack could cause a re-org if late attestations arrive. Over-estimating W just reduces the chance of single-slot confirmation; blocks will still be confirmed within 2–3 slots. Hence the confidence interval is tuned small (0.5 – 1 %) to balance safety and liveness.
 
 ```rust
 impl FastConfirmation {
@@ -1003,7 +1005,7 @@ No per-slot replay, no duplicate hashing, and every call further warms the cache
 
 This strategy ensures that FCR calculations are consistently fast, piggy-backing on Lighthouse's existing hot/cold store and LRU cache, giving `is_confirmed()` a micro-second hot-path while avoiding expensive state.
 
-#### Another Architectural Advantage
+#### An Architectural Advantage
 One key requirement for the performance of the FCR is that when running the algorithm at the beginning of slot `t`, we process any attestation received so far for any `slot < t`.
 
 In Slot `t - 1`, attestations arrive and are queued (not processed). Slot `t` beings and `update_time()` is called (before `get_head()`) with the new slot, `process_attestation_queue()` immediately processes all queued attestations from previous `slots < t`, i.e. processes attestations where `attestation.slot < current_slot`. After attestation processing, FCR can safely calculate Q-indicators. The fork choice lock is already held, so FCR operations are safe.
@@ -1303,7 +1305,6 @@ The primary goal of this project is to have a near-complete implementation of FC
 - Network synchrony impact on confirmation reliability
 - Memory usage patterns and optimization opportunities
 - Comparison with Prysm's implementation approach and lessons learned
-
 
 ## Conclusion
 
