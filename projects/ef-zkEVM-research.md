@@ -83,9 +83,9 @@ Research and PoC implementation for a hybrid EVM environment (native EVM and RIS
 
 Research Exploring the generality of the ZisK zkVM trace generation technique: Research on this has been conclude and report submitted to my mentor. [report](https://hackmd.io/@0xdeveloperuche/S1sZEi7Lxl)
 
-Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs writen in Go or C# proveable also: This is currently in progress, phase has been complete, I am currently working on phase two. Research completion is due for `30th Aug, 2025`.
+Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs writen in Go or C# proveable also: This is currently in progress, phase one has been complete, I am currently working on phase two. Research completion is due for `30th Aug, 2025`.
 
-> Due to the nature of the team I am working with more research taskes would be allocated to me as I exhaust what I have right now, I would do well to update this notte all along.
+> Due to the nature of the team I am working with more research taskes would be allocated to me as I exhaust what I have right now, I would do well to update this note all along.
 
 ## Possible challenges
 
@@ -93,7 +93,9 @@ What are the limitations and issues you may need to overcome?
 
 ## Goal of the project
 
-What does success look like? Describe the end goal of the project, scope, state and impact for the project to be considered finished and successful.
+1. PoC implemenation for a hybrid node and performance anaysis report
+2. Report on the viablity of exploring the generality of the ZisK zkVM trace generation technique
+3. A deatils report of the Linux ABI and syscalls zkVM need to support
 
 ## Collaborators
 [developeruche](https://github.com/developeruche)
