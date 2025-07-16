@@ -72,7 +72,7 @@ Besu - ephemery - basic support is implemented but there are still some remainin
 
 By Besu
 
-### Teku / Nimbus / Lodestar / Grandine: Implement EIP-7917 - Deterministic proposer lookahead  
+### Teku / Nimbus / Grandine: Implement EIP-7917 - Deterministic proposer lookahead  
 
 [EIP-7917](https://eips.ethereum.org/EIPS/eip-7917) is a mechanism to pre-calculate and store a deterministic proposer lookahead in the beacon state at the start of every epoch.
 Implementing this EIP in one or more of the above mentioned clients is a low hanging-fruit as well as [super valuable](https://hackmd.io/@linoscope/eip-7917-from-preconf-protocol), and may serve as an excellent starting point for a fellow to get involved with core protocol work.
