@@ -12,7 +12,7 @@ FOCIL helps defend Ethereum's credible neutrality, which is a core value and maj
 
 The goal of this project is to implement the FOCIL spec in the Reth execution client, enabling it to participate in interop testing with other clients. This involves updating and extending the current spec as outlined in [ethereum/execution-specs#1214](https://github.com/ethereum/execution-specs/pull/1214), and ensuring Reth plays well with other clients.
 
-The implementation builds on prior work by Jacob Kaufmann, rebasing and upgrading it to align with the latest specs and dependencies. A key focus is creating a clean, well thought out integration that not only supports interop testing but also helps advance the EIP across the broader Ethereum ecosystem.
+The implementation builds on [prior work](https://github.com/jacobkaufmann/reth/tree/prague-focil) by Jacob Kaufmann, rebasing and upgrading it to align with the latest specs and dependencies. A key focus is creating a clean, well thought out integration that not only supports interop testing but also helps advance the EIP across the broader Ethereum ecosystem.
 
 
 ## Specification
