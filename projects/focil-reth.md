@@ -17,15 +17,25 @@ The implementation builds on [prior work](https://github.com/jacobkaufmann/reth/
 
 ## Specification
 
-### Scope
+### FOCIL Scope
 
-- Rebase and update prior work by Jacob Kaufmann.
-- Implement additional FOCIL-related methods and validation logic.
-- Ensure compatibility with other clients via interop testing.
+#### Consensus Layer (CL)
+- Adds **Inclusion List (IL) committees**: 16 validators per slot submit ILs.
+- Handles **P2P gossip** of ILs between validators.
+- Tracks **equivocations** (conflicting ILs) for slashing.
+- Updates **fork choice** to make decisions based on observed IL's.
 
-### Tasks
+#### Execution Layer (EL)
+- Enforces **ILs** during block building and validation.
+- Builds **ILs** from the mempool.
+- Adds new **Engine API methods**:
+  - `engine_getInclusionListV1`
+  - `engine_updatePayloadWithInclusionListV1`
+  - `engine_newPayloadV5`
 
-#### 1. Rebase and Update Initial Implementation
+### Project Scope
+
+#### Rebase and Update Initial Implementation
 
 Rebase and modernize Jacob Kaufmann’s existing FOCIL branch to match current specifications and dependencies:
 
@@ -37,7 +47,7 @@ Rebase and modernize Jacob Kaufmann’s existing FOCIL branch to match current s
   - `engine_newPayloadV5`
 - Implement a basic Inclusion List (IL) validation strategy.
 
-#### 3. Address TODOs and Optimization Tasks
+#### Address TODOs and Optimization Tasks
 
 Finalize work items left in Jacob’s original implementation and complete remaining integration tasks:
 
@@ -58,7 +68,7 @@ Add comprehensive test coverage:
 
 Engage in cross-client interoperability testing:
 
-- Use [Jihoon’s local devnet](https://github.com/jihoonsong/local-devnet-focil/tree/main) for simulations.
+- Contribute to and utilize [Jihoon’s local devnet](https://github.com/jihoonsong/local-devnet-focil/tree/main) for simulations.
 - Identify any mismatches or gaps in conformance.
 - Track performance and correctness using the [FOCIL Metrics Board](https://github.com/ethereum/beacon-metrics/pull/16).
 - Document and share findings with the ecosystem.
