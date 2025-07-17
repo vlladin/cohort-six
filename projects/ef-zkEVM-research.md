@@ -69,7 +69,7 @@ During this Phase, the result of this experiment is documented.
 ### Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs writen in Go or C# proveable also.
 This research explores the introduction of a minimal, provable Linux ABI to a RISC-V zkVM. The primary goal is to enable the execution and proving of guest programs written in languages like Go (Geth) and C# (Nethermind) without requiring custom compiler toolchains.
 
-1. During this phase I would be implementing a binanry for a the exection of a block statelessly, just based off the block data and withness. Would be making implementations for RETH, GETH and Nethermind. [codebase](https://github.com/developeruche/stateless-block-exec)
+1. During this phase I would be implementing a binary for a the execution of a block statelessly, just based off the block data and witness. Would be making implementations for RETH, GETH and Nethermind. [codebase](https://github.com/developeruche/stateless-block-exec)
 
 2. Syscall Usage Documentation: Formally document the complete set and frequency of Linux syscalls used by the stateless Geth binary. This data will serve as a definitive reference for supporting Go applications in a zkVM.
 
