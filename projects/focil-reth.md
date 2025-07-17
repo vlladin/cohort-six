@@ -6,7 +6,7 @@ FOCIL (Fork-choice Enforced Inclusion Lists) [EIP-7805](https://eips.ethereum.or
 
 About 80% of blocks are built by just four builders, and approximately 3% of blocks actively censor transactions. This number has previously peaked at 85% and only dropped recently due to U.S. policy changes. But policies change, and centralization risks persist.
 
-FOCIL helps defend Ethereum's credible neutrality, which is a core value and major advantage over traditional financial systems and other blockchains (like Sui, which recently censored transactions to freeze a hack). Ethereum's trustless nature breaks down if transaction censorship becomes possible, at that point it starts to look more like a traditional payment network, heavily influenced by state policies. And thus just another traditional finance protocol, like Swift.
+FOCIL helps defend Ethereum's credible neutrality, which is a core value and major advantage over traditional financial systems and other blockchains and provides censorship resistance. Ethereum's trustless nature breaks down if transaction censorship becomes possible, at that point it starts to look more like a traditional payment network, heavily influenced by state policies. And thus just another traditional finance protocol, like Swift.
 
 ## Project Overview
 
