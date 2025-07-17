@@ -22,7 +22,7 @@ More research task would be assigned to me as all these are concluded, also the 
 [code](https://github.com/developeruche/riscv-evm-experiment/tree/main/crates/research-draft)
 [paper](https://github.com/developeruche/riscv-evm-experiment/blob/main/Bridging%20Worlds_%20A%20Performance%20and%20Feasibility%20Analysis%20of%20RISC-V%20Integration%20with%20Ethereum%20Virtual%20Machine.pdf)
 
-1. Design of the core components of this new RISC-V EVM VM, this would also invovle blockchain related operations fashioned as `opcodes` [rust implementation](https://github.com/developeruche/riscv-evm-experiment/tree/main/crates/research-draft)
+1. Design of the core components of this new RISC-V EVM VM, this would also involve blockchain related operations fashioned as `opcodes` [rust implementation](https://github.com/developeruche/riscv-evm-experiment/tree/main/crates/research-draft)
 2. Implementation of a RISC-V IM32 assembler compatible with blockchain requirements. This would be task to assemble RISCV assemble written smart-contracts to RISCV machine code [code](https://github.com/developeruche/riscv-assembler).
 3. Optimization of the implementation for performance, security specs constraints.
 4. Benchmarking and preliminary analysis
