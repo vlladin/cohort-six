@@ -33,6 +33,7 @@ The implementation builds on [prior work](https://github.com/jacobkaufmann/reth/
   - `engine_updatePayloadWithInclusionListV1`
   - `engine_newPayloadV5`
 
+The EL side is relatively straightforward and I’m hoping it serves as a solid first EIP to implement in an EL client. Most of the complexity lives in the CL, where things are a lot less structured, handling p2p gossip, tracking equivocations, and juggling liveness issues, all within a tightly time constricted environment.
 ### Project Scope
 
 #### Rebase and Update Initial Implementation
