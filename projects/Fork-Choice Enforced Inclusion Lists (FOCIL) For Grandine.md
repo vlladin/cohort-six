@@ -11,7 +11,7 @@ Today, over 80% of Ethereum blocks are built by just four builders, and approxim
 ## Project description
 
 This project aims to implement FOCIL in [Grandine](https://github.com/grandinetech/grandine)(an ethereum consensus client).
-All the features will be implemented according to the [Focil's ethereum/consensus-specs](https://github.com/ethereum/consensus-specs/tree/e678deb772fe83edd1ea54cb6d2c1e4b1e45cec6/specs/_features/eip7805) and  [Focil implementation in lighthouse](https://hackmd.io/@haxry/H1iXrWr8eg).
+All the features will be implemented according to the [Focil's ethereum/consensus-specs](https://github.com/ethereum/consensus-specs/tree/e678deb772fe83edd1ea54cb6d2c1e4b1e45cec6/specs/_features/eip7805) and with inspiration from [Focil's implementation in lighthouse](https://hackmd.io/@haxry/H1iXrWr8eg).
 
 
 ## Specification
@@ -43,7 +43,7 @@ All the features will be implemented according to the [Focil's ethereum/consensu
 
 
 
- ```rust!
+ ```rust
 pub struct InclusionList<P: Preset> {
     pub slot: Slot,
     #[serde(with = "serde_utils::quoted_u64")]
@@ -55,7 +55,7 @@ pub struct InclusionList<P: Preset> {
 
 *  **Signed Inclusion List**
 
-```rust!
+```rust
 pub struct SignedInclusionList<P: Preset> {
     pub message: InclusionList<P>,
     pub signature: Signature,
@@ -66,7 +66,7 @@ pub struct SignedInclusionList<P: Preset> {
 
 * **A new global topic for broadcasting `SignedInclusionList` objects.**
 
-```rust!
+```rust
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq, Hash, AsRefStr)]
 #[strum(serialize_all = "snake_case")]
 pub enum GossipKind {
@@ -76,7 +76,7 @@ pub enum GossipKind {
 ```
 * **A new RPC topic for request SignedInclusionList based on IL committee index**
 
-```rust!
+```rust
 pub enum RequestType<P: Preset> {
     InclusionListByCommitteeIndices(InclusionListByCommitteeIndicesRequest),
     ...
@@ -94,7 +94,7 @@ pub enum Response<P: Preset> {
 *  **New inclusion list committee assignment:**
 A validator may be a member of the new Inclusion List Committee (ILC) for a given slot. To check for ILC assignments the validator uses the helper `get_ilc_assignment(state, epoch, validator_index)` where epoch <= next_epoch.
 
-```python!
+```python
 def get_ilc_assignment(
         state: BeaconState,
         epoch: Epoch,
@@ -113,7 +113,7 @@ def get_ilc_assignment(
     return None
 ```
 If validator is a member of the inclusion list commitee for a particular slot then it uses the helper function `get_inclusion_list_signature` to sign the IL retrived from the execution layer by calling the `engine_getInclusionListV1` api endpoint.
-```python!
+```python
 def get_inclusion_list_signature(
         state: BeaconState, inclusion_list: InclusionList, privkey: int) -> BLSSignature:
     domain = get_domain(state, DOMAIN_IL_COMMITTEE, compute_epoch_at_slot(inclusion_list.slot))
@@ -129,7 +129,7 @@ The proposer should call `engine_updateInclusionListV1` at `PROPOSER_INCLUSION_L
 #### Fork Choice Updates:
 
 *  **Modified Store:**
-```python!
+```python
 @dataclass
 class Store(object):
      ...
@@ -140,7 +140,7 @@ class Store(object):
 * **Validating a received IL before caching it in the Store:**
 
 Whenever an Inclusion list is received over the gossipsub, this function is called to validate it before caching it in the Store.
-```rust!
+```rust
 impl<P, E, A, W> Controller<P, E, A, W>
 where
     P: Preset,
@@ -160,7 +160,7 @@ where
 ```
 
 * **Validating a block for inclusion list :**
-```python!
+```python
 def validate_inclusion_lists(store: Store, inclusion_list_transactions: List[Transaction, MAX_TRANSACTIONS_PER_INCLUSION_LIST * IL_COMMITTEE_SIZE], execution_payload: ExecutionPayload) -> bool:
     """
     Return ``True`` if and only if the input ``inclusion_list_transactions`` satifies validation, that to verify if the `execution_payload` satisfies `inclusion_list_transactions` validity conditions either when all transactions are present in payload or when any missing transactions are found to be invalid when appended to the end of the payload unless the block is full.
@@ -174,33 +174,33 @@ def validate_inclusion_lists(store: Store, inclusion_list_transactions: List[Tra
 
 ## Roadmap
 
-* **Milestone 0** (week-6) - Get familiar with the Grandine's Codebase and figure about the parts to change .
+* **Milestone 0** (week-6) - Get familiar with the Grandine's Codebase and figure about the parts to change.  
 
-* **Milestone 1** (week 7-10) - Complete the basic types definition and networking change.
-epic 1: Implement the basic types definition, ssz codec
-epic 2: Implement the gossip message definition, handler for sending and receiving.
+* **Milestone 1** (week 7-10) - Complete the basic types definition and networking change.<br>
+    epic 1: Implement the basic types definition, ssz codec.<br>
+    epic 2: Implement the gossip message definition, handler for sending and receiving.
 
 > Note: the optional RPC req/resp for query missing inclusion list by committee indices will be implemented later
 
-* **Milestone 2**(week 11-14) - Complete the execution engine API change
+* **Milestone 2**(week 11-14) - Complete the execution engine API change.<br>
 
-    epic 1: Implement the two new endpoints
-    epic 2: Implement the NewPayload endpoint modification
-* **Milestone 3**(week 15-18) - Complete the validator duties
+    epic 1: Implement the two new endpoints.<br>
+    epic 2: Implement the NewPayload endpoint modification.<br>
+* **Milestone 3**(week 15-18) - Complete the validator duties<br>
 
-    epic 1: Update inclusion list committee assignment
-    epic 2: Validate and store the inclusion list
-    epic 3: Validate the block with the inclusion list
-* **Milestone 4**(week 19-22) - Complete the proposer duties, attester duties, inclusion list committee duties
+    epic 1: Update inclusion list committee assignment.<br>
+    epic 2: Validate and store the inclusion list.<br>
+    epic 3: Validate the block with the inclusion list.<br>
+* **Milestone 4**(week 19-22) - Complete the proposer duties, attester duties, inclusion list committee duties.<br>
 
-    epic 1: Update execution payload with inclusion list and publish the block
-    epic 2: Vote the block which is satisfied with inclusion list rules
-    epic 3: Build and publish the inclusion list
-* **Milestone 5**(week 23 onwards) - Complete spec tests, the local interop devnet test and the optional p2p RPC req/resp endpoint
+    epic 1: Update execution payload with inclusion list and publish the block.<br>
+    epic 2: Vote the block which is satisfied with inclusion list rules.<br>
+    epic 3: Build and publish the inclusion list.<br>
+* **Milestone 5**(week 23 onwards) - Complete spec tests, the local interop devnet test and the optional p2p RPC req/resp endpoint.<br>
 
-    epic 1: Implement spec tests
-    epic 2: Implement the RPC message definition, handler for request and response.
-    epic 3: Implement the local interop devnet
+    epic 1: Implement spec tests.<br>
+    epic 2: Implement the RPC message definition, handler for request and response.<br>
+    epic 3: Implement the local interop devnet.<br>
 
 ## Possible challenges
 
