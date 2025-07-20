@@ -91,7 +91,7 @@ pub enum Response<P: Preset> {
 ---
 #### Validator Client Changes:
 
-*  **New inclusion list committee assignment:**
+*  **New inclusion list committee assignment:**<br>
 A validator may be a member of the new Inclusion List Committee (ILC) for a given slot. To check for ILC assignments the validator uses the helper `get_ilc_assignment(state, epoch, validator_index)` where epoch <= next_epoch.
 
 ```python
