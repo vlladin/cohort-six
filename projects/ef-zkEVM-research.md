@@ -79,11 +79,16 @@ This research explores the introduction of a minimal, provable Linux ABI to a RI
 
 
 ## Roadmap
-Research and PoC implementation for a hybrid EVM environment (native EVM and RISC-V): Research paper and PoC implemantion is done, leaving data extraction as the only remaining task, This is due for `15 Aug, 2025.`
+Research and PoC implementation for a hybrid EVM environment (native EVM and RISC-V): Research paper and PoC implemantion is done, leaving data extraction as the only remaining task, This is due for `15 Aug, 2025.`[report](https://hackmd.io/@0xdeveloperuche/Hk18BWxkxl)
 
 Research Exploring the generality of the ZisK zkVM trace generation technique: Research on this has been conclude and report submitted to my mentor. [report](https://hackmd.io/@0xdeveloperuche/S1sZEi7Lxl)
 
 Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs writen in Go or C# proveable also: This is currently in progress, phase one has been complete, I am currently working on phase two. Research completion is due for `30th Aug, 2025`.
+- Highlight the nature of the guest program zkVM will need to run to snarkify the execution layer.
+- Write that program in the RUST programming laguaguge (compiling to the target os native  std)
+- Write this same program in the Go programming laguage
+- Write this same program in the C# programming laguage
+- Now evaluate and highlight the `syscall` employed by these different implementations.
 
 > Due to the nature of the team I am working with more research taskes would be allocated to me as I exhaust what I have right now, I would do well to update this note all along.
 
