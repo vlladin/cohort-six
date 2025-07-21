@@ -278,15 +278,16 @@ The project seeks to create a P2P network layer entirely in Zig, with the possib
 
 ## Collaborators
 
-@spiral-ladder
+[@spiral-ladder](https://github.com/spiral-ladder) from the Lodestar team.
+[@FoodChain1028](https://github.com/FoodChain1028)  
 
 ### Fellows
 
-@grapebaba
+[@grapebaba](https://github.com/GrapeBaBa)
 
 ### Mentors
 
-@wemeetagain
+[@wemeetagain](https://github.com/wemeetagain) from the Lodestar team.
 
 ## Resources
 
