@@ -89,7 +89,7 @@ Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively
 
 ## Possible challenges
 
-What are the limitations and issues you may need to overcome?
+The main challenge I anticipate is the introduction of Linux ABIs and syscalls to zkVMs. Identifying the key syscalls and ABIs needed to support guest programs written in Rust is relatively straightforward, as the RISC-V64 binary is just a binary without an embedded runtime (unlike the Go runtime). Additionally, Rust is my primary language, so I’m already comfortable working in that ecosystem. On the other hand, supporting Go programs would require extra effort and learning, as I am less familiar with its runtime and internals.
 
 ## Goal of the project
 
