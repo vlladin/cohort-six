@@ -83,12 +83,13 @@ Research and PoC implementation for a hybrid EVM environment (native EVM and RIS
 
 Research Exploring the generality of the ZisK zkVM trace generation technique: Research on this has been conclude and report submitted to my mentor. [report](https://hackmd.io/@0xdeveloperuche/S1sZEi7Lxl)
 
-Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs writen in Go or C# proveable also: This is currently in progress, phase one has been complete, I am currently working on phase two. Research completion is due for `30th Aug, 2025`.
-- Highlight the nature of the guest program zkVM will need to run to snarkify the execution layer.
-- Write that program in the RUST programming laguaguge (compiling to the target os native  std)
-- Write this same program in the Go programming laguage
-- Write this same program in the C# programming laguage
-- Now evaluate and highlight the `syscall` employed by these different implementations.
+Research exploring the introduction of Linux ABIs and syscalls to zkVMs natively, enabling guest programs written in Go or C# to be provable as well: This is currently in progress. Phase one has been completed, and I am currently working on phase two. Research completion is due by 30th August, 2025.
+
+- Highlight the nature of the guest program the zkVM will need to run in order to snarkify the execution layer.
+- Write that program in the Rust programming language (compiling to the target OS's native standard library).
+- Write the same program in the Go programming language.
+- Write the same program in the C# programming language.
+- Evaluate and highlight the syscalls employed by these different implementations.
 
 > Due to the nature of the team I am working with more research taskes would be allocated to me as I exhaust what I have right now, I would do well to update this note all along.
 
