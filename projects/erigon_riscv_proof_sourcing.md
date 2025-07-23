@@ -119,6 +119,8 @@ This is a big project and there will obviously be some challenges along the way,
 - **Mitigation**: For these opcodes, we will be providing the necessary state / side effects directly into the program data location. For precompiles we will probably make them be transpiled as functions which will just map the input to the output of the call to the precompile.
 - **Timeline**: Weeks 11-17
 
+*Note: since we are transpiling inline with each transaction, the control flow jumps (`JUMP`/`JUMPI`) are less of an issue as they would efficiently be transpiled to a `NOP` opcode (and not a `JUMP` inside the RISC-V program). If time permits, we look into how we might support control flow jumps later on in the project as supporting them could allow us to do transpilation on the contract level, this would help reduce compilation overhead by reusing the transpiled contract over multiple transactions.** 
+
 ### Gas accounting
 - **Challenge**: Tracking gas cost also won't have a 1:1 mapping with RISC-V instructions.
 - **Timeline**: Not in scope.
