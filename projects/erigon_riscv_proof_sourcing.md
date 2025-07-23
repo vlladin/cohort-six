@@ -9,7 +9,7 @@
 7. [Resources](#resources)
 
 ## Motivation
-Current ZK proving systems usually compile the entire EVM implementations into the target instruction (like RISC-V). This increases the number of instructions needed for proof generation by many magnitudes. Vitalik has even [proposed switching the ISA](https://ethereum-magicians.org/t/long-term-l1-execution-layer-proposal-replace-the-evm-with-risc-v/23617) of the EVM to RISC-V to improve the proof generation. This project explores transpilation as a practical stepping stone by generating RISC-V executable alongside the EVM execution using instruction hooks.
+Current ZK proving systems usually compile the entire EVM implementations into the target instruction (like RISC-V). This increases the number of instructions needed for proof generation by many magnitudes. Vitalik has even [proposed switching the ISA](https://ethereum-magicians.org/t/long-term-l1-execution-layer-proposal-replace-the-evm-with-risc-v/23617) of the EVM to RISC-V to improve the proof generation. This project explores transpilation as a practical stepping stone by generating a RISC-V executable alongside the EVM execution using instruction hooks.
 
 ## Project description
 The proposed solution is adding an optional transpilation module integrated with Erigon that enables RISC-V ZK proving of transactions without requiring contract recompilation. This approach reduces the proof overhead by only proving executed EVM operations rather than proving an entire EVM implementation in addition to the contract being executed.
@@ -46,7 +46,7 @@ graph TD
         end
     end
 
-    subgraph ZK ["Zk proving module"]
+    subgraph ZK ["ZK proving module"]
         subgraph RC ["RISC-V Compiler"]
             W
         end
@@ -59,13 +59,13 @@ graph TD
     end
 ```
 
-Breaking this down. 
+Breaking this down:
 1. **Transaction:** We first start with some transaction that triggers the execution of the EVM within Erigon.
-2. **Transpilation:** The VM will communicate with the Erigon transpilation which will be responsible for acting on the opcode hook. The final results here will be outputted as a blob of RISC-V assembly.
-3. **Compilation:** The RISC-V assembly will then be compiled with some toolchain used by the Zk proving engine.
-4. **Proof generation:** The proving system processes the generated binary and generates the associated proof.
+2. **Transpilation:** The VM will communicate with the Erigon transpilation module which will be responsible for acting on the instruction hooks. The final results here will be outputted as a blob of RISC-V assembly.
+3. **Compilation:** The RISC-V assembly will then be compiled with some toolchain used by the ZK proving engine.
+4. **Proof generation:** The proving engine processes the generated RISC-V binary and generates the associated proof.
 
-Our role is mainly writing the transpilation module. The Zk proving module is mostly "outsourced" in the sense that we only need to find a good toolchain to integrate the transpilation module with. Same is true for the EVM implementation as we will hook into the existing EVM implementation from Erigon.
+Our role is mainly writing the transpilation module. The ZK proving module is mostly "outsourced" in the sense that we only need to find a good toolchain to integrate the transpilation module with. Same is true for the EVM implementation as we will hook into the existing EVM implementation from Erigon.
 
 ## Roadmap
 
@@ -78,14 +78,14 @@ This milestone we are now past, it gave us context on the project and familiarit
 The main missing piece is the transpilation module that needs to be written over the next weeks.
 
 ### First iteration of the transpilation module (Weeks 5-10)
-The first few weeks will involve us writing the first iteration of the transpilation module. This involves handling the instructions mapping and handling the first version of ELF binary generation.
+The first few weeks will involve us writing the first iteration of the transpilation module. This involves handling the mapping of EVN instructions to RISC-V instructions and handling the first version of ELF binary generation.
 
-**Delivery:** We should after this be able to prove simple contracts that we have written ourself, we will also still be in control of the environment. There might be no support for 256bit arithmetic operations, some limits to control flow needs or similar simplifications.
+**Delivery:** We should after this be able to prove simple contracts that we have written ourself, we will also still be in control of the environment. There might be no support for 256bit arithmetic operations, some limits to control flow and similar simplifications.
 
 ### Stabilizing the transpilation module (Weeks 11-17)
 For the next milestone we want to stabilize and solve some of the [possible challenges](#possible-challenges) to improve our support of real world contracts.
 
-**Delivery:** We should be able to transpile Uniswap V2 and other [real world applications](https://etherscan.io/topstat#HotContracts) and operate in close to a real world environment.
+**Delivery:** We should be able to transpile Uniswap V2 and other [real world applications](https://etherscan.io/topstat#HotContracts) and test it all in (near-)production environment.
 
 ### Optimize, benchmarking and evaluation (Weeks 18-21)
 At this point we hope to have an implementation that we can run experiments on to get a sense of the feasibility of this approach. We want to benchmark this against other existing approaches. The result of this should be published as part of the conclusion of this project.
@@ -114,9 +114,9 @@ This is a big project and there will obviously be some challenges along the way,
 - **Timeline**: Weeks 11-17
 
 ### Special opcodes and Precompiles
-- **Challenge**: Some opcodes will be harder to implement directly. For instance `keccak256` and some of the state introspection opcodes like `EXTCODESIZE` / `SELFBALANCE` / `CALLDATALOAD`. Precompiles also don't have a direct transpilation mapping as they are syscall- like.
-- **Impact**: High - many contracts use these.
-- **Mitigation**: For the opcodes, we will be providing the necessary state / side effects directly into the program data location. For precompiles we will probably make them be transpiled as functions which will just map the input to the output of the call to the precompile.
+- **Challenge**: Some opcodes will be harder to implement directly. For instance `keccak256` and some of the state introspection opcodes like `EXTCODESIZE` / `SELFBALANCE` / `CALLDATALOAD`. Precompiles also don't have a direct transpilation mapping as they are function like syscalls.
+- **Impact**: High - many contracts use these opcodes (and precompiles).
+- **Mitigation**: For these opcodes, we will be providing the necessary state / side effects directly into the program data location. For precompiles we will probably make them be transpiled as functions which will just map the input to the output of the call to the precompile.
 - **Timeline**: Weeks 11-17
 
 ### Gas accounting
