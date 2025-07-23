@@ -1,7 +1,5 @@
 # Implement QUIC+Gossipsub in zig-libp2p
 
-[TOC]
-
 ## Motivation
 
 ### Zig Advantage
@@ -246,21 +244,21 @@ Follow the [spec](https://github.com/libp2p/specs/tree/master/pubsub#stream-mana
 
 ## Roadmap
 
-- **Milestone 1** - Implement the `QuicTransport`.
+- **Milestone 1(week 5 - 8)** - Implement the `QuicTransport`.
   - epic 1: Implement `listen` feature of the `QuicTransport`.
   - epic 2: Implement `dial` feature of the `QuicTransport`.
 
-- **Milestone 2** - Implement the common pubsub wire message publishing and subscription.
+- **Milestone 2(week 9 - 12)** - Implement the common pubsub wire message publishing and subscription.
   - epic 1: Implement common wire message protobuf codec.
   - epic 2: Implement the publishing and subscription interfaces.
 
-- **Milestone 3** - Implement the gossipsub route algorithm
+- **Milestone 3(week 13 - 18)** - Implement the gossipsub route algorithm
   - epic 1: Implement gossipsub control message protobuf codec.
   - epic 2: Implement core router.
   - epic 3: Implement heartbeat mechanism.
   - epic 4: Implement topic membership operations.
 
-- **Milestone 4** - Implement tests
+- **Milestone 4(week 19 - 21)** - Implement tests
   - epic 1: Implement transport interop test.
   - epic 2: Implement gossipsub interop test.
   - epic 3: Implement bench test.
