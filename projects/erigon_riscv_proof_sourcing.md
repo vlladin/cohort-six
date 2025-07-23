@@ -78,9 +78,9 @@ This milestone we are now past, it gave us context on the project and familiarit
 The main missing piece is the transpilation module that needs to be written over the next weeks.
 
 ### First iteration of the transpilation module (Weeks 5-10)
-The first few weeks will involve us writing the first iteration of the transpilation module. This involves handling the mapping of EVN instructions to RISC-V instructions and handling the first version of ELF binary generation.
+The first few weeks will involve us writing the first iteration of the transpilation module. This involves handling the mapping of EVM instructions to RISC-V instructions and handling the first version of ELF binary generation.
 
-**Delivery:** We should after this be able to prove simple contracts that we have written ourself, we will also still be in control of the environment. There might be no support for 256bit arithmetic operations, some limits to control flow and similar simplifications.
+**Delivery:** We should after this be able to prove simple contracts that we have written ourselves, we will also still be in control of the testing environment. There might be no support for 256-bit arithmetic operations, some limits to control flow and similar simplifications.
 
 ### Stabilizing the transpilation module (Weeks 11-17)
 For the next milestone we want to stabilize and solve some of the [possible challenges](#possible-challenges) to improve our support of real world contracts.
@@ -104,13 +104,13 @@ This is a big project and there will obviously be some challenges along the way,
 ### Transpilation correctness
 - **Challenge**: Bugs in transpilation module pose serious security risks
 - **Impact**: Critical - incorrect translation could compromise system security
-- **Mitigation**: Testing, consider [formal verification methods](https://verified-zkevm.org/)
-- **Timeline**: Continuous verification as opcodes are implemented
+- **Mitigation**: Testing, consider [formal verification methods for zkEVM](https://verified-zkevm.org/)
+- **Timeline**: Weeks 5-17 as opcodes are implemented
 
 ### Word size
 - **Challenge**: RISC-V uses 32/64-bit words, EVM uses 256-bit
 - **Impact**: High - affects all arithmetic operations
-- **Mitigation**: There are existing algorithms for supporting arbitrary-precision arithmetic which we can implement in RISC-V. These will have overhead over having a native word size of 256-bit. We might be able migrate some of that overhead by doing some tricks like using the [RISC-V vector extension](https://github.com/riscvarchive/riscv-v-spec/blob/v1.0/v-spec.adoc) to enables more parallel arithmetics computation.
+- **Mitigation**: There are existing algorithms for supporting arbitrary-precision arithmetic which we can implement in RISC-V. These will have overhead over having a native word size of 256-bit. We might be able to mitigate some of that overhead by doing some tricks like using the [RISC-V vector extension](https://github.com/riscvarchive/riscv-v-spec/blob/v1.0/v-spec.adoc) to enable more parallel arithmetic computation.
 - **Timeline**: Weeks 11-17
 
 ### Special opcodes and Precompiles
@@ -119,13 +119,13 @@ This is a big project and there will obviously be some challenges along the way,
 - **Mitigation**: For these opcodes, we will be providing the necessary state / side effects directly into the program data location. For precompiles we will probably make them be transpiled as functions which will just map the input to the output of the call to the precompile.
 - **Timeline**: Weeks 11-17
 
-*Note: since we are transpiling inline with each transaction, the control flow jumps (`JUMP`/`JUMPI`) are less of an issue as they would efficiently be transpiled to a `NOP` opcode (and not a `JUMP` inside the RISC-V program). If time permits, we look into how we might support control flow jumps later on in the project as supporting them could allow us to do transpilation on the contract level, this would help reduce compilation overhead by reusing the transpiled contract over multiple transactions.** 
+*Note: since we are transpiling inline with each transaction, the control flow jumps (`JUMP`/`JUMPI`) are less of an issue as they would effectively be transpiled to a `NOP` opcode (and not a `JUMP` inside the RISC-V program). If time permits, we will look into how we might support control flow jumps later on in the project as supporting them could allow us to do transpilation on the contract level, this would help reduce compilation overhead by reusing the transpiled contract over multiple transactions.*
 
 ### Gas accounting
 - **Challenge**: Tracking gas cost also won't have a 1:1 mapping with RISC-V instructions.
 - **Timeline**: Not in scope.
 
-I don't consider this part of this project, but wanted to highlight it as something that might require further research.
+We don't consider this to be part of the project, but wanted to highlight it as something that might require further research.
 
 ## Goal of the project
 
