@@ -110,7 +110,7 @@ This is a big project and there will obviously be some challenges along the way,
 ### Word size
 - **Challenge**: RISC-V uses 32/64-bit words, EVM uses 256-bit
 - **Impact**: High - affects all arithmetic operations
-- **Mitigation**: There are existing algorithms for supporting arbitrary-precision arithmetic which we can implement in RISC-V.
+- **Mitigation**: There are existing algorithms for supporting arbitrary-precision arithmetic which we can implement in RISC-V. These will have overhead over having a native word size of 256-bit. We might be able migrate some of that overhead by doing some tricks like using the [RISC-V vector extension](https://github.com/riscvarchive/riscv-v-spec/blob/v1.0/v-spec.adoc) to enables more parallel arithmetics computation.
 - **Timeline**: Weeks 11-17
 
 ### Special opcodes and Precompiles
