@@ -21,9 +21,9 @@ Grandine has already integrated SP1 and RISC Zero, the codebase is private as of
 
 State Transition Function is very computationally heavy, so when choosing a zkVM we need to be carefull to pick one. At present, proposed zkVMs include:
 
-* [OpenVM](https://github.com/openvm-org/openvm) - "no-CPU" architecture adaption, continuation + recursion support, production-ready. Grandine integration with OpenVM is going to be handled by OpenVM core team, as confirmed by Saulius.
+* [OpenVM](https://github.com/openvm-org/openvm) - "no-CPU" architecture adaption, continuation + recursion support, production-ready. Grandine integration with OpenVM is going to be handled by OpenVM core team.
 
-* [Zisk](https://github.com/0xPolygonHermez/zisk) - RISC-V architecture, continuation support, massive parallelism via minimal trace
+* [Zisk](https://github.com/0xPolygonHermez/zisk) - RISC-V architecture, continuation support, massive parallelism via minimal trace - assigned to Aman
 
 Performance Considerations before choosing a zkVM:
 * Recursive proving / Proof aggregation
@@ -32,9 +32,9 @@ Performance Considerations before choosing a zkVM:
 * GPU acceleration
 
 We also propose exploring the following zkVMs for integration:
-* [Jolt](https://github.com/a16z/jolt) - sum-check protocol optimization, assigned to Aman (?)
+* [Jolt](https://github.com/a16z/jolt) - sum-check protocol optimization
 * [Pico](https://github.com/brevis-network/pico) - CircleSTARK implemenation, assigned to Jimmy Chu
-* \[**TODO**\] [Another VM](tk), assigned to Ritesh Das
+* [Ziren](https://github.com/ProjectZKM/Ziren) - assigned to Ritesh Das
 
 ## Specification
 
