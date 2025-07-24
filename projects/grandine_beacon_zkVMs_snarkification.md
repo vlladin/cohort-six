@@ -19,22 +19,26 @@ This project would help advancing on chain snarkification, and eventually "zk-pr
 
 Grandine has already integrated SP1 and RISC Zero, the codebase is private as of now. Early benchmarks indicate support for networks with tens of thousands of validators. We will be scaling this work to support larger validator sets and exploring zkVMs.
 
-State Transition Function is very computationally heavy, so when choosing a zkVM we need to be carefull to pick one. At present, proposed zkVMs include:
+State Transition Function is very computationally heavy, so when choosing a zkVM we need to be careful to pick one. At present, proposed zkVMs include:
 
 * [OpenVM](https://github.com/openvm-org/openvm) - "no-CPU" architecture adaption, continuation + recursion support, production-ready. Grandine integration with OpenVM is going to be handled by OpenVM core team.
 
 * [Zisk](https://github.com/0xPolygonHermez/zisk) - RISC-V architecture, continuation support, massive parallelism via minimal trace - assigned to Aman
 
 Performance Considerations before choosing a zkVM:
-* Recursive proving / Proof aggregation
-* Continuation support
-* Precompiles support
-* GPU acceleration
+* Recursive proving / Proof aggregation, essential for combining multiple state transition proofs
+* Continuation support required for handling large STF computations that exceed single proof capacity
+* Precompiles support critical for cryptographic operations in consensus logic
+* GPU acceleration necessary for reasonable proof generation times
+* Memory requirements and constraints must handle large validator sets and state data
+* Smaller proofs and faster verification enable better light client experience
+* Integration complexity - Ease of integration with existing Grandine Rust codebase
 
 We also propose exploring the following zkVMs for integration:
 * [Jolt](https://github.com/a16z/jolt) - sum-check protocol optimization
 * [Pico](https://github.com/brevis-network/pico) - CircleSTARK implemenation, assigned to Jimmy Chu
 * [Ziren](https://github.com/ProjectZKM/Ziren) - assigned to Ritesh Das
+* [zkWASM](https://github.com/DelphinusLab/zkWasm) - SNARK compatible WebAssembly runtime
 
 ## Specification
 
@@ -54,7 +58,7 @@ The proving workflow in OpenVM involves multiple stages, starting from compiling
 
 ## Roadmap
 
-Since few fellows are working on this project, we will be divinding the work among overselves. We got a draft plan - 
+Since few fellows are working on this project, we will be dividing the work among overselves. We got a draft plan - 
 
 - [ ] STF implementation in OpenVM and Zisk
 - [ ] Determining the optimal zkVM for Beacon Chain operations
@@ -62,8 +66,21 @@ Since few fellows are working on this project, we will be divinding the work amo
 
 ## Possible challenges
 
-* **Bugs or issues in zkVMs** - Since some zkVMs are still new, we might hit unexpected bugs or missing features during development.
-* **Large trace size** - The Beacon STF is heavy and may create large traces that don’t fit in one proof, so we might need to split execution into smaller parts.
+**Bugs or issues in zkVMs** - Since some zkVMs are still new, we might hit unexpected bugs or missing features during development.
+
+- *Mitigation*: Maintain parallel development on multiple zkVMs, active engagement with zkVM communities, fallback to more mature zkVMs if needed
+
+**Large trace size** - The Beacon STF is heavy and may create large traces that don't fit in one proof, so we might need to split execution into smaller parts.
+
+- *Mitigation*: Implement sophisticated continuation strategies, optimize trace generation, use proof aggregation techniques
+
+**Memory constraints** - Large validator sets may exceed available memory during proof generation.
+
+- *Mitigation*: Implement streaming processing, optimize data structures, use disk-based intermediate storage
+
+**Performance bottlenecks** - Proof generation may be too slow for real-time block processing.
+
+- *Mitigation*: GPU acceleration, parallel proving, optimized continuation boundaries
 
 ## Goal of the project
 
