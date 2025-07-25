@@ -58,11 +58,22 @@ The proving workflow in OpenVM involves multiple stages, starting from compiling
 
 ## Roadmap
 
-Since few fellows are working on this project, we will be dividing the work among overselves. We got a draft plan - 
+With three fellows each focusing on a different zkVM. Here are the main milestones and who is working on what:
 
-- [ ] STF implementation in OpenVM and Zisk
-- [ ] Determining the optimal zkVM for Beacon Chain operations
-- [ ] Optimization strategies tailored to zkVMs
+- **By Week 10:**  
+  Each fellow will have started integrating the Beacon Chain STF with their chosen zkVM.  
+  - Aman: Zisk  
+  - Jimmy Chu: Pico  
+  - Ritesh Das: Ziren
+
+- **By Week 14:**  
+  We will have initial results for proof generation and will start comparing how each zkVM performs with the Beacon Chain STF.
+
+- **By Week 17:**  
+  We will discuss and decide which zkVM is working best for our needs, based on our experiments.
+
+- **By Week 20:**  
+  We will prepare a final demo and summary, showing the STF running in a zkVM and sharing what we learned.
 
 ## Possible challenges
 
