@@ -113,7 +113,7 @@ The actual project development is the main part of the program. Post your regula
 
 | Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
 |---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
-|         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Jimmy Chu](https://github.com/jimmychu0807) | [Update 6](https://github.com/jimmychu0807/ethereum-zkvm-study/blob/main/weekly-update/week-06.md) |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
 ## Cohort end
 
