@@ -110,10 +110,54 @@ With the gained insight into the protocol, the following weeks serve as a deep d
 ## Phase 3: Execution
 
 The actual project development is the main part of the program. Post your regular progress updates here during the development phase, share your issues and successes with others.
+| Name/GH                                                | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
+| ------------------------------------------------------ | ------ | ------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+| [Akash](https://github.com/h3lio5)                     |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Aman](https://github.com/0xprivateChaos)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Amelia](https://github.com/amebru)                    |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Bhaskar](https://github.com/bhaskar1001101)           |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Brage](https://github.com/2xic)                       |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Developeruche](https://github.com/developeruche)      |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Dimitris](https://gitlab.com/dmitsios)                |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Ellie](https://github.com/0xEllie)                    |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Fabio](https://github.com/fabioz888)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Faheel](https://github.com/faheelsattar)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Grapebaba](https://github.com/GrapeBaBa)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Harrish](https://github.com/haxry)                    |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Harsh Pratap Singh](https://github.com/harsh-ps-2003) |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Irene](https://github.com/IreneBa26)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Jay](https://github.com/jveer634)                     |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Jimmy Chu](https://github.com/jimmychu0807)           |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Jun](https://github.com/syjn99)                       |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Li@only4sim](https://github.com/only4sim)             |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Nando](https://github.com/fernantho/)                 |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Mark](https://github.com/Patchoulis)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Owanikin](https://github.com/owanikin)                |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Pelle](https://github.com/pellekrab)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Peter](https://github.com/pbkompasz)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Preeti](https://github.com/pr9t)                      |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Poulav](https://github.com/PoulavBhowmick03)          |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Prototype](https://github.com/ShiroObiJohn)           |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Rahul](https://github.com/guha-rahul)                 |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Rimeeeeee](https://github.com/Rimeeeeee)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Ritesh](https://github.com/Dyslex7c)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Sambhav](https://github.com/DarkLord017)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Sato](https://github.com/githubgitlabuser)            |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Shane](https://github.com/shane-moore/)               |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Shariq](https://github.com/shariqnaiyer)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Shourya](https://github.com/18aaddy)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Skanda](https://github.com/skandabhat)                |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Soubhik](https://github.com/Soubhik-10)               |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Tamaghna](https://github.com/RazorClient)             |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [thinkAfCod](https://github.com/thinkAfCod)            |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Vineet](https://github.com/vineetpant)                |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Vedant](https://github.com/vedant-asati)              |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Veer](https://github.com/VeerChaurasia)               |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Vlladin](https://github.com/vlladin)                  |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Utsav](https://github.com/x-senpai-x)                 |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [Vukašin Marković](https://github.com/sntntn)          |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
+| [yunsig](https://github.com/Ham3798)                   |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
-| Name/GH | Week 6 | Week 7 | Week 8 | Week 9 | Week 10 | Week 11 | Week 12 | Week 13 | Week 14 | Week 15 | Week 16 | Week 17 | Week 18 | Week 19 | Week 20 | Week 21 + |
-|---------|--------|--------|--------|--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|
-|         |        |        |        |        |         |         |         |         |         |         |         |         |         |         |         |           |
 
 ## Cohort end
 
