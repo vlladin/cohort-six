@@ -46,28 +46,25 @@ Changes to P2P
 
 #### Fork-Choice
 
-- is_inclusion_list_satisfied method
-- notify_forkchoice_updated method
-- Modify PayloadAttributes
-- Modified get_forkchoice_store
-- New validate_inclusion_lists
-- New get_attester_head
-- New on_inclusion_list
+- Adding `is_inclusion_list_satisfied` method
+- modify `notify_forkchoice_updated` method
+- Modify `PayloadAttributes`
+- Modified `get_forkchoice_store`
+- New `validate_inclusion_lists` method
+- New `get_attester_head` method
+- New `on_inclusion_list` method
 
 changes to other function based on inclusion Lists
 
 #### Inclusion List Logic
 
 - New InclusionList Store: Implements a cache
-- New method get_inclusion_list_store
-- New process_inclusion_list
-- New get_inclusion_list_transactions
+- Adding new `get_inclusion_list_store, process_inclusion_list, get_inclusion_list_transactions`methods
 
-#### Engine Related changes
 
-- New engine_newPayloadV5
-- New engine_getInclusionListV1
-- New engine_updatePayloadWithInclusionListV1
+#### EngineAPI Related changes
+
+- Adding new `engine_newPayloadV5, engine_getInclusionListV1, engine_updatePayloadWithInclusionListV1` calls
 
 ## Roadmap
 
