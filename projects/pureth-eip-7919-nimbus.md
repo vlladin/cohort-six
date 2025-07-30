@@ -155,6 +155,14 @@ The roadmap and implemention timeline can be broken as follows:-
 - Building a two-dimensional SSZ-based log index (ProgressiveList, EIP-7916) with block and transaction dimensions.
 - Validating the implementation against test vectors (proof_test_vectors) and ensuring compatibility with Kurtosis testnet queries is time-consuming.
 
+#### ToDo 
+
+Some additional points need to be studied and updated in the proposal as the implementation progresses.
+
+- Evaluate Querying efficiency of the linearized index structure.
+- Storage growth with big/old blocks and if client receives many eth_getLogs queries.
+- How much performance overhead it adds with SSZ
+
 #### Goal of the project
 
 - Trustless Log Retrieval
