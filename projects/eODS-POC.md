@@ -4,15 +4,17 @@ This projects aims to achieve a proof of concept implementation of eODS in Lodes
 ## Motivation
 Delegating is a discussed topic, especially in a BeamChain future - see Rainbow Staking. 
 A hypothetical model has been put forth by Dan Goron a year ago, and since it evolved into something more practical.
-There exists a set of consensus specs where eODS is implemented, compilable and ready to be tested. 
-
-The part that will be affected the most by this is the Consensus Layer, the Execution Layer will only suffer minor changes and no new concepts will be brought in the execution part of the system.
+I was part of those specs writing and [design](https://github.com/gorondan/consensus-specs/commits/eods/?author=vlladin) so I want to take it further. I believe delegations, in one form or another, are an integral part of the future.
+Having reached to various people and listening to their feedback, I think it's important to have a POC client implementation. Benefits are many, first of all it will allow us to weed out all design flaws and polish the specs even more. Then, it will allow us to understand the effort required to actually implement something like this in the existing clients. Then it will help us understand how big an impact it will have on various metrics of the system.
 
 ## Project description
-I was part of those specs writing and design so I want to take it further. 
-On one hand I want to write tests for the functionality added in the specs and on the other hand I want try a minimal implementation inside an existing client. Best case scenario I end up with a functional dev net where eODS is usable.
+This project is about writing spec tests for eODS and writing a proof of concept implementation in Lodestar.
 
-Having reached to various people and listening to their feedback, I think it's important to have a POC client implementation. Benefits are many, first of all it will allow us to weed out all design flaws and polish the specs even more. Then, it will allow us to understand the effort required to actually implement something like this in the existing clients. Then it will help us understand how big an impact it will have on various metrics of the system.
+### Tests
+Tests will help us identify and weed out all the small things we missed in the specs.
+
+### Proof of concept implementation
+The proof of concept client implementation will allow us to understand the effort required to actually implement something like this in the existing clients. It will also help us understand how big an impact eODS will have on various metrics of the system.
 
 ## Specification
 
@@ -114,11 +116,40 @@ So I must take each one of these execution pipelines and implement them in Lodes
 
 There are about 4 months available on the writing of this md. In the first 4-5 weeks I have pushed to have the eODS specs finalised so I can focus on implementation moving forward. I also explored a bit Lodestar's codebase, as much as was possible in the given time and priorities.
 
-From the total of 11 weeks I would:
-- take 2 to write tests for eODS and make sure the specs are ready for implementation in the client
-- take 2 weeks to get into Lodestar - fix some bugs, get active in the community
-- take 6 weeks to implement the specs into Lodestar
-- take the rest of the time to try and handle the EL of the project
+I will take 12 weeks for the roadmap, with a few left for buffers: 
+
+### Testing
+`weeks 1-2`
+
+I will cover eODS specs with tests, trying to cover all the edge cases and weed out most of the (big) issues. I don't expect eODS specs to be in a perfect form right now, but these tests and the required patches will get us close to that. 
+
+*Deliverables: Written tests and patches for eODS.*
+
+### Lodestar 
+`weeks 3-4`
+
+I need at least a couple of weeks to **really** get into Lodestar. Fixing bugs and interacting with the community will help me do that.
+
+*Deliverables: I expect to fix some bugs and PR those fixes into Lodestar's repo.*
+
+### Proof of concept
+`weeks 5-6-7-8-9-10`
+
+This is where the proof of concept implementation takes place.
+Since it's a big timebox, let's divide it further:
+- `weeks 5-6` BeaconState changes and unbundling of the Delegation Operations Contract data bus
+- `week 7 `DepositToDelegate, ActivateOperator, Delegate 
+- `week 8` Undelegate / Redelegate
+- `week 9` WithdrawFromDelegator
+- `week 10 `Handling the intersections between eODS and existing features: Rewards / Penalties / Slashing 
+
+*Deliverables: A proof of concept consensus client implementation in Lodestar*
+
+### Execution Layer
+I've given myself a few weeks of buffer, because things happen.
+Best case scenario I will use those weeks to write the EL contracts needed for eODS.
+
+I will update this section later, as work progresses and things become more clear to me.
 
 ## Possible challenges
 
