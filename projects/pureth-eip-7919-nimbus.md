@@ -5,7 +5,7 @@
 - [Vineet](https://github.com/vineetpant) 
 - [Tamaghana](https://github.com/RazorClient)
 
-We will coordinate and work parallely on separate EIPs for implementation, once core EIPs (7745 and 6404) are done , we will work on other EIPs for Log Reform and Remove old tx types categories in Pureth.
+We will coordinate and work in parallel on separate EIPs for implementation, once core EIPs (7745 and 6404) are done , we will work on other EIPs for Log Reform and Remove old tx types categories in Pureth.
 
 ### LOG Reform for Pureth
 
