@@ -59,9 +59,13 @@ type LogEntry = object
 type LogFilter = ProgressiveList[LogEntry]
 ```
 
+2. Reorg Handling
+
+Reorgs may occur, and the log index may have to be partially rewinded to switch to a different chain head. LogIndex should be implemented and tested to handle reorgs.
+
 - Use `ProgressiveList` for dynamic log growth
 
-2. Build Two-Dimensional Log Index
+3. Build Two-Dimensional Log Index
 
 The log index is constructed during receipt processing to enable efficient log retrieval. Each log entry is stored with its associated metadata, and logs are organized in a two-dimensional structure (by block and transaction). Additionally, Logs are stored in per-block Merkle trees, with roots linked to the block’s state or receipt trie for verifiable queries.
 
@@ -89,7 +93,7 @@ proc buildLogIndex(receipts: seq[Receipt], block: Block): LogFilter =
     ))
 ```
 
-3. Implement FNV-1a Hashing for Filtering
+4. Implement FNV-1a Hashing for Filtering
 
 ```nim
 def get_column_index(log_value_index, log_value):
@@ -99,16 +103,16 @@ def get_column_index(log_value_index, log_value):
     return log_value_index % VALUES_PER_MAP * log_value_width + collision_filter
 ```
 
-4. Pattern Matching and Verification
+5. Pattern Matching and Verification
 
    - Implement `singleProver`, `matchAnyProver`, and `matchSequenceProver` (inspired by Geth PoC)
    - Use set operations for union (matchAnyProver) and intersection (matchSequenceProver)
 
-5. Test with Provided Vectors
+6. Test with Provided Vectors
 
    - Implement binary proof parsing (little-endian) and validate against JSON test cases. Integrate with Nimbus’s test suite (tests directory).
 
-6. Test with Kurtosis (Local testnet)
+7. Test with Kurtosis (Local testnet)
    - Send transactions (e.g., ERC-20, EIP-7708 logs), verify SSZ logs and proofs
 
 #### Roadmap
@@ -137,6 +141,9 @@ The roadmap and implemention timeline can be broken as follows:-
       - Should take 5 weeks (approx) to implement
       - Emit SSZ logs for opcodes like SELFDESTRUCT or CALL transfers.
       - Simulate tests for Eth transfer in smart contract wallet
+    - Additional Transfers which should be logged and tested
+      - Deployment of a new contract with a starting balance
+      - Fee payments (both for the burn and also for the priority fee)
 
   - EIP-7799: System Logs
     - Effort estimate
