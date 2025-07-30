@@ -18,11 +18,9 @@ Working on LOG Reform would solve following shortcomings :
 - Fetching full receipts because of false positives is impractical for Light clients and mobile devices with resource constraints.
 - Eth transfers from smart contracts don't emit logs which leads to problems in tracking transfers.
 
-#### Why important ?
-
 Working on Log Reform is important for following reasons
 
-- Recent implementation from `Geth` has shown that new log indexer returns the results for `eth_getLogs` in milliseconds which other clients with BloomFilter might take few seconds.
+- Recent implementation from `Geth` has shown that new log indexer returns the results for `eth_getLogs` in milliseconds which other clients with BloomFilter might take few seconds.[ref link](https://xcancel.com/sina_mahmoodi/status/1930565142183387627).
 - It will help lightClient and dapps to be more efficient by reducing the unnecessary data fetching.
 - Reduce data overhead with compact `SSZ` encoding, enable trusless log retrieval with `Merkle proofs`.
 - SSZ encoded logs will be available for all Eth Transfers(e.g., CALL, SELFDESTRUCT) and will be good for tracing.
@@ -34,7 +32,6 @@ We will start the work by focussing on the implemention of [EIP-7745:Two dimensi
 - Implement a two-dimensional SSZ index (by block and transaction) for precise, efficient log retrieval.
 - Provide SSZ-encoded logs with Merkle proofs, verifiable against block headers.
 - Remove the need for Bloom filters.
-- Updated eth_getLogs with proofs
 
 Once the work on EIP-7745 is complete, we will prioritize other log reform EIPs.
 
@@ -46,18 +43,19 @@ Once the work on EIP-7745 is complete, we will prioritize other log reform EIPs.
 
 #### Specification
 
-Implementing EIP-7745 in [Nimbus-EL](https://github.com/status-im/nimbus-eth1) involves updating the RPC layer to build and query the SSZ log filter, generate Merkle proofs, and handle pattern matching.
+Implementing EIP-7745 in [Nimbus-EL](https://github.com/status-im/nimbus-eth1) involves query the SSZ log filter, generate Merkle proofs, and handle pattern matching.
 
-1.  Define LogEntry and LogFilter structs
+1.  Define LogIndex, LogEntry and LogFilter structs
 
 ```nim
 type LogEntry = object
-address: Address
-topics: List[Bytes32, 4]
-data: Bytes
-blockNumber: uint64
-txHash: Bytes32
-logIndex: uint64
+  address: Address
+  topics: List[Bytes32, 4]
+  data: Bytes
+  blockNumber: uint64
+  txHash: Bytes32
+  logIndex: uint64
+
 type LogFilter = ProgressiveList[LogEntry]
 ```
 
@@ -93,25 +91,24 @@ proc buildLogIndex(receipts: seq[Receipt], block: Block): LogFilter =
 
 3. Implement FNV-1a Hashing for Filtering
 
+```nim
+def get_column_index(log_value_index, log_value):
+    log_value_width = MAP_WIDTH // VALUES_PER_MAP                      # constant
+    column_hash = fnv_1a(to_binary64(log_value_index) + log_value)     # 64-bit FNV-1A hash
+    collision_filter = (column_hash // (2**64 // log_value_width) + column_hash // (2**32 // log_value_width)) % log_value_width
+    return log_value_index % VALUES_PER_MAP * log_value_width + collision_filter
+```
+
 4. Pattern Matching and Verification
 
    - Implement `singleProver`, `matchAnyProver`, and `matchSequenceProver` (inspired by Geth PoC)
    - Use set operations for union (matchAnyProver) and intersection (matchSequenceProver)
 
-5. Process Partial Proofs
-
-   - Handle unproven gaps in filter rows
-   - Treat unproven gaps as potential match ranges, ensuring exhaustiveness. Verify count field for partial proofs.
-
-6. Update `eth_getLogs`
-
-   - Modify to return SSZ-encoded LogFilter with proofs
-
-7. Test with Provided Vectors
+5. Test with Provided Vectors
 
    - Implement binary proof parsing (little-endian) and validate against JSON test cases. Integrate with Nimbus’s test suite (tests directory).
 
-8. Test with Kurtosis (Local testnet)
+6. Test with Kurtosis (Local testnet)
    - Send transactions (e.g., ERC-20, EIP-7708 logs), verify SSZ logs and proofs
 
 #### Roadmap
@@ -166,12 +163,13 @@ The roadmap and implemention timeline can be broken as follows:-
 
 ### Mentors
 
-[Etan](https://github.com/etan-status) is the mentor for Pureth EIP-7919 implementation
+[Etan](https://github.com/etan-status) is the mentor for Pureth EIP-7919 implementation, [Advaita](https://github.com/advaita-saha)  will be mentor for Nimbus-EL specific questions (receipts processing / logs / reorgs).
 
 ### Resources
 
-| Resource                                | link                                                                   |
-| --------------------------------------- | ---------------------------------------------------------------------- |
-| Pureth EIP-7919                         | https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7919.md          |
-| EIP-7745 : 2D log filter data structure | https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7745.md          |
-| EIP-7745 details by Zsolt               | https://github.com/zsfelfoldi/eip-7745/blob/main/proof_verification.md |
+| Resource                                    | link                                                                   |
+| ------------------------------------------- | ---------------------------------------------------------------------- |
+| Pureth EIP-7919                             | https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7919.md          |
+| EIP-7745 : 2D log filter data structure     | https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7745.md          |
+| EIP-7745 details by Zsolt                   | https://github.com/zsfelfoldi/eip-7745/blob/main/proof_verification.md |
+| Performance improvement of new Log indexer  | https://xcancel.com/sina_mahmoodi/status/1930565142183387627           | 
