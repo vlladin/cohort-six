@@ -186,6 +186,7 @@ So far:
 
 [POC Lodestar repo](https://github.com/vlladin/lodestar)
 
-[eODS from a developer's point of view - still WIP](https://hackmd.io/Sw48H9qMQ0ukWZ08egkpkA)
+[eODS (Enshrined Operator Delegator Separation): a Delegation model proposal](https://ethresear.ch/t/eods-enshrined-operator-delegator-separation-a-delegation-model-proposal/22826)
 
-[eODS research post - tbd]()
+[eODS from a developer's point of view](https://hackmd.io/Sw48H9qMQ0ukWZ08egkpkA)
+
