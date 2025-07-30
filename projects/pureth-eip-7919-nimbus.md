@@ -5,13 +5,13 @@
 - [Vineet](https://github.com/vineetpant) 
 - [Tamaghana](https://github.com/RazorClient)
 
-We will coordinate and work parallely on separate EIPs for implementation, once core EIPs (7745 and 6404) are done , we will work on other EIPs for Log Reform and Remove old tx types categories in Pureth.
+We will coordinate and work in parallel on separate EIPs for implementation, once core EIPs (7745 and 6404) are done , we will work on other EIPs for Log Reform and Remove old tx types categories in Pureth.
 
 ### LOG Reform for Pureth
 
 #### Motivation
 
-Since Pureth is Meta EIP and Log Reform is really importance part of Pureth which addresses major inefficiencies in current Logs.
+[Pureth](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7919.md) is a Meta EIP that contains multiple changes including Log Reform which is really important as it addresses major inefficiencies in current Logs.
 Working on LOG Reform would solve following shortcomings :
 
 - Smart contract wallets have to fetch and verify additional transaction receipts within a queried block range because Bloom filters produce false positives, leading to inefficient log retrieval.
