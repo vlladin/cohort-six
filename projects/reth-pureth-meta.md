@@ -3,7 +3,7 @@
 ## Introduction
 
 The [Pureth proposal](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7919.md) contains a bunch of EIPs aimed at making Ethereum accessible without the need of trusted RPCs. This is crucial to Ethereum's principles, as untrusted RPCs could make the whole network trustless for constrained devices which can't run a full node themselves. The proposal aims to make Ethereum accessible to resource-constrained devices in a trustless manner.
-Upon talking with my mentor, Etan about this proposal, this proposal needs to be divided into two main parts. One is implementing the [2D logs filter structure](https://eips.ethereum.org/EIPS/eip-7745) and the other is SSZ types, mainly [SSZ Progressive List](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7916.md). I have chosen to take up implementing the 2D logs filter in Reth.
+Upon talking with my mentor, Etan about this proposal, this proposal needs to be divided into two main parts. One is implementing the [2D logs filter structure](https://eips.ethereum.org/EIPS/eip-7745) and the other is SSZ types, which build on top of [SSZ Progressive List](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7916.md). I have chosen to take up implementing the 2D logs filter in Reth.
 
 ## 2D Logs Filter
 
@@ -15,8 +15,7 @@ The current Bloom Filter data structure is [highly inefficient](https://ethereum
 
 ### Importance
 
-A correct implementation of this structure should result in large speedups of querying logs and should result in significantly lower false positive rates.
-
+A correct implementation of the Pureth EIP should remove the need for external indexers and standardize a proof format to achieve verifiability for the onchain data received from RPCs. 
 ### Project Description
 
 This project aims to implement the EIP-7745 logs filter structure in Reth according to the [EIP specifications](https://eips.ethereum.org/EIPS/eip-7745) and similar to [Geth's implementation](https://github.com/zsfelfoldi/go-ethereum/blob/proof-poc/core/filtermaps) of the structure.
