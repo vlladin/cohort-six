@@ -2,7 +2,6 @@
 
 Enables an automatically reset public testnet embedded on Besu
 
-
 ## Motivation
 
 By the implementation of this proposal, [the Besu execution client](https://github.com/hyperledger/besu) is going to be the only execution client with automated reset functionality within the node. This way, infrastructure providers don't need to run any external tooling.
