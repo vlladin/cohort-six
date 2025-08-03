@@ -24,8 +24,9 @@ Implement filtermaps in Erigon, closely following Zsolt's design in Go-Ethereum 
 1. **Define Data Structures:** Adapt struct and field definitions for Erigon compatibility.
 2. **Design Interfaces:** Create matcher, indexer, and filtermap interfaces for modular implementation.
 3. **Implement Core Components:** Develop matcher logic for log value queries, indexer for event indexing, and filtermaps for efficient storage and retrieval.
-4. **Integrate Proof System:** Support verifiable log queries via  proofs.
-5. **Testing:** Use test vectors, Hive, Kurtosis, and RPC endpoints for comprehensive validation.
+4. **Add Root Hash to Block Header:** Introduce a consensus-level change replacing `logs_bloom` with a `log_index_root` to enable fully verifiable endpoints.
+5. **Integrate Proof System:** Start with Geth’s early proof-of-concept ([log-proofs](https://pureth.guide/log-proofs/)) then try to research as there is not a lot of prior art.
+6. **Testing:** Use test vectors, Hive, Kurtosis, and RPC endpoints for comprehensive validation.
 
 ### Data Structures
 
@@ -140,7 +141,7 @@ for layer := 0; layer < maxLayers; layer++ {
 - **Weeks 8–10:** Implement mathematical utilities, map renderer, and filtermaps data structure. Write initial unit tests.
 
 **Milestone 2**
-- **Weeks 11–16:** Build indexer, matcher, matcher backend. Expand test coverage.
+- **Weeks 11–16:** Build indexer, matcher, matcher backe nd. Expand test coverage.
 
 **Milestone 3**
 - **Weeks 17–20:** Implement proof generation and verification mechanisms.
@@ -149,12 +150,13 @@ for layer := 0; layer < maxLayers; layer++ {
 - **Weeks 20–21:** Test thoroughly using Hive, Kurtosis, and RPC endpoints. Develop custom and integration tests.
 
 **Milestone 5**
-- **Week 21+:** Implement related EIPs (e.g., EIP-7708, EIP-7799) or pursue further performance optimizations.
+- **Week 21+:** -  Pursue further performance optimizations or will consider additional EIPs if log-filter changes are achieved.
 
 ## Challenges
 
 - Adapting complex EIP logic
 - Some library issues or differences between geth and erigon.
+- For proofs, there is not a lot of prior work done 
 
 ## Goals
 
@@ -168,6 +170,6 @@ for layer := 0; layer < maxLayers; layer++ {
 
 ## Resources
 https://pureth.guide
-https://web3-purrified.box
+https://purified-web3.box 
 https://github.com/zsfelfoldi/eip-7745
 https://github.com/ethereum/go-ethereum/compare/master...zsfelfoldi:go-ethereum:proof-poc
