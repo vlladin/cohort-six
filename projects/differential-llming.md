@@ -1,6 +1,8 @@
 ## Differential LLMing
 
-TLDR: Link to the Slides introducing the project: https://docs.google.com/presentation/d/1LpxBvbz30qVwpplKAX2DC66CfZuEb7kNTB4qlZq_hHA/edit?usp=sharing 
+TLDR: 
+Link to the Slides introducing the project: https://docs.google.com/presentation/d/1LpxBvbz30qVwpplKAX2DC66CfZuEb7kNTB4qlZq_hHA/edit?usp=sharing 
+Link to presentation: https://www.youtube.com/watch?v=UqkQdlyEwdA 
 
 ## Motivation
 Ethereum Improvement Proposals (EIPs) are implemented independently by several execution and consensus layer client teams. Each of them make their own design and implementation decisions. During development phase, this may lead to divergences which may lead to security risks, consensus breaks or edge cases that may lead to bugs. Manual peer reviews and bi-weekly All Core Dev calls are not scalable enough to tackle the above cases. Often they are found out during extensive testing phases if not later. LLMs can’t help in this case out of the box due to context length limitations. 
