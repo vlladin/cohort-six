@@ -508,7 +508,7 @@ Some additional points need to be studied and updated in the proposal as the imp
 
 ## Collaborators
 
-Vineet and @samyxandy (Tamaghna)
+Vineet and @RazorClient (Tamaghna)
 
 - Vineet :- Focussing on Log Reform EIP-7745: Two dimensional log filter data structure
 - Tamaghana :- Focussing on EIP-6404: SSZ transactions
