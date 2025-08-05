@@ -8,11 +8,17 @@ Link to presentation: https://www.youtube.com/watch?v=UqkQdlyEwdA
 Ethereum Improvement Proposals (EIPs) are implemented independently by several execution and consensus layer client teams. Each of them make their own design and implementation decisions. During development phase, this may lead to divergences which may lead to security risks, consensus breaks or edge cases that may lead to bugs. Manual peer reviews and bi-weekly All Core Dev calls are not scalable enough to tackle the above cases. Often they are found out during extensive testing phases if not later. LLMs can’t help in this case out of the box due to context length limitations. 
 
 ## Project Description
-Build an AI based solution that given an EIP number and one or more client repositories, produces a human readable report that:
+Build an AI based solution (as a CLI tool for this project) that given an EIP number and one or more client repositories, produces a human readable report that:
 - Shows relevant code paths which implement several features of an EIP
 - Highlight missing or non compliant logic
 - Look for edge cases or security vulnerabilities
-- Eventually compare two clients 
+- Eventually compare two clients
+
+The report will be structured as:
+- **Implementation Summary**: Overview of how each client implements the EIP
+- **Compliance Analysis**: Missing or non-compliant logic with specific code references
+- **Security & Edge Cases**: Potential vulnerabilities or edge cases identified
+- **Cross-Client Comparison**: Side-by-side differences between client implementations 
 
 ## Specification
 
@@ -63,10 +69,17 @@ The loop continues until the agent completes a full final report for a client wh
 
 
 ### Frontend
-Frontend is a single page based on Next js with the following minimum components:
-- dropdown for EIP number
-- multi-select for clients
-- compare button
+Frontend is a single page based on Next.js with the following components:
+- Dropdown for EIP number
+- Multi-select for clients
+- Compare button
+- Advanced features:
+  - File-specific analysis input
+  - Custom prompt interface
+  - Model selection (GPT-4o, Claude, open-source alternatives)
+  - Results export functionality
+
+*Note: Frontend development is a secondary priority after CLI tool completion.*
 
 ## Roadmap
 
@@ -87,11 +100,12 @@ Frontend is a single page based on Next js with the following minimum components
 - Get feedback from Core devs and iterate
 
 ## Possible challenges
-- Choice of LLM: the best LLMs aren't free. I will need to find the best open source that I can run on my laptop for quick feedback. 
-- The indexing and chunking mechanism as well as retrieval has to work well and we need to try various mechanisms for it e.g. cosine similarity. 
-- The agents are a bit brittle so getting it to work well without edge cases might be a challenge.
-- Getting good feedback from existing core devs is also important. 
-- Prompt engineering of the agent may not necessarily go smoothly and will require lot of iterations. 
+- **Choice of LLM**: The best LLMs aren't free. Solution: Allow users to switch between models and provide their own API keys, or explore project subsidization for research purposes.
+- **LLM Reliability**: Risk of hallucinations and inaccurate analysis during large context windows. The tool needs to be context length aware.
+- **Indexing and Retrieval**: The chunking mechanism and retrieval must work effectively. Multiple approaches needed (cosine similarity, semantic search, etc.).
+- **Agent Brittleness**: Getting agents to work reliably without edge cases requires extensive testing and error handling.
+- **Core Dev Feedback**: Obtaining meaningful feedback from existing core developers is crucial for validation.
+- **Prompt Engineering**: Agent prompts will require significant iteration and optimization. 
 
 ## Goal of the project
 
@@ -105,3 +119,6 @@ Sato
 
 ### Mentors
 Fredrik
+
+## Resources
+- [Project Presentation](https://www.youtube.com/watch?v=UqkQdlyEwdA)
