@@ -55,7 +55,7 @@ BlockAccessList
     │   └── slot: StorageKey (32 bytes)
     ├── balance_changes: BalanceChange[]
     │   ├── tx_index: uint16
-    │   └── post_balance: Balance (12 bytes)
+    │   └── post_balance: Balance (16 bytes)
     ├── nonce_changes: NonceChange[]
     │   ├── tx_index: uint16
     │   └── new_nonce: uint64
