@@ -19,19 +19,27 @@ The Postgres implementation supports all database columns used by Lighthouse and
 ## Specification
 
 * Backend Implementation:
-....* Implement the `AsyncKeyValueStore<E>` trait using `sqlx::PgPool` and Asynchronous Rust patterns.
-  Support full CRUD operations: `get_bytes, put_bytes, key_exists, do_atomically,` and column interation
+  - Implement the `AsyncKeyValueStore<E>` trait using `sqlx::PgPool` and Asynchronous Rust patterns.
+  - Support full DB operations that are core to lighthouse: `get_bytes, put_bytes, key_exists, key_delete, do_atomically, compact, iter_column_keys_from, iter_column_keys, iter_column_from, compact_column, delete_batch, and delete_if`
 
 * Database Schema:
-a table for each `DBColumn: col(byte), key(bytea), value(bytea)`.
+  - This will maintain a table for each `DBColumn` to allow modular, column-based storage while still leveraging Postgres features for indexing and querying.
+Each table will have the following base structure
+```
+CREATE TABLE <column_name> (
+    key   BYTEA PRIMARY KEY,
+    value BYTEA NOT NULL
+);
+```
+Where possible, column values will use structured Postgres types (e.g., `BIGINT, TEXT, JSONB`) instead of storing all data as `BYTEA`, with a defined Rust–Postgres type mapping for each `DBColumn`. Certain datasets such as state summaries or block metadata may use relational tables with joins, foreign keys, and targeted indexes to improve consistency and query performance. All tables will have a primary key index on `key`, with additional or composite indexes on frequently queried fields (e.g., slot, validator index). The backend will support `do_atomically` for batched CRUD operations within transactions, and iteration functions (`iter_column_keys, iter_column_keys_from, iter_column_from`) will be implemented via SQL cursors or range queries to align with Lighthouse’s iterator-based workflows while leveraging Postgres’s optimization capabilities. As a consideration, prior testing with SQLite in the Slasher DB showed that primary/foreign key constraints degraded batch write performance, so we will evaluate the trade-offs for the beacon node context before committing to such constraints.
 
 * Integration:
-....* Add `#[cfg(feature = "postgres")]` support to Lighthouse's database interface layer.
-  Modify configuration options to enable Postgres backend selection via `CLI` or `toml`.
+  - Add `#[cfg(feature = "postgres")]` support to Lighthouse's database interface layer.
+  - Modify configuration options to enable Postgres backend selection via `CLI` or `toml`.
 
 * Testing:
-....* Add a dedicated test suite using `tokio::test` to run database tests on a live PostgresDB instance via Docker or local instance.
-  Integrate with existing lighthouse test suite to run with Postgres db backend.
+  - Add a dedicated test suite using `tokio::test` to run database tests on a live PostgresDB instance via Docker or local instance.
+  - Integrate with existing lighthouse test suite to run with Postgres db backend.
 
 ## Roadmap
 
