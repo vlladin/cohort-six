@@ -2,7 +2,7 @@
 This projects aims to achieve a proof of concept implementation of eODS in Lodestar.
 
 ## Motivation
-Delegating is a discussed topic, especially in a BeamChain future - see Rainbow Staking. 
+Delegating is a discussed topic, especially in a BeamChain future - see [Rainbow Staking](https://ethresear.ch/t/unbundling-staking-towards-rainbow-staking/18683). 
 A hypothetical model has been put forth by Dan Goron a year ago, and since it evolved into something more practical.
 I was part of those specs writing and [design](https://github.com/gorondan/consensus-specs/commits/eods/?author=vlladin) so I want to take it further. I believe delegations, in one form or another, are an integral part of the future.
 Having reached to various people and listening to their feedback, I think it's important to have a POC client implementation. Benefits are many, first of all it will allow us to weed out all design flaws and polish the specs even more. Then, it will allow us to understand the effort required to actually implement something like this in the existing clients. Then it will help us understand how big an impact it will have on various metrics of the system.
