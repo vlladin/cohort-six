@@ -8,6 +8,8 @@ Besu currently uses Discovery v4 (DiscV4) for peer discovery, which lacks suppor
 
 Many Ethereum clients, such as Teku and Lighthouse, have already implemented DiscV5
 
+For an Execution Layer (EL) client such as Besu, DiscV5 will be utilized exclusively for peer discovery, while protocol negotiation and data exchange will continue to be handled through devp2p/RLPx. To maintain compatibility, Besu should support dual-mode operation (DiscV4 + DiscV5), ensuring that existing bootnodes and networks remain functional, with DiscV5 adopted as the preferred discovery mechanism when available.
+
 By implementing DiscV5 in Besu, we can:
 
 - Align Besu with Ethereum’s networking roadmap.
