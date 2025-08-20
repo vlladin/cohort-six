@@ -70,13 +70,13 @@ This work will prepare Lodestar for Ethereum’s history expiry roadmap.
 - [Rahul Guha](https://github.com/guha-rahul)
 
 ### Mentors
-- 
+- [Caymen](https://github.com/wemeetagain)
 
 
 ## Resources
-
- - [EthResearch: Era archival files for block and consensus data](https://ethresear.ch/t/era-archival-files-for-block-and-consensus-data/13526)
- - [Geth docs: Downloader](https://geth.ethereum.org/docs/fundamentals/downloadera)
- - [Nimbus Guide: Era store](https://nimbus.guide/era-store.html)
- - [HackMD: Era archival notes](https://hackmd.io/@advaita/BkMvD9Qllg)
- - [EtherWorld: History expiry moves forward in Ethereum’s Fusaka upgrade](https://etherworld.co/2025/06/16/history-expiry-moves-forward-in-ethereums-fusaka-upgrade/)
+- [Link to Lodestar Era Issue tracker](https://github.com/ChainSafe/lodestar/issues/7048)  
+- [EthResearch: Era archival files for block and consensus data](https://ethresear.ch/t/era-archival-files-for-block-and-consensus-data/13526)
+- [Geth docs: Downloader](https://geth.ethereum.org/docs/fundamentals/downloadera)
+- [Nimbus Guide: Era store](https://nimbus.guide/era-store.html)
+- [HackMD: Era archival notes](https://hackmd.io/@advaita/BkMvD9Qllg)
+- [EtherWorld: History expiry moves forward in Ethereum’s Fusaka upgrade](https://etherworld.co/2025/06/16/history-expiry-moves-forward-in-ethereums-fusaka-upgrade/)
