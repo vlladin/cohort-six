@@ -180,11 +180,12 @@ Shariq Naiyer - [Github](https://github.com/shariqnaiyer)
 
 ### Specifications:
 
-1. [Validator Flow Documentation](https://ethereum.github.io/beacon-APIs/validator-flow.md)
-2. [Consensus Specs](https://github.com/ethereum/consensus-specs/tree/dev/specs/electra)
-3. [Beacon API Spec](https://ethereum.github.io/beacon-APIs/#/)
-4. [3 Slot Finality](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
-5. [3SF Mini Implementation](https://github.com/ethereum/research/blob/master/3sf-mini/consensus.py)
+1.[Lean Consensus Specs](https://github.com/leanEthereum/leanSpec)
+2. [Validator Flow Documentation](https://ethereum.github.io/beacon-APIs/validator-flow.md)
+3. [Consensus Specs](https://github.com/ethereum/consensus-specs/tree/dev/specs/electra)
+4. [Beacon API Spec](https://ethereum.github.io/beacon-APIs/#/)
+5. [3 Slot Finality](https://ethresear.ch/t/3-slot-finality-ssf-is-not-about-single-slot/20927)
+6. [3SF Mini Implementation](https://github.com/ethereum/research/blob/master/3sf-mini/consensus.py)
 
 ### Videos:
 
