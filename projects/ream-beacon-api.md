@@ -38,19 +38,50 @@ Ream supports Pectra fork. I'll reference the specifications below.
 - [Beacon API](https://ethereum.github.io/beacon-APIs/releases/v3.1.0/beacon-node-oapi.json)
 - [Consensus Specs](https://github.com/ethereum/consensus-specs/tree/master/specs/electra)
 
-I will also reference:
+We will also reference:
 
 - [Annotated Specification of ETH2 book](https://eth2book.info/capella/part3/)
 - [Lighthouse Consensus Client](https://github.com/sigp/lighthouse)
+
+For the implementation of API endpoints, we will reference the existing Beacon API endpoints in the Ream codebase. Http handlers are located in [ream-rpc-beacon](https://github.com/ReamLabs/ream/tree/master/crates/rpc/beacon/src/handlers), which uses actix_web to manage HTTP requests and responses. API data types are defined in [ream-api-types-beacon](https://github.com/ReamLabs/ream/tree/master/crates/common/api_types/beacon/src). Additionally, the implementation utilizes ReamDB from [ream-storage](https://github.com/ReamLabs/ream/blob/master/crates/storage/src/db.rs) for data storage and retrieval.
 
 ## Roadmap
 
 To improve my estimation for the timeline, I started working on issue [Implement /eth/v1/beacon/light_client/optimistic_update](https://github.com/ReamLabs/ream/issues/211) to see how long ​it takes​ to implement one endpoint, so I can use it as a baseline. I implemented it in one week but ran into problems testing it. After some debugging and communication with mentors back and forth, I found that it's due to a bug in the syncing functions of Ream, the latest finalized block is not being updated correctly. Based on this experience, considering Ream is still in alpha stage with active development, I expect to spend 2 - 3 weeks on each endpoint. Since other fellows and contributors will take some of the issues, I expect to finish 5-8 Beacon API issues by the 20th week of the EPF program, and wrap up the project by the 21st week. I expect to continue contributing to Ream after the EPF program.
 
+We will try to finish all the Beacon APIs during the EPF program, below are the project milestones for me.
+
+#### Weeks 7
+
+- Finish [Implement /eth/v1/beacon/light_client/optimistic_update](https://github.com/ReamLabs/ream/issues/211)
+
+#### Weeks 10
+
+- Finish [Implement /eth/v1/beacon/pool/sync_committees](https://github.com/ReamLabs/ream/issues/215)
+
+
+#### Weeks 13
+
+- Finish [Implement /eth/v1/validator/contribution_and_proofs](https://github.com/ReamLabs/ream/issues/240)
+
+#### Weeks 16
+
+- Finish [Implement /eth/v1/validator/sync_committee_contribution](https://github.com/ReamLabs/ream/issues/238)
+
+#### Weeks 19
+
+- Finish [Implement /eth/v2/beacon/pool/attester_slashings](https://github.com/ReamLabs/ream/issues/213)
+
+#### Weeks 20+
+
+- Address bug fixes, draft a project report, and wrap up development.
+- Explore eth2-comply (by Infura) and API test suites from clients such as Nimbus, Prysm, and Lighthouse to evaluate the possibility of automating conformance testing against the official Beacon API specifications
+
 ## Possible challenges
 
 - Running out of Beacon API issues: Ream project is popular, other open source contributors may also take on some of the Beacon API issues. I'd be happy to work on some P2P/Networking layer issues if this happens.
 - Complexity beyond my estimation: Some of the Beacon API endpoints may be much more complex than the one I used as baseline for the estimation, or some of their dependencies need heavy work. I'll communicate actively with mentors and update EPF organizers if the progress is affected.
+- Beam does not currently have a formal specification. In fact, Beam has been renamed to Lean since this proposal was drafted. The scope has now also been expanded to include the Data Availability Layer and the Execution Layer. Reimplementing existing Beacon Chain features at this stage may require significant changes in the future once the Lean specifications are finalized next year.
 
 ## Goal of the project
 
@@ -61,7 +92,11 @@ Since most of the Endpoints don't depend on each other, fellows & other contribu
 
 ### Fellows 
 
-[Jay](https://github.com/jveer634) is a permissionless fellow who will also work on Ream client Beacon API endpoints. He mentioned his main focus is on Validator endpoints around Sync Committee and validator registrations.
+[Prototype](https://github.com/ShiroObiJohn) I'm working on endpoints mentioned from above milestones. 
+
+[Jay](https://github.com/jveer634) is a permissionless fellow who will also be working on Beacon API endpoints for the Ream client. He mentioned that his main focus will be on validator endpoints related to Sync Committees and validator registrations. We have already been in contact and plan to sync up weekly on the issues we are working on. We have also identified some shared dependencies in the P2P layer that he is currently developing.
+
+For endpoints that depend on his work, I will use his functions or features as placeholders in my implementation. Once his work is ready, I will replace these placeholders with the actual function calls. We will follow the same practice when he is waiting for dependencies from my side.
 
 ### Mentors
 
