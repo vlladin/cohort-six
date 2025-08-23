@@ -18,41 +18,60 @@ The project involves implementing reading, verification, and  writing of `.era` 
 
 ### Scope
 
-- **Parsing `.e2s` records**: Implement utilities to read the 8-byte headers .
-- **Era grouping**: Add logic to parse `.era` file groups, which include a set of blocks, an era-ending state, and trailing indices.
-- **Verification**:
-  - Ensure block roots match those recorded in the state.
-  - Verify consistency of indices and offsets.
-  - Confirm historical root correctness and alignment with checkpoints.
-- **Integration with Lodestar sync**:
-  - Allow importing an era file as a sync source.
-  - Enable checkpoint sync from an era state root.
-  - Provide APIs to iterate over blocks and states in an era file.
+- **Parsing `.e2s` records** (`packages/era/src/`):
+  - Implement `readEntry` for 8-byte headers (2-byte type, 4-byte length LE, 2-byte reserved=0).
+  - Implement `readSlotIndex` and `getEraIndexes` to parse trailing slot indices without full scans.
+  - Add `EraReader` and `EraWriter` classes for sequential reading and writing of groups.
 
-### Deliverables
+- **Era grouping**:
+  - Groups contain `CompressedSignedBeaconBlock*`, one `CompressedBeaconState`, optional extension entries, and trailing `SlotIndex` records.
+  - Genesis era has only the genesis state and a state index.
 
-- A Lodestar module (`packages/era`) for `.e2s`/`.era` parsing and verification.
-- Utilities for inspecting and validating era files from CLI.
-- Hooks in Lodestar sync to use `.era` files as data sources.
+- **Verification** (`packages/era/src/verify.ts`):
+  - Ensure `hash_tree_root(block) == state.block_roots[slot % SLOTS_PER_HISTORICAL_ROOT]` for each non-empty slot.
+  - Apply continuity rule for empty slots (`root(slot) == root(slot-1)`).
+  - Validate that all slot index offsets are in-bounds and point to the correct type.
+  - Confirm era boundary alignment with `era * SLOTS_PER_HISTORICAL_ROOT`.
+  - Anchor the era state against a finalized checkpoint root.
+
+- **Integration with Lodestar sync** (`packages/beacon-node/src/sync/eraSource.ts`):
+  - Add an `EraSource` implementing the existing block/state fetcher abstractions.
+  - On `--checkpoint-era <file>` (new CLI option in `packages/cli/src/cmds/beacon/options.ts`), sync uses `EraSource` instead of network fetchers.
+  - Provide programmatic APIs (e.g., get blocks by range, get state at slot) backed by `EraReader`.
+
+- **CLI** (`packages/cli/src/cmds/era/`):
+  - `lodestar era inspect <file>` → list groups, slot ranges, and indices.
+  - `lodestar era verify <file>` → run verification checks, with `--checkpoint-root` option.
+  - `lodestar era extract <file> --slot N (--block|--state)` → dump SSZ data at a given slot.
+  - `lodestar era create --in … --out file.era` → build an era file and append indices.
 
 ## Work during the fellowship
 
 Planned steps:
-1. Implement reading and writing of `.era` files.
-2. Build CLI tools for creating, inspecting, and validating era files.
-3. Integrate era support into Lodestar (sync, checkpoint, and processing pipelines).
+1. **Era IO** (`packages/era/src/`): Implement `EraReader`/`EraWriter` to parse headers, group blocks + states, and write trailing indices.
+2. **Verification** (`packages/era/src/verify.ts`): Add utilities to validate internal consistency and run checkpoint anchoring.
+3. **CLI integration** (`packages/cli/src/cmds/era/`): Add `lodestar era inspect|verify|extract` commands with JSON output.
+4. **Sync integration** (`packages/beacon-node/src/sync/eraSource.ts`): Implement `EraSource` that feeds blocks/states to Lodestar’s sync pipeline.
 
 ## Roadmap
 
 1. **Week 8–10** – Implement reading and writing of `.era` files.
-2. **Week 11–14** – Implement group parsing and slot index support.Integrate era support into Lodestar .
-4. **Week 15** – Build CLI tools for creating, inspecting, and validating era files; add tests.
-5. **Week 16+** – Performance tuning .
+2. **Week 11–14** – Implement group parsing and slot index support; integrate sync support via `EraSource`.
+3. **Week 15** – Build CLI tools for creating, inspecting, and validating era files.
+4. **Week 16+** – Performance tuning and testing with Nimbus `.era` files.
+
+### Deliverables
+
+- A Lodestar module (`packages/era`) for `.e2s`/`.era` parsing and verification.
+- Utilities for inspecting and validating era files from CLI (`packages/cli/src/cmds/era/`).
+- Hooks in Lodestar sync (`beacon-node/src/sync/`) to use `.era` files as data sources.
 
 ## Possible challenges 
 
-
-- Performance tuning.
+- **Performance tuning**: `.era` files can be hundreds of megabytes, so Node.js memory handling is a bottleneck. Mitigations:  
+  - Lazy load only headers and indices up front.  
+  - Use `SnappyFramesUncompress` (already in `reqresp/`) to stream decompression one entry at a time.   
+  - **Future improvement**: there is an ongoing Zig SSZ library effort, which could be leveraged to offload SSZ encode/decode to a high-performance native backend, significantly reducing Lodestar’s CPU and memory overhead.
 - Ensuring interoperability with Nimbus and other client outputs.
 
 ## Goal of the project
@@ -72,9 +91,8 @@ This work will prepare Lodestar for Ethereum’s history expiry roadmap.
 ### Mentors
 - [Caymen](https://github.com/wemeetagain)
 
-
 ## Resources
-- [Link to Lodestar Era Issue tracker](https://github.com/ChainSafe/lodestar/issues/7048)  
+- [ Lodestar Era Issue tracker](https://github.com/ChainSafe/lodestar/issues/7048)  
 - [EthResearch: Era archival files for block and consensus data](https://ethresear.ch/t/era-archival-files-for-block-and-consensus-data/13526)
 - [Geth docs: Downloader](https://geth.ethereum.org/docs/fundamentals/downloadera)
 - [Nimbus Guide: Era store](https://nimbus.guide/era-store.html)
