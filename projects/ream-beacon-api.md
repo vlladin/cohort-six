@@ -87,10 +87,7 @@ We will try to finish all the Beacon APIs during the EPF program, below are the 
 
 By the end of the project. I expect all Beacon API endpoints from the above list are implemented (unless no longer needed in future versions).
 
-## Collaborators
-Since most of the Endpoints don't depend on each other, fellows & other contributors are not collaborating at the moment. I may reach out to other fellows if there are overlaps on some of the issues we're working on.
-
-### Fellows 
+### Collaborators & Fellows 
 
 [Prototype](https://github.com/ShiroObiJohn) I'm working on endpoints mentioned from above milestones. 
 
