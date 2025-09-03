@@ -52,10 +52,14 @@ Project: Rust KZG - Education & Optimization
 ```
 
 ### Track 1: The `rust-kzg` Tutorial
-This track focuses on creating a comprehensive, hands-on tutorial for the `rust-kzg` library. It will guide developers from the mathematical foundations of KZG commitments to the practical implementation details within the context of EIP-4844.
+This track focuses on creating a comprehensive, hands-on tutorial for the `rust-kzg` library. It will guide developers from the mathematical foundations of KZG commitments to the practical implementation details within the context of EIP-4844. The following is the working codebase:
+
+*   [Rust KZG Tutorial](https://github.com/only4sim/rust-kzg-tutorial)
 
 ### Track 2: Performance Optimization
 This track is a research-oriented effort to significantly improve the performance of `rust-kzg`. The work will focus on implementing state-of-the-art algorithms for the library's most computationally expensive operations.
+
+*   [Rust KZG Optimization](https://github.com/only4sim/rust-kzg)
 
 ## Specification
 
