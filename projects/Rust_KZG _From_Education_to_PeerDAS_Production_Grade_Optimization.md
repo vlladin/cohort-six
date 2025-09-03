@@ -56,6 +56,8 @@ This track focuses on creating a comprehensive, hands-on tutorial for the `rust-
 
 *   [Rust KZG Tutorial](https://github.com/only4sim/rust-kzg-tutorial)
 
+In addition, suitable content will be submitted to [epf.wiki](https://epf.wiki/#/) after translation and adaptation.
+
 ### Track 2: Performance Optimization
 This track is a research-oriented effort to significantly improve the performance of `rust-kzg`. The work will focus on implementing state-of-the-art algorithms for the library's most computationally expensive operations.
 
