@@ -237,8 +237,8 @@ As this project consists of two subprojects, we need to dedicate a week to integ
 ## Resources
     
 - Meta Issues
-    - [SSZ Query Language #15343](https://github.com/OffchainLabs/prysm/issues/15343)
-    - [Merkle proofs of everything #15344](https://github.com/OffchainLabs/prysm/issues/15344)
+    - [SSZ Query Language Meta Tracking Issue #15587](https://github.com/OffchainLabs/prysm/issues/15587)
+    - [Generalized Merkle Proof (GMP) Meta Tracking Issue #15598](https://github.com/OffchainLabs/prysm/issues/15598)
 - Specification documents
     - [`postSszQuery` API specification](https://hackmd.io/@junsong/rkAN9lIIxx)
     - [SSZ-QL Specification](https://hackmd.io/@fernantho/rkjsksrIxg)
